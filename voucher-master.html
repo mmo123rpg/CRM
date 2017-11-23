@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must comeafter* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <img src="Content/img/btn_search.png" width="30" height="30" alt="" /> </button>
+        <!-- <button type="button" class="navbar-toggle pull-left  menu-collapse-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+    </div>
+</nav>
+<div class="menu-left">
+    <ul class="menu-collapse">
+        <li>
+            <a href="#" class="menu menu_expand"><span>MENU</span></a>
+        </li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Issued">
+            <a href="voucher-issued.html" class="menu menu-voucher-issued"><span>VOUCHER ISSUED</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Collected">
+            <a href="voucher-collected.html" class="menu menu-voucher-collected"><span>VOUCHER COLLECTED</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Master">
+            <a href="#" class="menu menu-voucher-master-selected"><span>VOUCHER MASTER</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Physic">
+                <a href="voucher-physic.html" class="menu menu-voucher-physic"><span>VOUCHER PHYSIC</span></a></li>
+    </ul>
+    <ul style="border-top:3px solid #b2ebf2">
+        <li class="dropdown">
+            <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+            <ul class="dropdown-menu dropdown-menu1">
+                <li><a href="#">log out</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">
+                    <div class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6"> 
+                                <span class="action-for-filter action-filter col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" title="" data-toggle="collapse" data-target="#voucher-filter-3" data-original-title="Filter"></span> 
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <nav class="sub-tab pull-right">
+                                    <ul class="nav" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#card3a" aria-controls="card3a" role="tab" data-toggle="tab" class="action action_graphic_view" aria-expanded="true" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Switch view"></a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#table3a" aria-controls="table3a" role="tab" data-toggle="tab" class="action action_menu" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Switch view"></a>
+                                        </li>
+                                    </ul>
+                                </nav>                                       
+                                <span class="action action_act pull-right" data-placement="bottom" data-tooltip="true" data-original-title="Add new voucher" data-toggle="modal" data-target="#add-voucher"></span> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="collapse" id="voucher-filter-3">
+                                    <div class="well">                 
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Status</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <select class="form-control">
+                                                                <option value='0'>All</option>
+                                                                <option value='1'>Pending</option>
+                                                                <option value='1'>Approved</option>
+                                                                <option value='1'>Rejected</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Type</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <select class="form-control">
+                                                                <option value='0'>Cash</option>
+                                                                <option value='1'>Product</option>
+                                                                <option value='1'>Service</option>
+                                                                <option value='1'>Car Park</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Location</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <div class="input-group quicksearch-width">
+                                                                <div class="typeahead-container">
+                                                                    <div class="typeahead-field">
+                                                                        <input autocomplete="off" class="form-control country_v1-query" type="text" value="" placeholder="Location" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-btn">
+                                                                    <button type="button" class="btn btn-input btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                                                    <ul class="dropdown-width dropdown-menu dropdown-menu-right dropdown-typehead">
+                                                                        <li><a href="#">Far East</a></li>
+                                                                        <li><a href="#">CMA</a></li>
+                                                                        <li><a href="#">Plaza Singapura</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Datetime</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <input type="text" class="form-control datetimepicker" placeholder="22/01/2016">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Search</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <div class="input-group" style="margin-bottom:0;">
+                                                                <input class="form-control" type="text">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-quicksearch2"></button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <span class="action-for-filter action_clearform pull-right" data-placement="bottom" data-tooltip="true" title="" data-original-title="Clear Filter"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="card3a" style="padding:0">
+                                <div class="divide16px"></div>
+                                <div class="tab-card-view">                                                   
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="grid">
+                                                <div class="card-windgroup card6 card-voucher-type">
+                                                    <div class="electronic-contain light-orange" data-toggle="modal" data-target="#voucher-detail">
+                                                        <div class="electronic1">5</div>
+                                                        <div class="electronic2">CASH VOUCHER</div>
+                                                    </div>
+                                                    <div class="electronic-img" data-toggle="modal" data-target="#voucher-detail">
+                                                        <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                    </div>
+                                                    <div class="link">
+                                                        <a href="#" class="link-red transition" data-toggle="modal" data-target="#confirm-inactivate"><i class="fa fa-ban"></i>Inactivate</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-windgroup card6 card-voucher-type">
+                                                    <div class="electronic-contain light-orange" data-toggle="modal" data-target="#voucher-detail">
+                                                        <div class="electronic1">5</div>
+                                                        <div class="electronic2">CASH VOUCHER</div>
+                                                    </div>
+                                                    <div class="electronic-img" data-toggle="modal" data-target="#voucher-detail">
+                                                        <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                    </div>
+                                                    <div class="link">
+                                                        <a href="#" class="link-red transition" data-toggle="modal" data-target="#confirm-inactivate"><i class="fa fa-ban"></i>Inactivate</a>
+                                                    </div>
+                                                </div>                                                       
+                                                <div class="card-windgroup card6 card-voucher-type">
+                                                    <div class="electronic-contain yellow" data-toggle="modal" data-target="#voucher-detail">
+                                                        <div class="electronic1"></div>
+                                                        <div class="electronic2">The Irish Times buy 1 get 1 free</div>
+                                                    </div>
+                                                    <div class="electronic-img" data-toggle="modal" data-target="#voucher-detail">
+                                                        <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                    </div>
+                                                    <div class="link">
+                                                        <a href="#" class="link-green transition" data-toggle="modal" data-target="#confirm-activate"><i class="fa fa-check-circle-o"></i>Activate</a>
+                                                    </div>      
+                                                    <img src="Content/img/inactive.png" width="150" alt="" class="watermark watermark-image3">                                      
+                                                </div>
+                                                <div class="card-windgroup card6 card-voucher-type">
+                                                    <div class="electronic-contain light-orange" data-toggle="modal" data-target="#voucher-detail">
+                                                        <div class="electronic1">5</div>
+                                                        <div class="electronic2">CASH VOUCHER</div>
+                                                    </div>
+                                                    <div class="electronic-img" data-toggle="modal" data-target="#voucher-detail">
+                                                        <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                    </div>
+                                                    <div class="link">
+                                                        <a href="#" class="link-green transition" data-toggle="modal" data-target="#confirm-activate"><i class="fa fa-check-circle-o"></i>Activate</a>
+                                                    </div>
+                                                    <img src="Content/img/inactive.png" width="150" alt="" class="watermark watermark-image3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade home-content" id="table3a" style="padding:0">
+                                <div class="divide8px"></div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover dataTable" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr role="row">
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>SubType</th>
+                                                <th>Denomination</th>
+                                                <th>Consumer Cost</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Validity</th>
+                                                <th>Stock Balance</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td><a href="#" data-toggle="modal" data-target="#voucher-detail">213321321</a></td>
+                                                <td>Cash</td>
+                                                <td>Mall</td>
+                                                <td>12.00</td>
+                                                <td></td>
+                                                <td>20/08/2016</td>
+                                                <td>26/08/2016</td>
+                                                <td>Until(DD/MM) 3/9 in next 1 year(s)</td>
+                                                <td>123</td>
+                                                <td>Active</td>
+                                                <td><a href="#" class="link-red fontweight-600" data-toggle="modal" data-target="#confirm-inactivate"><i class="fa fa-ban"></i>&nbsp;Inactivate</a></td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td><a href="#" data-toggle="modal" data-target="#voucher-detail">Free Tonkotsu Ramen with min. $80 spent</a>
+                                                </td>
+                                                <td>Product</td>
+                                                <td>Retailer</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>18/05/2016</td>
+                                                <td>30/06/2016</td>
+                                                <td>14 Day(s)</td>
+                                                <td>100</td>
+                                                <td>Inactive</td>
+                                                <td><a href="#" class="link-green fontweight-600" data-toggle="modal" data-target="#confirm-activate"><i class="fa fa-check-circle-o"></i>&nbsp;Activate</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-fix content" style="margin-top:-16px;">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+            </div>
+        </div>
+       <!-- <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix">
+                    <div class="row">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> Shopper Engage - 2016 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>
+
+<!-- Modal Confirm Inactivate -->
+<div class="modal fade" id="confirm-inactivate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-500 vertical-align-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Confirmation</div>
+                </div>
+                <div class="modal-body">                        
+                    <p>Are you sure you want to inactivate this item?</p>
+                    <div class="height16"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class=" btn btn-blue-green">Yes</button>
+                    <button type="Save" class=" btn btn-dark-red" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Confirm Activate -->
+<div class="modal fade" id="confirm-activate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-500 vertical-align-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Confirmation</div>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to activate this item?</p>
+                    <div class="height16"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class=" btn btn-blue-green">Yes</button>
+                    <button type="Save" class=" btn btn-dark-red" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Voucher Detail -->
+<div class="modal fade" id="voucher-detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-lg vertical-align-center" role="document">                
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Voucher Details</div>
+                </div>
+                <div class="modal-body">
+                    <div class="padding-accordion">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-windgroup">
+                                <div class="row">
+                                    <div class="col-ph-6">
+                                        <div class="title_popup" data-toggle="collapse" href="#collapseFive" aria-expanded="true">
+                                            <h4 class="panel-title"><i class="fa icon-collapse"></i> Basic</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-ph-6">
+                                        <span class="action action_edit edit-shop-information1" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit"></span>
+                                        <span class="action action_delete hide-shop-information1 hide" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Cancel"></span>
+                                        <span class="action action_save hide-shop-information1 hide" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Save"></span>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div id="collapseFive" class="panel-collapse collapse in disabled-shop-information1">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Voucher Code<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <select class="form-control" disabled>
+                                                            <option value="">[Select]</option>
+                                                        </select>
+                                                        <label class="control-label">Prefix<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <select class="form-control placeholder" disabled>
+                                                            <option>Cash</option>
+                                                            <option>Product</option>
+                                                            <option>Service</option>
+                                                            <option>Car Park</option>
+                                                        </select>
+                                                        <label class="control-label">Type<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Total Stock<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <textarea class="form-control" rows="6" disabled ></textarea>
+                                                        <label class="control-label">Short Description<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Retailer<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Partner<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>        
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-horizontal form-horizontal2"> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Voucher Name<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>  
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Padding Length<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <select class="form-control placeholder" disabled>
+                                                            <option>Cash</option>
+                                                            <option>Product</option>
+                                                            <option>Car Park</option>
+                                                        </select>
+                                                        <label class="control-label">Subtype<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Daily Stock<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control placeholder" disabled>
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text" disabled>
+                                                                    <label class="control-label">Denomination<span class="asterisk">&nbsp;*</span></label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control placeholder" disabled>
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text" disabled>
+                                                                    <label class="control-label">Consumer Cost<span class="asterisk">&nbsp;*</span></label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="colorselector_1">
+                                                                      <option value="106" data-color="#f5f6f7"></option>
+                                                                      <option value="102" data-color="#11b691"></option>
+                                                                      <option value="101" data-color="#1f60b9"></option>
+                                                                      <option value="67" data-color="#ffa816"></option>
+                                                                      <option value="87" data-color="#ff6717"></option>
+                                                                      <option value="17" data-color="#ff2715" selected></option>
+                                                                      <option value="18" data-color="#7226b6"></option>
+                                                                    </select>
+                                                                    <label class="control-label" style="color:white;">Voucher Color</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control colorColor1" type="text">
+                                                                    <label class="control-label">Color Code</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="form-group"> 
+                                                        <label for="file-input-voucher-detail" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Tap to upload image">
+                                                            <img class="form-image" src="Content/img/logo1.png"/>
+                                                        </label>
+                                                        <input id="file-input-voucher-detail" type="file" style="display:none" disabled/>
+                                                        <label class="control-label upload-logo-label">Company Logo</label> 
+                                                    </div> 
+                                                </div>                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-sm-12">  
+                                            <div class="form-horizontal form-horizontal2"> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <textarea class="form-control" rows="6" placeholder="You undertake that you shall not disallow the use of the V-aap Voucher Platform as a means of payment for goods or services by Users who wish to effect such payment. You shall indemnify WIND Group from and against any liabilities, losses and other consequences arising from any such refusal. " disabled></textarea>
+                                                        <label class="control-label">Long Description<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>                                         
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide8px"></div>
+                            <div class="panel panel-windgroup">
+                                <div class="row">
+                                    <div class="col-ph-6">
+                                        <div class="title_popup" data-toggle="collapse" href="#collapseSix" aria-expanded="false">
+                                            <h4 class="panel-title" id="heading2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                              <i class="fa icon-collapse"></i> Rules</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-ph-6">
+                                        <span class="action action_edit edit-shop-information2" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit"></span>
+                                        <span class="action action_delete hide-shop-information2 hide" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Cancel"></span>
+                                        <span class="action action_save hide-shop-information2 hide" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Save"></span>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div id="collapseSix" class="panel-collapse collapse disabled-shop-information2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-horizontal form-horizontal2"> 
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control datetimepicker" disabled> 
+                                                        <label class="control-label">Start Date<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control datetimepicker" disabled> 
+                                                        <label class="control-label">End Date<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Validity Period<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Grade Period<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Memberships<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Channels<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Issue Locations<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Issue Groups<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-horizontal form-horizontal2"> 
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Groups<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Stock per Member<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="col-ph-12"> 
+                                                    <div class="controls form-group"> 
+                                                        <input type="text" class="form-control" disabled> 
+                                                        <label class="control-label">Daily Stock per Member<span class="asterisk">&nbsp;*</span></label> 
+                                                    </div> 
+                                                </div>
+                                                <div class="row"> 
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control" disabled>
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency *</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text" disabled>
+                                                                    <label class="control-label">Pay to Retailer<span class="asterisk">&nbsp;*</span></label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row"> 
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control" disabled>
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency *</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-ph-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text" disabled>
+                                                                    <label class="control-label">Charge to Partner<span class="asterisk">&nbsp;*</span></label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Utilize Locations<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Utilize Groups<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Malls<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="chosen-select" multiple tabindex="2">
+                                                            <option value="">CMA</option>
+                                                            <option value="">Watson's</option>
+                                                            <option value="">Fraser</option>
+                                                            <option value="">NTUC</option>
+                                                            <option value="">BPP</option>
+                                                            <option value="">Plaza Singapura</option>
+                                                            <option value="">Bedok Point</option>
+                                                            <option value="">Causeway Point</option>
+                                                            <option value="">Watson's BPP</option>
+                                                            <option value="">NTUC BPP</option>
+                                                            <option value="">Ichiban Boshi BPP</option>
+                                                            <option value="">Guardian's BPP</option>
+                                                            <option value="">Bread Talk BPP</option>
+                                                        </select>
+                                                        <label class="control-label">Mall Operator<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-ph-12">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <textarea class="form-control" rows="4" disabled></textarea>
+                                                        <label class="control-label">T&C<span class="asterisk">&nbsp;*</span></label>
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Add Voucher -->
+<div class="modal fade" id="add-voucher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-medium67" role="document">            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Add New Voucher</div>
+                </div>
+                <div class="modal-body">
+                    <div class="rootwizard tabbable">
+                        <ul class="nav nav-wiz">
+                            <li>
+                                <a href="#add1" aria-controls="add1" role="tab" data-toggle="tab"><span class="a1"> 1 </span> 
+                                <span class="a2"> Basic </span> </a>
+                            </li>
+                            <li>
+                                <a href="#add2" aria-controls="add2" role="tab" data-toggle="tab"><span class="a1"> 2 </span> 
+                                <span class="a2"> Rules </span></a></li>
+                        </ul>
+                        <div class="yellow-line"></div>
+                        <div class="tab-content modal-padding">
+                            <div class="tab-pane active fade in" id="add1">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-8 height-add-voucher">
+                                        <div class="row"> 
+                                            <div class="col-md-3">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Voucher Code</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-3">
+                                                <div class="checkbox right-checkbox">
+                                                    <label><input type="checkbox"> Generate</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"> 
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Voucher Name</label> 
+                                                        </div> 
+                                                    </div>                                        
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <select class="form-control">
+                                                                <option value="">[Select]</option>
+                                                            </select>
+                                                            <label class="control-label">Prefix</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Padding Length</label> 
+                                                        </div> 
+                                                    </div>                                        
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <select class="form-control placeholder">
+                                                                <option>Cash</option>
+                                                                <option>Product</option>
+                                                                <option>Service</option>
+                                                                <option>Car Park</option>
+                                                            </select>
+                                                            <label class="control-label">Type</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <select class="form-control placeholder">
+                                                                <option>Cash</option>
+                                                                <option>Product</option>
+                                                                <option>Car Park</option>
+                                                            </select>
+                                                            <label class="control-label">Subtype</label> 
+                                                        </div> 
+                                                    </div>                                        
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Total Stock</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Daily Stock</label> 
+                                                        </div> 
+                                                    </div>                                        
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Short Description</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control placeholder">
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text">
+                                                                    <label class="control-label">Denomination</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Retailer</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="form-control placeholder">
+                                                                        <option>SGD</option>
+                                                                        <option>MYR</option>
+                                                                    </select>
+                                                                    <label class="control-label">Currency</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control" type="text">
+                                                                    <label class="control-label">Consumer Cost</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="col-md-6">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <input type="text" class="form-control"> 
+                                                            <label class="control-label">Partner</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                            <div class="col-md-6"> 
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <select class="colorselector_3">
+                                                                      <option value="106" data-color="#f5f6f7"></option>
+                                                                      <option value="102" data-color="#11b691"></option>
+                                                                      <option value="101" data-color="#1f60b9"></option>
+                                                                      <option value="67" data-color="#ffa816"></option>
+                                                                      <option value="87" data-color="#ff6717"></option>
+                                                                      <option value="17" data-color="#ff2715" selected></option>
+                                                                      <option value="18" data-color="#7226b6"></option>
+                                                                    </select>
+                                                                    <label class="control-label" style="color:white;">Voucher Color</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input class="form-control colorColor3" type="text">
+                                                                    <label class="control-label">Color Code</label>
+                                                                </div>                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input id="lefile1" type="file" style="display:none">
+                                                            <div class="input-group" onclick="$('input[id=lefile1]').click();">
+                                                                <input id="get-file-input1" class="form-control" type="text">
+                                                                <span class="input-group-btn"><button class="btn btn-input" type="button"><i class="fa fa-upload"></i></button></span> 
+                                                            </div>
+                                                            <label class="control-label">Upload Voucher Logo</label>
+                                                        </div>                                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row"> 
+                                            <div class="col-ph-12">  
+                                                <div class="form-horizontal form-horizontal2"> 
+                                                    <div class="col-ph-12"> 
+                                                        <div class="controls form-group"> 
+                                                            <textarea class="form-control" rows="6" placeholder="You undertake that you shall not disallow the use of the V-aap Voucher Platform as a means of payment for goods or services by Users who wish to effect such payment. You shall indemnify WIND Group from and against any liabilities, losses and other consequences arising from any such refusal. "></textarea>
+                                                            <label class="control-label label-textarea">Long Description</label> 
+                                                        </div> 
+                                                    </div>                                         
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="background voucher-review">
+                                            <div class="vr-preview">Preview</div>
+                                            <div class="card-windgroup card6 vr-content">
+                                                <div class="electronic-contain red">
+                                                    <div class="electronic1">5</div>
+                                                    <div class="electronic2">CASH VOUCHER</div>
+                                                </div>
+                                                <div class="electronic-img">
+                                                    <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn btn-next btn-blue-green btn-min">Next</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="add2">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-8 height-add-voucher">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control datetimepicker">
+                                                            <label class="control-label">Start Date *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Groups</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control datetimepicker">
+                                                            <label class="control-label">End Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Stock per Member</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option>Fixed</option>
+                                                                <option>Fixed Period</option>
+                                                                <option value="">Day</option>
+                                                                <option value="">Month</option>
+                                                                <option value="">Year</option>
+                                                            </select>
+                                                            <label class="control-label">Validity</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control" type="text">
+                                                            <label class="control-label">Time Unit</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Daily Stock per Member</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control datetimepicker" type="text">
+                                                            <label class="control-label">Forward Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="checkbox right-checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> End of Period</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option>SGD</option>
+                                                                <option>MYR</option>
+                                                            </select>
+                                                            <label class="control-label">Currency *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control" type="text">
+                                                            <label class="control-label">Pay to Retailer</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option>Fixed</option>
+                                                                <option>Fixed Period</option>
+                                                                <option value="">Day</option>
+                                                                <option value="">Month</option>
+                                                                <option value="">Year</option>
+                                                            </select>
+                                                            <label class="control-label">Grace Validity *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control" type="text">
+                                                            <label class="control-label">Time Unit</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option>SGD</option>
+                                                                <option>MYR</option>
+                                                            </select>
+                                                            <label class="control-label">Currency</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control" type="text">
+                                                            <label class="control-label">Charge to Partner</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input class="form-control datetimepicker" type="text">
+                                                            <label class="control-label">Grace Forward Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="checkbox right-checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> End of Period</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Utilize Locations</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Memberships</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Utilize Groups</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Channels *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Malls</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Issue Locations</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Mall Operator</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="chosen-select" multiple tabindex="2">
+                                                                <option value="">CMA</option>
+                                                                <option value="">Watson's</option>
+                                                                <option value="">Fraser</option>
+                                                                <option value="">NTUC</option>
+                                                                <option value="">BPP</option>
+                                                                <option value="">Plaza Singapura</option>
+                                                                <option value="">Bedok Point</option>
+                                                                <option value="">Causeway Point</option>
+                                                                <option value="">Watson's BPP</option>
+                                                                <option value="">NTUC BPP</option>
+                                                                <option value="">Ichiban Boshi BPP</option>
+                                                                <option value="">Guardian's BPP</option>
+                                                                <option value="">Bread Talk BPP</option>
+                                                            </select>
+                                                            <label class="control-label">Issue Groups</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-ph-12">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <textarea class="form-control" rows="3"></textarea>
+                                                            <label class="control-label">T&C</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="background voucher-review">
+                                            <div class="vr-preview">Preview</div>
+                                            <div class="card-windgroup card6 vr-content">
+                                                <div class="electronic-contain red">
+                                                    <div class="electronic1">5</div>
+                                                    <div class="electronic2">CASH VOUCHER</div>
+                                                </div>
+                                                <div class="electronic-img">
+                                                    <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn btn-blue-green btn-min btn-previous">Previous</a>
+                                    <a class="btn btn-next btn-dark-red btn-min">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="js/jquery.flip.min.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="Content/js/bootstrap-colorselector.js"></script>
+<script src="Content/js/chosen.jquery.js"></script>
+<script>
+$(document).ready(function() {
+    var block_height = (($(window).innerHeight()) - 120);
+    $('.block-1').css('min-height', block_height);
+    function resizeHeight1() {
+      //alert('abc');
+                          var winHeight = $(window).innerHeight(),
+                              bodyHeight = $('body').height();
+                          block1Height = $('.block-1').height();
+                          var winWidth = $(window).innerWidth();                              
+                          var contentHeight = winHeight - 196 - block1Height;
+      //alert('contentHieght: ' + contentHeight);                 
+      var wrapperHeight = $('.mainwrapper').height();
+      var leftbar = wrapperHeight;
+      
+      //alert('wrapperHeight: ' + wrapperHeight + 'and leftbar: ' + leftbar);
+                                              
+      $('.tab-content1').css('min-height', contentHeight);
+      $('.menu-left').css('min-height', leftbar);
+    }
+
+    resizeHeight1();
+
+    var $container = $('.grid');
+    $container.masonry({
+        columnWidth: '.card',
+        itemSelector: '.card',
+        gutter: 40,
+        isFitWidth: true,
+    });
+
+    $(".flip").flip();
+
+    $(".edit-shop-information1").click(function() {
+        $(".disabled-shop-information1 input,.disabled-shop-information1 select,.disabled-shop-information1 textarea").prop('disabled', false);
+        $(".hide-shop-information1,.disabled-shop-information1 .asterisk").show().removeClass("hide");
+        $(".location-checked").addClass("hide");
+        $(".disabled-shop-information1 .pointer-none").removeClass('pointer-none');
+        $(".disabled-shop-information1 .form-image").parent().css({
+            "border":"1px solid #f5f6f7",
+            "text-align":"center",
+            "width":"100%",
+            "border-radius":"4px"
+        });
+    });
+
+    $(".edit-shop-information2").click(function() {
+        $(".disabled-shop-information2 input,.disabled-shop-information2 select,.disabled-shop-information2 textarea").prop('disabled', false);
+        $(".hide-shop-information2,.disabled-shop-information2 .asterisk,.disabled-shop-information2 .input-group-addon").show().removeClass("hide");
+        $(".disabled-shop-information2 .form-image").css("border","1px solid #ccc");
+        $(".label-checkbox").removeClass("hide");
+        $(".remove-form").hide();
+        $(".hide").removeClass("hide");
+    });
+
+    $(".chosen-select").chosen();
+
+    $('.colorselector_1').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor1").val(color);
+          }
+    });
+    $('.colorselector_2').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor2").val(color);
+          }
+    });
+    $('.colorselector_3').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor3").val(color);
+          }
+    });
+
+    $('input[id=lefile1]').change(function() {
+        $('#get-file-input1').val($(this).val());
+    });
+    $('input[id=lefile2]').change(function() {
+        $('#get-file-input2').val($(this).val());
+    });
+
+});
+</script>
+</body>
+
+</html>

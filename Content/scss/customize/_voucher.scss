@@ -1,0 +1,581 @@
+    // .customer-service { 18-2-2016
+//     background-image: url("../img/customer-service-banner.png");
+//     height: 182px;
+//     background-position: top right;
+// }
+@media(min-width:768px){
+    .search-form{   
+        float:right;
+        margin-top:15px;
+    }
+    .tab-4{
+        float:right;
+        select{margin:10px 0;}
+    }  
+}
+@media(min-width:992px){
+    .scan-receipt-margin1{margin-top:50px;}
+    .scan-receipt-margin{margin-top:75px;}
+}
+.cs-tittle{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 15px 0px;
+}
+.cs-mb-number{
+    font-size: 14px;
+    font-weight: 600;
+    line-height:36px;
+}
+.edit-number{width:auto}
+.purchase-voucher-left {
+    float: left;
+    background: #fafafa;
+    width:260px;
+    padding: 5px;
+    height: 210px;
+    border-radius: 2px 0 0 2px;
+}
+.purchase-voucher-right {
+    float: right;
+    width: 100px;
+    height:210px;
+    padding:5px;
+    .checkbox{
+        position:absolute;
+        width:20px;
+        height:20px;
+        margin:0;
+        top:0;
+        right:-30px;
+    }
+    .QRCode{
+        width:54px;height:54px;margin:5px 0;
+    }
+    .manage{
+        font-size:8px;
+        margin-top:3px;
+    }
+}
+.barcode{margin-top:30px;}
+.voucher-info1{font-size: 50px;font-weight: 500;line-height: 50px;margin:13px 0;}
+.voucher-info2{font-size: 14px;max-width:220px;font-weight: 600;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.voucher-info3{font-size: 12px;font-weight: 500;margin-top:5px;}
+.voucher-info4{font-size: 12px;margin-left:45px;}
+.voucher-info6{
+    img:first-child{
+        margin-top:5px;
+    }
+}
+
+
+
+
+
+
+@media(min-width:768px){
+.span8{width:60%;float:left;border-right:1px solid #f1f1f1;min-height:500px;}
+.span4{width:40%;float:right;}
+}
+@media(min-width:1500px){
+.span8{width:70%;float:left;}
+.span4{width:30%;float:right;}
+}
+.tab-view2 {
+    @media(min-width:768px){
+        padding-right: 16px;
+    }    
+}
+.tab-view3 {
+    padding-top:16px;
+    overflow: hidden;    
+    @media(min-width:768px){
+        padding-left: 16px;
+    }
+}
+.span7{width:70%;}
+.span3{width:30%;}
+.secret-code {
+    border: 1px solid $light-green;
+    padding: 5px;
+    font-weight: 500;
+    color:$dark-grey;
+    font-size:8px;
+    text-transform: uppercase;
+    float:left;
+    width:100%;
+}
+
+.btn-select-voucher {
+    height: 34px;
+    color: #969696!important;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 0;
+    border: 1px solid #c7c7c7;
+    text-align: left;
+    font-weight:400;
+    min-width:215px;
+    background: url(../img/arrow.png) no-repeat right #fff;    
+}
+.height436{
+    @media(min-width:768px){
+        height:410px;
+    }
+}
+.dropdown-menu-voucher{margin:0;}
+.btn-select-voucher:hover,.btn-select-voucher:focus{background: url(../img/arrow.png) no-repeat right #fff;}    
+.dropdown-menu-voucher>li.active>a, .dropdown-menu-voucher>li:hover>a, .dropdown-menu-voucher>li.active:hover>a{background:#11b691;color:white;}
+
+
+
+
+
+
+
+
+.voucher-number {
+    display: flex;
+}
+.voucher-footer1 {
+    position: absolute;
+    bottom: -40px;
+    left: 110px;
+}
+.voucher-footer2 {
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+}
+.voucher-footer3 {
+    position: absolute;
+    bottom: -40px;
+    left:38px;
+}
+.voucher-number i {
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #939598;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    color: #939598;
+}
+.voucher-number i:hover{color:#11b691;background:#11b691;color:white;}
+.voucher-number i:focus{color:green;}
+.voucher-number-middle {
+    border: 1px solid #939598;
+    font-size: 17px;
+    width: 80px;
+    height: 24px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 12px;
+}
+
+.voucher-number .checkbox {
+    top: 8px;
+    left: 58px;
+}
+.voucher-number .checkbox input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+// .voucher-stamp {19-2-2016
+//     border-radius: 50%;
+//     width: 160px;
+//     height: 160px;
+//     background: rgba(255,255,255,0.95);
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -80px;
+//     top: 50%;
+//     margin-top: -80px;
+//     text-align: center;
+//     font-weight: bold;
+//     line-height: 160px;
+//     font-size: 16px;
+// }
+// .scanning {
+//     color:$green;
+// }
+// .activated {
+//     color: $yellow;
+// }
+.background-voucher {
+    background: black;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 2px;
+    opacity: 0.3;
+}
+
+.electronic-contain {
+    height: 167px;
+    border-radius: 2px 2px 0 0;
+    color:white;
+
+    input[type="checkbox"]{
+        position:absolute;
+        width:20px;
+        height:20px;
+        margin:0;
+        top:0;
+        right:0;
+    }
+}
+.card-voucher-type{
+    .electronic-contain{
+        height:131px;
+        .electronic1{
+            padding-top:8px;
+        }
+    }
+}
+.red{background:$red}
+.yellow{background:$yellow;}
+.blue{background:$blue;}
+.light-orange{background:#FFB183}
+.orange{background:$orange;}
+.electronic1 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 500;
+    padding-top:30px;
+    padding-left:10px;
+    line-height: 50px;
+    min-height: 20px;
+}
+.electronic2 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-left:10px;
+    line-height:23px;
+    padding-top: 15px;
+}
+.electronic-img{
+    height: 100px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.electronic-img>img{
+    height: 100px;
+}
+
+.bulk-quantity {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-img {
+    float: left;
+    margin-right: 20px;
+    margin: 10px 20px 10px 0; 
+    padding:0;
+}
+.btn-img img {
+    margin-right: 10px;
+}
+// .text-left-button {
+//     font-weight: 600;
+//     font-size: 20px;
+//     word-break: break-all;
+//     margin: 20px 0;
+// }
+.btn-white {
+    background:transparent;
+    color:$dark-grey;
+    position:relative;
+}
+
+
+
+/////////////////////////////////////////////////
+////////PROGRESS BUTTON////////////////////////
+/////////////////////////////////////////////////
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+    cursor: default;
+}
+
+.progress-button .content {
+    position: relative;
+    display: block;
+    box-shadow: none!important;
+    background: transparent!important;
+}
+
+.progress-button .content::before,
+.progress-button .content::after  {
+    position: absolute;
+    right: 20px;
+    color: $dark-grey;
+    font-family: "fontawesome";
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .content::before {
+    content: "\f00c"; /* Checkmark for success */
+}
+
+.progress-button .content::after {
+    content: "Error"; /* Cross for error */
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+    opacity: 1;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.progress-button .progress {
+    background: #148544;
+}
+
+.progress-button .progress-inner {
+    position: absolute;
+    left: 0;
+    background: #D08200;
+}
+
+.progress-button[data-horizontal] .progress-inner {
+    top: 0;
+    width: 0;
+    height: 100%;
+    -webkit-transition: width 0.3s, opacity 0.3s;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+.progress-button[data-vertical] .progress-inner {
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s;
+    transition: height 0.3s, opacity 0.3s;
+}
+
+/* Necessary 3d styles for buttons with perspective */
+
+.progress-button[data-perspective] {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+    -webkit-perspective: 900px;
+    perspective: 900px;
+}
+
+/*.progress-button[data-perspective] .content {
+    padding: 0 60px;
+    background: #1d9650;
+}*/
+
+.progress-button[data-perspective] .progress-wrap {
+    display: block;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+    outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
+}
+
+/* Individual styles */
+/* Choose the effect(s) you want, delete the rest */
+
+/* Fill horizontal */
+/* ====================== */
+
+.progress-button[data-style="fill"][data-horizontal] {
+    overflow: hidden;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content::before,
+.progress-button[data-style="fill"][data-horizontal] .content::after {
+    top: 200%;
+    right: auto;
+    left: 50%;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-success .content,
+.progress-button[data-style="fill"][data-horizontal].state-error .content {
+    -webkit-transform: translateY(-180%);
+    transform: translateY(-180%);
+}
+
+.glow{
+     -moz-box-shadow: 0px 0px 15px $yellow;
+        -webkit-box-shadow: 0px 0px 15px $yellow;
+        box-shadow: 0px 0px 15px $yellow;
+}
+.view-detail{
+    padding:8px;
+    .view{
+        color:$blue;
+        line-height:30px;
+    }
+    .total{
+        text-align:right;
+        @media (max-width: 768px) {
+            text-align:left;
+        }  
+        line-height:30px;
+        span{
+            white-space: nowrap;
+        }
+    }
+}
+.background2{
+    background:#f7f7f7!important;
+}
+
+.scan-receipt{
+    background:$green;
+    padding:12px 0;
+    text-align:center;
+    height:80px;
+    cursor:pointer;
+    .icon{
+        margin:0 auto;
+        float:none;       
+    }
+    div:last-child{
+        color:white;
+    }
+}
+.receipt-back{
+    padding-bottom:12px;
+    @media (max-width: 992px) {
+        padding:10px;
+    }
+    img{
+        width:400px;height:400px;
+        @media (max-width: 480px) {
+            width:200px
+        }
+    }
+}
+.receipt-image{
+    background:#333;width:400px;height:400px;margin:0 auto;
+    @media (max-width: 480px) {
+        width:200px
+    }
+}
+.receipt-click{
+    @media (max-width: 480px) {
+        margin-bottom:16px;
+    }
+}
+.member-info-right{
+    @media (min-width: 1600px){
+        margin-left:-50px;
+    }
+}
+.hide-customer-service{    
+    background: white;
+    width: 87%;
+    height: 417px;
+    position: absolute;
+    z-index: 10;
+    opacity: .3;
+    cursor: initial}
+.voucher-review{
+    overflow:hidden;height:328px;
+    .vr-preview{font-size:18px;font-weight:600;text-align:center;margin:8px 0;}
+    .vr-content{margin:0 auto;float:none;}
+}
+
+.asterisk {
+    display: none;
+}
+@media (min-width: 992px){
+.height-add-voucher {
+    min-height: 717px;
+}
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+@media (max-width:  $screen-ph-min){
+.form-margin {
+    margin-top: 16px;
+}
+}
+.form-image {
+    height: 136px;
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.upload-logo-label{
+    position: absolute;
+    top: 4px;
+    font-size: 12px;
+    left: 12px;
+}
+.right-checkbox{height:46px;}
+
+.image-upload {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.upload-image-container {
+  position: relative;
+  max-height:250px;
+  overflow-y:auto;
+}
+.overlay-upload {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 0;
+    height: 30px;
+    width: 30px;
+    background-color: $M1;
+    cursor: pointer;
+}
+.overlay-upload:hover{
+    background-color:darken($M1, 10%);
+}
+
+// .upload-image-container:hover .overlay-upload {
+//   opacity: 1;
+// }
+
+.text-upload {
+  color: white;
+  font-size: 14px;
+  padding:5px 7px;
+}

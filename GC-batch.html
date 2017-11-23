@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Home Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css"> </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>                
+    </nav>
+    <div id="toggle"> </div>
+    <div class="menu-left menu-left-2">
+        <ul class="menu-collapse">
+            <li> <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Home"> <a href="GC-home.html" class="menu menu_home"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Gift card"> <a href="GC-detail.html" class="menu menu_giftcard"><span>Gift card</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Card batch"> <a href="#" class="menu menu_cardbatch_selected"><span>Card batch</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown"> <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a>
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">location</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content tab-pane block-1" style="margin-bottom:0">
+                        <div class="modal-subtitle">
+                            <div class="name">Create card batch</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">No. of Card</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">Location Code</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">Balance</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <select class="form-control">
+                                                <option value="">Select</option>
+                                            </select>
+                                            <label class="control-label">Currency</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">Description</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="form-horizontal form-horizontal2">
+                                    <div class="col-ph-12">
+                                        <div class="controls form-group">
+                                            <input type="text" class="form-control datetimepicker">
+                                            <label class="control-label">Expiry Date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide8px"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pull-right">
+                                    <nav class="nav nav-pills">
+                                        <li>
+                                            <a href="#" class="btn btn-blue-green">Create batch</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-dark-yellow">clear</a>
+                                        </li>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide32px"></div>
+                        <div class="modal-subtitle">
+                            <div class="name">card batches</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <table class="table table-hover stripe memberson-grid dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Batch ID&nbsp;</th>
+                                    <th>No. of Cards &nbsp;</th>
+                                    <th>Created datetime &nbsp;</th>
+                                    <th>Created by &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>00001</td>
+                                    <td>1,000</td>
+                                    <td>28/11/2016 15:20</td>
+                                    <td>demo</td>
+                                </tr>
+                                <tr>
+                                    <td>00002</td>
+                                    <td>1,000</td>
+                                    <td>28/11/2016 15:20</td>
+                                    <td>demo</td>
+                                </tr>
+                                <tr>
+                                    <td>00003</td>
+                                    <td>1,000</td>
+                                    <td>28/11/2016 15:20</td>
+                                    <td>demo</td>
+                                </tr>
+                                <tr>
+                                    <td>00004</td>
+                                    <td>1,000</td>
+                                    <td>28/11/2016 15:20</td>
+                                    <td>demo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Search Card -->
+<div class="modal fade" id="search-card" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Search card</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Serial No.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                        </select>
+                                        <label class="control-label">Reference No.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                        </select>
+                                        <label class="control-label">Customer No.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                        </select>
+                                        <label class="control-label">Ext. Ref. No.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide8px"></div>
+                        <div class="col-lg-12">
+                            <a href="#" class="btn btn-blue-green pull-right">search</a>
+                        </div>
+                        <div class="divide16px"></div>
+                    </div>
+                    <table class="table table-hover stripe memberson-grid">
+                        <thead>
+                            <tr>
+                                <th># &nbsp;</th>
+                                <th>Reference No. &nbsp;</th>
+                                <th>Balance &nbsp;</th>
+                                <th>Customer No. &nbsp;</th>
+                                <th>Status &nbsp;</th>
+                                <th>Column 5 &nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>0000000</td>
+                                <td>5,000.00 MMK</td>
+                                <td>0000003</td>
+                                <td>Active</td>
+                                <td>Value 5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0000000</td>
+                                <td>5,000.00 MMK</td>
+                                <td>0000003</td>
+                                <td>Active</td>
+                                <td>Value 5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0000000</td>
+                                <td>5,000.00 MMK</td>
+                                <td>0000003</td>
+                                <td>Active</td>
+                                <td>Value 5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0000000</td>
+                                <td>5,000.00 MMK</td>
+                                <td>0000003</td>
+                                <td>Active</td>
+                                <td>Value 5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0000000</td>
+                                <td>5,000.00 MMK</td>
+                                <td>0000003</td>
+                                <td>Active</td>
+                                <td>Value 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="divide16px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add Card -->
+<div class="modal fade" id="add-card" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">add new card</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                        </select>
+                                        <label class="control-label">Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Reference No.</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Customer No.</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Ext. Ref. No.</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Balance</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control datetimepicker">
+                                        <label class="control-label">Reference No.</label>
+                                    </div>
+                                </div>
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                        </select>
+                                        <label class="control-label">Status</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide8px"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-login btn-blue-green">save</button>
+                    <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script>
+$(document).ready(function() {
+    var block_height = (($(window).innerHeight()) - 121);
+    $('.block-1').css('min-height', block_height);
+     $("#edit").click(function() {
+        $(".modal-title").addClass("orange");
+    });    
+});
+</script>    
+</body>
+
+</html>

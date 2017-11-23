@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">
+                    <div class="tab-content">
+                        <div class="modal-header">
+                            <div class="modal-title">Create email communication</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a href="#" class="action action_edit" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="Edit"></a>
+                                    <a href="#" class="action action-generate" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="Generate"></a>
+                                    <a href="#" class="action action-send-message" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-toggle="modal" data-target="#send-test-message" data-original-title="Send test messages"></a>
+                                    <a href="#" class="action action-discard" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="Discard"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-horizontal form-horizontal2">
+                                        <div class="col-ph-12">
+                                            <div class="controls form-group">
+                                                <input type="text" class="form-control" id="date">
+                                                <label class="control-label">Send Datetime</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-horizontal form-horizontal2">
+                                        <div class="col-ph-12">
+                                            <div class="controls form-group">
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Communication Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" checked=""> Override send date range restrictions
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="background-communication">
+                                        <div class="row">
+                                            <div class="col-sm-3">1. Budget Approval</div>
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-green">Appproved</a> &nbsp;&nbsp;by <b>Lisa Tan</b> on 22/06/2017 <a href="#" class="action action-history" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="History"></a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="btn btn-blue-green pull-right" data-toggle="modal" data-target="#budget-approve">submit</a>
+                                            </div>
+                                        </div>
+                                        <div class="divide16px"></div>
+                                        <div class="row">
+                                            <div class="col-sm-3">2. Template Approval</div>
+                                            <div class="col-sm-6"></div>
+                                            <div class="col-sm-3">
+                                                <a href="#" class="btn btn-blue-green pull-right" data-toggle="modal" data-target="#budget-approve">submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide32px"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="modal-subtitle">
+                                        <div class="name">Targets</div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" type="text">
+                                                            <span class="input-group-btn input-group-action-btn">
+                                                                <a href="#" class="action action_edit pull-right" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="Edit" style="margin-left:0"></a>
+                                                            </span>
+                                                        </div>
+                                                        <label class="control-label">Target List</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="background-communication">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width:150px;">Total target list:</td>
+                                                            <td style="width:100px;text-align:center;"><b>0</b></td>
+                                                            <td rowspan="2"><a href="#" class="action action-info pull-right"></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <table class="pull-right">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Generated on<br> dd/mm/yyyy</td>
+                                                            <td><a href="#" class="action action-estimate pull-right"></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <div class="background-communication">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width:150px;"><p>Estimated send count:</p></td>
+                                                            <td style="width:100px;text-align:center;"><b><p>0</p></b></td>
+                                                            <td rowspan="2"><a href="#" class="action action-info pull-right"></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:150px;">Estimated send cost:</td>
+                                                            <td style="width:100px;text-align:center;"><b>USD 0</b></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <table class="pull-right">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-top:6px;">Last estimation<br> dd/mm/yyyy</td>
+                                                            <td><a href="#" class="action action-estimate pull-right"></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divide32px"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="modal-subtitle">
+                                        <div class="name">Email Details</div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <input type="text" class="form-control">
+                                                        <label class="control-label">Sender Profile</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-12 col-xl-6">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <input type="text" class="form-control">
+                                                        <label class="control-label">Sender Mask</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-12 col-xl-6">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <select class="form-control">
+                                                            <option value="">Select</option>
+                                                        </select>
+                                                        <label class="control-label">Message Type</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-12 col-xl-6">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <input type="text" class="form-control" >
+                                                        <label class="control-label">Seed List</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-12 col-xl-6">
+                                            <div class="form-horizontal form-horizontal2">
+                                                <div class="col-ph-12">
+                                                    <div class="controls form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" >
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-input" data-toggle="modal" data-target="#edit-subject">...</button>
+                                                            </span>
+                                                        </div>
+                                                        <label class="control-label">Notifications</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="checkbox checkbox-inline">
+                                                <label>
+                                                    <input type="checkbox" checked=""> Advertisement
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-inline">
+                                                <label>
+                                                    <input type="checkbox" checked=""> Do not send to duplicated recipients
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-inline">
+                                                <label>
+                                                    <input type="checkbox" checked=""> Include 'View in browser' link
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divide32px"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="modal-subtitle">
+                                        <div class="name">TEMPLATE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide16px"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="nav nav-tabs-2" role="tablist">
+                                        <li role="presentation"><a href="#">Default</a></li>
+                                        <div class="dropdown pull-left">
+                                            <a href="#" class="action action_act" data-toggle="modal" data-target="#create-template"></a>
+                                        </div>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active fade in" style="padding:0">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="controls form-group">
+                                                                <input type="text" class="form-control">
+                                                                <label class="control-label">Subject</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="controls form-group">
+                                                                <input type="text" class="form-control">
+                                                                <label class="control-label">Pre-header</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-7">
+                                    <div class="modal-subtitle">
+                                        <div class="name">HTML</div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <a href="#" class="btn btn-blue-green">Import</a>
+                                            <a href="#" class="btn btn-blue-green">use master template</a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="#" class="action action_edit pull-right" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="" data-original-title="Edit"></a>
+                                        </div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <img class="img-responsive" src="Content/img/your award.jpg" alt="">
+                                </div>
+                                <div class="col-sm-6 col-lg-5">
+                                    <div class="modal-subtitle">
+                                        <div class="name">DATA BINDING</div>
+                                    </div>
+                                    <div class="divide16px"></div>
+                                    <table class="table table-multiselect">
+                                        <thead>
+                                            <tr>
+                                                <th>Keyword &nbsp;</th>
+                                                <th>Data field &nbsp;</th>
+                                                <th>Format &nbsp;</th>
+                                                <th>Example string &nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>[@CustomerNo]</td>
+                                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>[@CustomerNo]</td>
+                                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>[@CustomerNo]</td>
+                                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>[@CustomerNo]</td>
+                                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>[@CustomerNo]</td>
+                                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                                <td><input type="text" class="form-control" style="margin-bottom:0"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-blue-green btn-save">save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Edit Subject -->
+<div class="modal fade" id="edit-subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Notifications</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-ph-4 col-sm-3 col-xl-2">
+                            <label class="control-label">Notify when</label>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkbox">
+                                      <label><input type="checkbox">Generated</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="checkbox">
+                                      <label><input type="checkbox">Confirmed</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="checkbox">
+                                      <label><input type="checkbox">Completed</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide16px"></div>
+                        </div>
+                        <div class="col-ph-8 col-sm-9 col-xl-10">
+                             <label class="control-label">Notify by</label>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                      <label><input type="checkbox">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="form-horizontal form-horizontal2">
+                                        <div class="col-ph-12">
+                                            <div class="controls form-group">
+                                                <input type="text" class="form-control" value="mail@mail.com"="">
+                                                <label class="control-label">Notification Receiver Emails</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                      <label><input type="checkbox">SMS</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="form-horizontal form-horizontal2">
+                                        <div class="col-ph-12">
+                                            <div class="controls form-group">
+                                                <input type="text" class="form-control" value="8957648"="">
+                                                <label class="control-label">Notification Receiver Mobiles</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-margin btn-blue-green btn-min">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Data Binding -->
+<div class="modal fade" id="data-binding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Data binding</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#" class="btn btn-blue-green">COPY TO OTHER VARIATIONS</a>
+                            <a href="#" class="btn btn-blue-green">COPY ALL TO OTHER VARIATIONS</a>
+                        </div>
+                    </div>
+                    <div class="divide16px"></div>
+                    <table class="table table-multiselect">
+                        <thead>
+                            <tr>
+                                <th>Keyword &nbsp;</th>
+                                <th>Data field &nbsp;</th>
+                                <th>Format &nbsp;</th>
+                                <th>Example string &nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td><select class="multiselect" >
+                                                    <option>Double</option>
+                                                    <option>Triple</option>
+                                                </select></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td>[Select]</td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td>[Select]</td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td>[Select]</td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td>[Select]</td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>[@CustomerNo]</td>
+                                <td>[Select]</td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-margin btn-blue-green btn-min">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Send Test Messages -->
+<div class="modal fade" id="send-test-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Test Communication</div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="form-group-name">1. Please fill in the recipient addresses separated by comma. Maximum allowed recipient count is 5.</div>
+                        <div class="divide12px"></div>
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control">
+                                    <label class="control-label">Address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="form-group-name">2. Please fill in the test data to be used.</div>
+                        <div class="divide8px"></div>
+                        <ul class="nav nav-tabs-2" role="tablist">
+                            <li role="presentation" class="active"><a href="#template1" aria-controls="template1" role="tab" data-toggle="tab">Template 1</a></li>
+                            <li role="presentation"><a href="#template2" aria-controls="template2" role="tab" data-toggle="tab">Template 2</a></li>
+                            <li role="presentation"><a href="#template3" aria-controls="template3" role="tab" data-toggle="tab">Template 3</a></li>
+                            <li role="presentation"><a href="#template4" aria-controls="template4" role="tab" data-toggle="tab">Template 4</a></li>
+                            <li role="presentation"><a href="#template5" aria-controls="template5" role="tab" data-toggle="tab">Template 5</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" style="padding:0" id="template1">
+                                <div class="row">
+                                    <div class="col-ph-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">labelControl1</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-ph-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">labelControl2</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane active fade in" style="padding:0" id="template2">
+                            </div>
+                            <div role="tabpanel" class="tab-pane active fade in" style="padding:0" id="template3">
+                            </div>
+                            <div role="tabpanel" class="tab-pane active fade in" style="padding:0" id="template4">
+                            </div>
+                            <div role="tabpanel" class="tab-pane active fade in" style="padding:0" id="template5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-margin btn-blue-green btn-min">Reset Test Data</a>
+                    <a class="btn btn-margin btn-blue-green btn-min">Send</a>
+                    <a class="btn btn-margin btn-dark-red btn-min" data-dismiss="modal">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Budget Approve -->
+<div class="modal fade" id="budget-approve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">REQUEST APPROVE</div>
+                </div>
+                <div class="modal-body">
+                    <p>You are submitting the following for Request Approve</p>
+                    <div class="background-communication">
+                        <dl class="dl-horizontal">
+                            <dt>Communication Name:</dt>
+                            <dd>&nbsp;&nbsp;Communicate 001</dd>
+                            <dt>Target List:</dt>
+                            <dd>&nbsp;&nbsp;200,000</dd>
+                            <dt>Send Date:</dt>
+                            <dd>&nbsp;&nbsp;07/02/2017 10:00:00 AM</dd>
+                        </dl>
+                    </div>
+                    <div class="divide16px"></div>
+                    <p>The followal user(s) will receive approval request </p>
+                    <div class="table-responsive">
+                        <table class="table table-align-middle table-hover table-striped memberson-grid data-table">
+                            <thead>
+                                <tr>
+                                    <th style="background:none;padding-left:10px;width:20px"><input type="checkbox" checked></th>
+                                    <th>Username &nbsp;</th>
+                                    <th>Email &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>Alan Smith</td>
+                                    <td>alan.smith@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>Serene</td>
+                                    <td>serene.ng@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>Xu Rong</td>
+                                    <td>rong.xu@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" target="_blank" type="button" class="btn btn-blue-green btn-save">save</a>
+                    <a href="#" target="_blank" type="button" class="btn btn-dark-red btn-save">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Create Template -->
+<div class="modal fade" id="create-template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Create Template</div>
+                </div>
+                <div class="modal-body">
+                    <div class="group-tab">
+                        <div class="modal-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#history" aria-controls="history" role="tab" data-toggle="tab" aria-expanded="true">Predefined</a>
+                                </li>
+                                <li class="">
+                                    <a href="#transaction" aria-controls="transaction" role="tab" data-toggle="tab" aria-expanded="false">Customized</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="history"  style="min-height:300px;">
+                                <div class="select-multilayout">
+                                    <div class="select-multilayout-radio">
+                                        <input id="option1" type="radio" name="credit-card" value="option1">
+                                    </div>
+                                    <label for="option1" class="select-multilayout-label">
+                                        Template1
+                                        <div class="divide8px"></div>
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group" style="margin-bottom:0">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">Condition</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="select-multilayout">
+                                    <div class="select-multilayout-radio">
+                                        <input id="option2" type="radio" name="credit-card" value="option2">
+                                    </div>
+                                    <label for="option2" class="select-multilayout-label">
+                                        Template 2
+                                        <div class="divide8px"></div>
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group" style="margin-bottom:0">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">Condition</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="select-multilayout">
+                                    <div class="select-multilayout-radio">
+                                        <input id="option3" type="radio" name="credit-card" value="option3">
+                                    </div>
+                                    <label for="option3" class="select-multilayout-label">
+                                        Template 3
+                                        <div class="divide8px"></div>
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group" style="margin-bottom:0">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">Condition</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="transaction"  style="min-height:300px;">
+                                <div class="select-multilayout">
+                                    <div class="select-multilayout-radio">
+                                        <input id="option4" type="checkbox" value="option4">
+                                    </div>
+                                    <label for="option4" class="select-multilayout-label">Default</label>
+                                </div>
+                                <div class="select-multilayout">
+                                    <div class="select-multilayout-radio">
+                                        <input id="option5" type="checkbox" value="option5">
+                                    </div>
+                                    <label for="option5" class="select-multilayout-label">
+                                        Conditional
+                                        <div class="divide8px"></div>
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group" style="margin-bottom:0">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">No. of Layout</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" target="_blank" type="button" class="btn btn-blue-green btn-save">ok</a>
+                    <a href="#" target="_blank" type="button" class="btn btn-dark-red btn-save">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-resize" id="edit-point-scheme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-large" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">edit point scheme</div>
+                </div>
+                <div class="modal-body">
+                    <div class="title_popup" type="button" data-toggle="collapse" data-target="#edit1" aria-expanded="true" aria-controls="collapse-information" style="cursor:pointer"><i class="fa icon-collapse"></i> Base Setting</div>
+                    <div class="pull-right">         
+                        <a href="#basic2" aria-controls="basic2" role="tab" data-toggle="tab" class="action action_edit" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit"></a>
+                        <a href="#basic1" aria-controls="basic1" role="tab" data-toggle="tab" class="action action_delete" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Cancel"></a>       
+                        <a href="#basic1" aria-controls="basic1" role="tab" data-toggle="tab" class="action action_save" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Save"></a> 
+                    </div>
+                    <div class="divide8px"></div>
+                    <div class="collapse in" id="edit1" aria-expanded="true">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="basic1" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>Name:</dt>
+                                                    <dd>IMM Web Game Voucher</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>Status:</dt>
+                                                    <dd>Active</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>Start Date:</dt>
+                                                    <dd>15/05/2015</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>End Date:</dt>
+                                                    <dd>31/10/2015</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>Issued No.:</dt>
+                                                    <dd>0</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <dl class="dl-horizontal">
+                                                    <dt>Total Issued:</dt>
+                                                    <dd>0</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <dl class="dl-horizontal">
+                                            <dt>Description:</dt>
+                                            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam laudantium provident cum beatae deserunt, doloribus esse eaque obcaecati, qui aut dicta reprehenderit incidunt, illum aliquid excepturi non inventore optio, ratione.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="basic2" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">                                    
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Name *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option value="">Select</option>
+                                                            </select>
+                                                            <label class="control-label">Status</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Start Date *</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                                                    
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">End Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Issue No.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Total Issued </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <textarea class="form-control" rows="4"></textarea>
+                                                            <label class="control-label label-textarea">Long Description</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="divide32px"></div>
+                    <div class="title_popup" type="button" data-toggle="collapse" data-target="#edit2" aria-expanded="true" aria-controls="collapse-information" style="cursor:pointer"><i class="fa icon-collapse"></i> Issue</div>
+                    <div class="pull-right">         
+                        <a href="#issue2" aria-controls="issue2" role="tab" data-toggle="tab" class="action action_edit" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit"></a>
+                        <a href="#issue1" aria-controls="issue1" role="tab" data-toggle="tab" class="action action_delete" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Cancel"></a>       
+                        <a href="#issue1" aria-controls="issue1" role="tab" data-toggle="tab" class="action action_save" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Save"></a> 
+                    </div>
+                    <div class="divide8px"></div>
+                    <div class="collapse in" id="edit2" aria-expanded="true">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="issue1" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <dl class="dl-horizontal">
+                                            <dt>Give:</dt>
+                                            <dd><a href="">1 STAR$ per 1 SGD</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="issue2" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">Give</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="col-sm-3">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <select class="form-control">
+                                                        <option value="">STAR$</option>
+                                                        <option value="">SLDC</option>
+                                                        <option value="">star coin</option>
+                                                        <option value="">parking$</option>
+                                                        <option value="">Hour</option>
+                                                    </select>
+                                                    <label class="control-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>                                     
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <input type="text" class="form-control">
+                                                    <label class="control-label">per</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <select class="form-control">
+                                                        <option value="">SGD</option>
+                                                        <option value="">MY</option>
+                                                        <option value="">THB</option>
+                                                    </select>
+                                                    <label class="control-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+
+                    <div class="divide32px"></div>
+                    <div class="title_popup" type="button" data-toggle="collapse" data-target="#edit3" aria-expanded="true" aria-controls="collapse-information" style="cursor:pointer"><i class="fa icon-collapse"></i> Criteria</div>
+                    <div class="pull-right">         
+                        <a href="#edit-criteria-2" aria-controls="edit-criteria-2" role="tab" data-toggle="tab" class="action action_edit" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit"></a>
+                        <a href="#edit-criteria-1" aria-controls="edit-criteria-1" role="tab" data-toggle="tab" class="action action_delete" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Cancel"></a>       
+                        <a href="#edit-criteria-1" aria-controls="edit-criteria-1" role="tab" data-toggle="tab" class="action action_save" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Save"></a> 
+                    </div>
+                    <div class="divide8px"></div>
+                    <div class="collapse in" id="edit3" aria-expanded="true">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="edit-criteria-1" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>PQ:</dt>
+                                            <dd><a href="#pg" aria-controls="pg" role="tab" data-toggle="tab">Blank</a></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>Membership:</dt>
+                                            <dd><a href="#membership" aria-controls="membership" role="tab" data-toggle="tab">Blank</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>Qty Limit:</dt>
+                                            <dd><a href="#qty" aria-controls="qty" role="tab" data-toggle="tab">1</a></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>Campaigns:</dt>
+                                            <dd><a href="#campaigns" aria-controls="campaigns" role="tab" data-toggle="tab">Blank</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>Days & Time:</dt>
+                                            <dd><a href="#day" aria-controls="day" role="tab" data-toggle="tab">Blank</a></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <dl class="dl-horizontal">
+                                            <dt>Membership:</dt>
+                                            <dd><a href="#membership" aria-controls="membership" role="tab" data-toggle="tab">Blank</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fadin" id="edit-criteria-2" style="padding:0;">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li role="presentation" class="active"><a href="#edit-criteria-settings" aria-controls="edit-criteria-settings" role="tab" data-toggle="tab">Settings</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-pg" aria-controls="edit-criteria-pg" role="tab" data-toggle="tab">PQ</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-qty" aria-controls="edit-criteria-qty" role="tab" data-toggle="tab">Qty Limit</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-membership" aria-controls="edit-criteria-membership" role="tab" data-toggle="tab">Membership</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-campaigns" aria-controls="edit-criteria-campaigns" role="tab" data-toggle="tab">Campaigns</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-excl" aria-controls="edit-criteria-excl" role="tab" data-toggle="tab">Excl. Promos</a></li>
+                                    <li role="presentation"><a href="#edit-criteria-day" aria-controls="edit-criteria-day" role="tab" data-toggle="tab">Day & Time</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="edit-criteria-settings" style="padding:0">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Value</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <ul class="nav nav-tabs" role="tablist" id="myTab" style="display:none">
+                                            <li role="presentation" class="active"><a href="#edit-criteria-validity0" aria-controls="validity0" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#validity1" aria-controls="validity1" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#validity2" aria-controls="validity2" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                            <li role="presentation"><a href="#validity3" aria-controls="validity3" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#validity4" aria-controls="validity4" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                        </ul>      
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control mySelect">
+                                                                <option value="validity0">Select</option>
+                                                                <option value="validity1">Day</option>
+                                                                <option value="validity2">Month</option>
+                                                                <option value="validity2">Year</option>
+                                                                <option value="validity0">Period</option>
+                                                                <option value="validity0">Forever</option>
+                                                                <option value="validity3">Fixed</option>
+                                                                <option value="validity4">Fixed period</option>
+                                                            </select>
+                                                            <label class="control-label">Validity</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane active" id="validity0" style="padding:0;">
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="validity1" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control">
+                                                                            <label class="control-label">Periods</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="">End of Period</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="validity2" style="padding:0;">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input type="text" class="form-control">
+                                                                    <label class="control-label">Periods</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="validity3" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">From</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Until</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="validity4" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Till (e.g. 30/06)</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control">
+                                                                                <span class="input-group-addon">year(s)</span>
+                                                                            </div>
+                                                                            <label class="control-label">in next</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                
+                                        </div> 
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-pg" style="padding:0">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">PQ Min</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">PQ Max</label>
+                                                        </div>
+                                                    </div>
+                                                </div>                                     
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control">
+                                                                <option value="">SGD</option>
+                                                                <option value="">MY</option>
+                                                                <option value="">THB</option>
+                                                            </select>
+                                                            <label class="control-label"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="nav nav-tabs" role="tablist" id="myTab2" style="display:none">
+                                            <li role="presentation" class="active"><a href="#period0" aria-controls="period0" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#period1" aria-controls="period1" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#period2" aria-controls="period2" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                            <li role="presentation"><a href="#period3" aria-controls="period3" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#period4" aria-controls="period4" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                        </ul>      
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control mySelect2">
+                                                                <option value="period0">Select</option>
+                                                                <option value="period1">Day</option>
+                                                                <option value="period2">Month</option>
+                                                                <option value="period2">Year</option>
+                                                                <option value="period0">Period</option>
+                                                                <option value="period0">Forever</option>
+                                                                <option value="period3">Fixed</option>
+                                                                <option value="period4">Fixed period</option>
+                                                            </select>
+                                                            <label class="control-label">Period</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane active" id="period0" style="padding:0;">
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="period1" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control">
+                                                                            <label class="control-label">Periods</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="">End of Period</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="period2" style="padding:0;">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input type="text" class="form-control">
+                                                                    <label class="control-label">Periods</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="period3" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">From</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Until</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="period4" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Till (e.g. 30/06)</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control">
+                                                                                <span class="input-group-addon">year(s)</span>
+                                                                            </div>
+                                                                            <label class="control-label">in next</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                
+                                        </div> 
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-qty" style="padding:0">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Qty Limit</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <ul class="nav nav-tabs" role="tablist" id="myTab3" style="display:none">
+                                            <li role="presentation" class="active"><a href="#Qty0" aria-controls="Qty0" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#Qty1" aria-controls="Qty1" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#Qty2" aria-controls="Qty2" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                            <li role="presentation"><a href="#Qty3" aria-controls="Qty3" role="tab" data-toggle="tab" aria-expanded="false"></a></li>
+                                            <li role="presentation"><a href="#Qty4" aria-controls="Qty4" role="tab" data-toggle="tab" aria-expanded="true"></a></li>
+                                        </ul>      
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="form-control mySelect3">
+                                                                <option value="Qty0">Select</option>
+                                                                <option value="Qty1">Day</option>
+                                                                <option value="Qty2">Month</option>
+                                                                <option value="Qty2">Year</option>
+                                                                <option value="Qty0">Period</option>
+                                                                <option value="Qty0">Forever</option>
+                                                                <option value="Qty3">Fixed</option>
+                                                                <option value="Qty4">Fixed period</option>
+                                                            </select>
+                                                            <label class="control-label">Period</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane active" id="Qty0" style="padding:0;">
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="Qty1" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control">
+                                                                            <label class="control-label">Periods</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="">End of Period</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="Qty2" style="padding:0;">
+                                                        <div class="form-horizontal form-horizontal2">
+                                                            <div class="col-ph-12">
+                                                                <div class="controls form-group">
+                                                                    <input type="text" class="form-control">
+                                                                    <label class="control-label">Periods</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="Qty3" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">From</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Until</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="Qty4" style="padding:0;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <input type="text" class="form-control datetimepicker">
+                                                                            <label class="control-label">Till (e.g. 30/06)</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-horizontal form-horizontal2">
+                                                                    <div class="col-ph-12">
+                                                                        <div class="controls form-group">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control">
+                                                                                <span class="input-group-addon">year(s)</span>
+                                                                            </div>
+                                                                            <label class="control-label">in next</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                
+                                        </div> 
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-membership" style="padding:0">
+                                        <table class="table table-hover stripe memberson-grid data-table sort_remove">
+                                            <thead>
+                                                <tr>
+                                                    <th>Membership</th>
+                                                    <th width="80">Selected</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CapitaStar</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shopper</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SPARK</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-campaigns" style="padding:0">
+                                        <table class="table table-hover stripe memberson-grid data-table sort_remove">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th width="80">Selected</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Special Sales</td>
+                                                    <td>1/12/2014</td>
+                                                    <td>5/12/2014</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lucky Draw 1st 100 winners</td>
+                                                    <td>5/8/2016</td>
+                                                    <td>9/9/2016</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SPARK</td>
+                                                    <td>31/1/2014</td>
+                                                    <td>1/2/2014</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-excl" style="padding:0">
+                                        <table class="table table-hover stripe memberson-grid data-table sort_remove">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Name</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th width="80">Selected</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>SSP01</td>
+                                                    <td>Special Sales</td>
+                                                    <td>1/12/2014</td>
+                                                    <td>5/12/2014</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>T0001</td>
+                                                    <td>Lucky Draw 1st 100 winners</td>
+                                                    <td>5/8/2016</td>
+                                                    <td>9/9/2016</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CR03</td>
+                                                    <td>SPARK</td>
+                                                    <td>31/1/2014</td>
+                                                    <td>1/2/2014</td>
+                                                    <td><input type="checkbox"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="edit-criteria-day" style="padding:0">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <select class="multiselect-2" multiple="multiple">
+                                                                <option>Monday</option>
+                                                                <option>Tuesday</option>
+                                                                <option>Wednesday</option>
+                                                                <option>Thursday</option>
+                                                                <option>Friday</option>
+                                                                <option>Saturday</option>
+                                                                <option>Sunday</option>
+                                                            </select>
+                                                            <label class="control-label">Day</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">Start Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control">
+                                                            <label class="control-label">End Date</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>                                                                          
+                    </div>
+
+                    <div class="divide32px"></div>
+                    <div class="title_popup" type="button" data-toggle="collapse" data-target="#edit4" aria-expanded="true" aria-controls="collapse-information" style="cursor:pointer"><i class="fa icon-collapse"></i> Membership</div>
+                    <div class="divide8px"></div>
+                    <div class="collapse in" id="edit4" aria-expanded="true">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#edit-location1" aria-controls="edit-location1" role="tab" data-toggle="tab" aria-expanded="false">Locations</a></li>
+                            <li role="presentation"><a href="#edit-location2" aria-controls="edit-location2" role="tab" data-toggle="tab">Malls</a></li>
+                            <li role="presentation"><a href="#edit-location3" aria-controls="edit-location3" role="tab" data-toggle="tab">Brands</a></li>
+                            <li role="presentation"><a href="#edit-location4" aria-controls="edit-location4" role="tab" data-toggle="tab">Location Types</a></li>
+                            <li role="presentation"><a href="#edit-location5" aria-controls="edit-location5" role="tab" data-toggle="tab">Location Categories</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="edit-location1" style="padding:0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Code</th>
+                                            <th>Brand</th>
+                                            <th>Mall</th>
+                                            <th>Company</th>
+                                            <th>Location Type</th>
+                                            <th>Location Category</th>
+                                            <th width="80">Selected</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sinapore HQ</td>
+                                            <td>LHQS</td>
+                                            <td></td>
+                                            <td>CapitaMalls HQ Singapore</td>
+                                            <td>OFFICE</td>
+                                            <td>OFFICE/HQ</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>                               
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="edit-location2" style="padding:0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Mall</th>
+                                            <th width="80">Selected</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CapitaMalls HQ Singapore</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="edit-location3" style="padding:0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Brand</th>
+                                            <th width="80">Selected</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>LHQS</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="edit-location4" style="padding:0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Location Type</th>
+                                            <th width="80">Selected</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>OFFICE</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="edit-location5" style="padding:0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Brand</th>
+                                            <th width="80">Selected</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>OFFICE/HQ</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-blue-green">save</button>
+                    <button type="submit" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 45);
+    }
+
+    resizeHeight();
+    jQuery(window).resize(function () {
+         resizeHeight();
+    });
+
+    $('#date').datetimepicker({
+        sideBySide: true
+    });
+
+    $("#multilayout-selector").click(function (e) {
+        e.stopPropagation();
+    });
+    $("#btn-close").click(function (e) {
+        $('.dropdown').removeClass("open");
+    });
+
+    $("#edit").click(function() {
+        $(this).removeClass("action_edit").addClass("action_save");
+        $("input,select,textarea,.btn").prop('disabled', false).removeClass("disabled");
+    });
+    $('.datetimepicker2').datetimepicker({
+        icons: {
+            time: 'fa fa-clock-o',
+            date: 'fa fa-calendar',
+            up: 'fa fa-angle-up',
+            down: 'fa fa-angle-down ',
+            previous: 'fa fa-arrow-left',
+            next: 'fa fa-arrow-right',
+            today: 'fa fa-list-alt',
+            clear: 'fa fa-scissors'
+        },
+        collapse: true,
+        format: 'DD-MM-YYYY'
+    });
+
+    $('#example').multiselect({
+        enableClickableOptGroups: true,
+        enableCollapsibleOptGroups: true,
+        enableFiltering: true,
+        includeSelectAllOption: true
+    });
+});
+</script>
+</body>
+
+</html>

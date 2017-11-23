@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Homepage</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <img src="Content/img/btn_search.png" width="30" height="30" alt="" />
+            </button>
+            <button type="button" class="navbar-toggle pull-left menu-collapse-left">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="pull-left" src="Content/img/memberson_logo.png" width="60" height="60" alt="" />
+            <div class="top-info">
+                <div class="dropdown acc_info">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-acc" aria-labelledby="dLabel">
+                        <li><a href="#">MR. XU RONG - 0021686 5789 5467 87987 5789</a></li>
+                        <li><a href="#">Hide personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#clear-personal-data">Clear personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#edit-personal-data">Edit personal data</a></li>
+                        <li><a href="#">Refresh</a></li>
+                    </ul>
+                </div>
+                <ul class="nav acc_action" style="display:none;">
+                    <li class="action action_hide" data-placement="bottom" data-tooltip="true" title="Hide personal data"></li>
+                    <li class="action action_clear" data-placement="bottom" data-tooltip="true" title="Clear personal data" data-toggle="modal" data-target="#clear-personal-data"></li>
+                    <li class="action action_edit" data-placement="bottom" data-tooltip="true" title="Edit personal data" data-toggle="modal" data-target="#edit-personal-data"></li>
+                    <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                        <label for="email">Quick search:</label>
+                        <div class="input-group" id="quicksearch-width">
+                            <div class="typeahead-container">
+                                <div class="typeahead-field">
+                                    <input id="country_v1-query" autocomplete="off" class="form-control" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-close btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-width" href="#">Separated link</a></li>
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- /btn-group -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control select-padding">
+                            <option value="" selected="">Customer No.</option>
+                            <option>Member No.</option>
+                            <option>Card NO.</option>
+                            <option>NRIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-quicksearch"><img src="Content/img/btn_search.png" width="30" height="30" alt="" /></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+                <a href="Home.html" class="menu menu_home_selected"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Cases">
+                <a href="case.html" class="menu menu_activity" target="_blank"><span>CASES</span></a></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a class="menu menu_member right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Member"><span data-toggle="dropdown">MEMBER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-search-member">search member</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-add-member">Add newmember</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Report">
+                <a href="https://cma-50.memgate.com/reports/Reportmenu.aspx" class="menu menu_report" target="_blank"><span>REPORT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dashboard">
+                <a href="http://cma-50.memgate.com/dashboard" class="menu menu_dashboard" target="_blank"><span>DASHBOARD</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher">
+                <a href="#" class="menu menu_voucher" target="_blank"><span>VOUCHER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Admin">
+                <a href="#" class="menu menu_admin" target="_blank"><span>ADMIN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaign">
+                <a href="SE-home.html" class="menu menu_campaign" target="_blank"><span>CAMPAIGN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Review Management">
+                <a href="Review.html" class="menu menu_review_management" target="_blank"><span>REVIEW MANAGEMENT</span></a></li>
+        </ul>
+    
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_content_management" target="_blank"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1" id="drop1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">change timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change location</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change language</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content tab-pane block-1" style="margin-bottom:0">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="transaction-field home-member">                                       
+                                    <img src="Content/img/active-member.png" alt="">
+                                    <p>Profile with <b>Active Membership</b><br><number>1,232</number></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="transaction-field home-member">                                       
+                                    <img src="Content/img/inactive-member.png" alt="">
+                                    <p>Profile with <b>Inactive Membership</b><br><number>2,574</number></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="transaction-field home-member">                                       
+                                    <img src="Content/img/no-member.png" alt="">
+                                    <p>Profile with <b>No Membership</b><br><number>1,589</number></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">NEW CUSTOMERS</div>
+                                    <div class="panel-body">
+                                        <canvas id="canvas1" height="100" ></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">RECENT TRANSACTIONS</div>
+                                    <div class="panel-body">
+                                        <canvas id="canvas2" height="100" ></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="modal-subtitle">
+                            <div class="name">NEW CASES TODAY</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="table-responsive">
+                                <table id="table-cases" class="table stripe memberson-grid dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Time &nbsp;</th>
+                                            <th>Case ID &nbsp;</th>
+                                            <th>Case Category &nbsp;</th>
+                                            <th>Case Type &nbsp;</th>
+                                            <th>Priority &nbsp;</th>
+                                            <th>Creator &nbsp;</th>
+                                            <th>Status &nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>28/11/2016 10:35</td>
+                                            <td><a href="#">688</a></td>
+                                            <td>Complants</td>
+                                            <td>Case Type</td>
+                                            <td>NORMAL</td>
+                                            <td>Creator</td>
+                                            <td>Status</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28/11/2016 10:35</td>
+                                            <td><a href="#">699</a></td>
+                                            <td>(old) General</td>
+                                            <td>CarpitarCard</td>
+                                            <td>HIGH</td>
+                                            <td>Creator</td>
+                                            <td>Status</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28/11/2016 10:35</td>
+                                            <td><a href="#">701</a></td>
+                                            <td>(old) General</td>
+                                            <td>Home Team</td>
+                                            <td>HIGH</td>
+                                            <td>Creator</td>
+                                            <td>Status</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28/11/2016 10:35</td>
+                                            <td><a href="#">705</a></td>
+                                            <td>(old) General</td>
+                                            <td>General</td>
+                                            <td>HIGH</td>
+                                            <td>Creator</td>
+                                            <td>Status</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28/11/2016 10:35</td>
+                                            <td><a href="#">709</a></td>
+                                            <td>(old) General</td>
+                                            <td>General</td>
+                                            <td>NORMAL</td>
+                                            <td>Creator</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>                      
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/vis.js"></script>
+<script>
+$(document).ready(function() {
+    var block_height = (($(window).innerHeight()) - 121);
+    $('.block-1').css('min-height', block_height);
+
+    $(".dropdown").hover(function(){
+        var winHeight = $(window).innerHeight();
+        
+        var scrollTop     = $(window).scrollTop(),
+        elementOffset = $('#drop1').offset().top,
+        distance      = (elementOffset - scrollTop);
+        
+        if (distance > (winHeight / 2)) {
+            $('.dropdown-menu1').css({"top": "auto", "bottom": "0"})
+        }
+        else {
+            $('.dropdown-menu1').css({"top": "0", "bottom": "auto"})
+        }
+                
+    });
+
+     var randomScalingFactor = function() {
+            return Math.round(Math.random() * 100)
+        };
+
+        var detail_chart_1 = {
+            labels: ["15/11", "16/11", "17/11", "18/11", "19/11", "20/11", '21/11', "22/11", "23/11", "24/11", "25/11", "26/11", '27/11', '28/11'],
+            datasets: [{
+                    fillColor: "#1e9db3",
+                    strokeColor: "#1e9db3",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: [15, 10, 16, 14, 13, 10, 15, 15, 10, 16, 14, 13, 10, 15]
+                }
+
+            ]
+
+        }
+
+        var ctx_char_1 = document.getElementById("canvas1").getContext("2d");
+            window.myBar = new Chart(ctx_char_1).Bar(detail_chart_1, {
+                scaleShowGridLines: false,
+                responsive: true,
+        });
+
+        var detail_chart_2 = {
+            labels: ["15/11", "16/11", "17/11", "18/11", "19/11", "20/11", '21/11', "22/11", "23/11", "24/11", "25/11", "26/11", '27/11', '28/11'],
+            datasets: [{
+                    fillColor: "#fea815",
+                    strokeColor: "#fea815",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: [200, 2475, 1212, 4745, 214, 24, 2437, 3778, 8655, 4532, 4537, 1274, 4253, 215]
+                }
+
+            ]
+
+        }
+
+        var ctx_char_2 = document.getElementById("canvas2").getContext("2d");
+            window.myBar = new Chart(ctx_char_2).Bar(detail_chart_2, {
+                scaleShowGridLines: false,
+                responsive: true,
+        });
+      
+});
+</script>
+</body>
+
+</html>

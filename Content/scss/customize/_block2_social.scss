@@ -1,0 +1,17 @@
+textarea{resize:none;}
+.form-control-padding-left1 {
+	padding: 6px 8px;
+}
+.field-validation-error .form-control {
+	color: red;
+}
+/* 20-01-2016 Alex. Them code cho Social tab */
+.social-container {overflow:hidden;margin:0 auto;border-radius:2px;padding:0 !important;}
+.social-img {
+	height:100%;padding:16px 0;text-align:center;
+	>h3{color: #555;font-weight: 400;}
+}
+.social img {display: block;margin-left: auto;margin-right: auto; }
+.social-detail {background-color:#f2f2f2; padding:16px 16px 16px 32px;}
+.img-bg:hover {background: #555!important;z-index: 9999;position: relative;}
+.img-bg img {cursor: pointer;}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Home Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css"> </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>                
+    </nav>
+    <div id="toggle"> </div>
+    <div class="menu-left menu-left-2">
+        <ul class="menu-collapse">
+            <li> <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Home"> <a href="#" class="menu menu_home_selected"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Gift card"> <a href="GC-detail.html" class="menu menu_giftcard"><span>Gift card</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-tooltip="true" data-original-title="Card batch"> <a href="GC-batch.html" class="menu menu_cardbatch"><span>Card batch</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown"> <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a>
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">location</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content tab-pane block-1" style="margin-bottom:0">
+                        <div class="row">
+                            <div class="col-ph-6">
+                                <div class="transaction-field">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-4 col-xl-5 text-center SE-total-value">
+                                            <img src="Content/img/giftcard-money.png" alt="">
+                                            <p class="SE-title">Total available value</p>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-4 text-center">
+                                            <div class="SE-value">23,550.00</div>
+                                            <div style="font-size:20px;">SGD</div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 text-center">
+                                            <div class="SE-value">32,331.00</div>
+                                            <div style="font-size:20px;">USD</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-ph-6">
+                                <div class="transaction-field">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-4 text-center SE-total-value">
+                                            <img src="Content/img/giftcard-issue.png" alt="">
+                                            <p class="SE-title">Total cards issue</p>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 text-center">
+                                            <div class="SE-value">13,500</div>
+                                            <div style="font-size:20px;">SGD QTY</div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 text-center">
+                                            <div class="SE-value">22,225</div>
+                                            <div style="font-size:20px;">USD QTY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="modal-subtitle">
+                            <div class="name">total top-up ad usage amount per day</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <canvas id="canvas-detail-1" height="100"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script>
+$(document).ready(function() {
+    var block_height = (($(window).innerHeight()) - 121);
+    $('.block-1').css('min-height', block_height);
+     $("#edit").click(function() {
+        $(".modal-title").addClass("orange");
+    });    
+
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100)
+    };
+
+    var detail_chart_1 = {
+        labels: ["15/11", "16/11", "17/11", "18/11", "19/11", "20/11", '21/11', "22/11", "23/11", "24/11", "25/11", "26/11", '27/11', '28/11'],
+        datasets: [{
+                fillColor: "#2185da",
+                strokeColor: "#2185da",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data: [15, 10, 16, 14, 13, 10, 15, 15, 10, 16, 14, 13, 10, 15],
+            }, 
+            {
+                fillColor: "#78909d",
+                strokeColor: "#78909d",
+                highlightFill: "rgba(151,187,205,0.75)",
+                highlightStroke: "rgba(151,187,205,1)",
+                data: [20, 15, 17, 18, 14, 10, 15, 15, 15, 10, 16, 14, 13, 10,]
+            }
+
+        ],
+
+
+    }
+
+    var ctx_char_1 = document.getElementById("canvas-detail-1").getContext("2d");
+        window.myBar = new Chart(ctx_char_1).Bar(detail_chart_1, {
+            scaleShowGridLines: false,
+            responsive: true,
+
+    });
+});
+</script>    
+</body>
+
+</html>

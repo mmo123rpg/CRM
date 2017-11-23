@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <img src="Content/img/btn_search.png" width="30" height="30" alt="" /> </button>
+            <!-- <button type="button" class="navbar-toggle pull-left  menu-collapse-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+            <div class="top-info">
+                <div class="dropdown acc_info">SITUATION ROOM</div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="email">Quick search:</label>
+                        <div class="input-group" id="quicksearch-width">
+                            <div class="typeahead-container">
+                                <div class="typeahead-field">
+                                    <input id="country_v1-query" autocomplete="off" class="form-control" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-close btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-width" href="#">Separated link</a></li>
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- /btn-group -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control select-padding">
+                            <option value="" selected="">Customer No.</option>
+                            <option>Member No.</option>
+                            <option>Card NO.</option>
+                            <option>NRIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-quicksearch"><img src="Content/img/btn_search.png" width="30" height="30" alt="" /></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+                <a href="Home.html" class="menu menu_home_selected"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Cases">
+                <a href="case.html" class="menu menu_activity" target="_blank"><span>CASES</span></a></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a class="menu menu_member right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Member"><span data-toggle="dropdown">MEMBER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-search-member">search member</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-add-member">Add newmember</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Report">
+                <a href="https://cma-50.memgate.com/reports/Reportmenu.aspx" class="menu menu_report" target="_blank"><span>REPORT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dashboard">
+                <a href="http://cma-50.memgate.com/dashboard" class="menu menu_dashboard" target="_blank"><span>DASHBOARD</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher">
+                <a href="#" class="menu menu_voucher" target="_blank"><span>VOUCHER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Admin">
+                <a href="#" class="menu menu_admin" target="_blank"><span>ADMIN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaign">
+                <a href="SE-home.html" class="menu menu_campaign" target="_blank"><span>CAMPAIGN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Review Management">
+                <a href="Review.html" class="menu menu_review_management" target="_blank"><span>REVIEW MANAGEMENT</span></a></li>
+        </ul>
+    
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_content_management" target="_blank"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">location</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-lg-12">
+                        <div style="background:white;padding:12px 16px;margin-bottom:16px;">
+                            <label class="control-label">View by</label>
+                            <label class="radio-inline" style="margin-top:0;margin-left:20px;">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Today
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Week
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Month
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3"> Quarter
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option3"> Year
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content block-1">
+                        <div class="chart-title">CONNECT</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="chart-area text-center">
+                                    <div class="chart-name">LEAD GENERATION & AQUISITION</div>
+                                    <div class="divide45px"></div>
+                                    <canvas id="donut" height="235"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-md-6">                               
+                                <div class="chart-info text-center">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fontweight-700" style="padding-top:0">SOURCE</td>
+                                                <td class="text-right fontweight-700" colspan="2" style="padding-top:0">NEW SIGN-UP</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label1"></div></td>
+                                                <td class="text-left">Web</td>
+                                                <td class="fontweight-600 text-right">35</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label2"></div></td>
+                                                <td class="text-left">Mobile</td>
+                                                <td class="fontweight-600 text-right">45</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label3"></div></td>
+                                                <td class="text-left">In-Store</td>
+                                                <td class="fontweight-600 text-right">18</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label4"></div></td>
+                                                <td class="text-left">e-Shop</td>
+                                                <td class="fontweight-600 text-right">27</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"></td>
+                                                <td class="fontweight-700 text-left">Total</td>
+                                                <td class="fontweight-600 text-right">125</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content block-1">
+                        <div class="chart-title">TRANSACT</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="chart-area text-center">
+                                    <div class="chart-name">PURCHASE TRANSACTIONS</div>
+                                    <div class="divide12px"></div>
+                                    <label class="radio-inline" style="margin-top:0;">
+                                      <input type="radio" name="radio-group2" id="group1" value="option8"> Location
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="radio-group2" id="group2" value="option9"> Source
+                                    </label>
+                                    <div class="divide12px"></div>
+                                    <canvas id="pie" height="235"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-md-6">                               
+                                <div class="chart-info text-center">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fontweight-700" style="padding-top:0">LOCATION</td>
+                                                <td class="text-right fontweight-700" colspan="2" style="padding-top:0">PURCHASES</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label1"></div></td>
+                                                <td class="text-left">Location 1</td>
+                                                <td class="fontweight-600 text-right">100</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label2"></div></td>
+                                                <td class="text-left">Location 2</td>
+                                                <td class="fontweight-600 text-right">175</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label3"></div></td>
+                                                <td class="text-left">Location 3</td>
+                                                <td class="fontweight-600 text-right">87</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label4"></div></td>
+                                                <td class="text-left">Location 4</td>
+                                                <td class="fontweight-600 text-right">220</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label5"></div></td>
+                                                <td class="text-left">Location 5</td>
+                                                <td class="fontweight-600 text-right">60</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"></td>
+                                                <td class="fontweight-700 text-left">Total</td>
+                                                <td class="fontweight-600 text-right">642</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content block-1">
+                        <div class="chart-title">ENGAGE</div>
+                        <ul class="nav nav-chart" role="tablist">
+                            <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Customer Interactions</a></li>
+                            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Campaign Schedule</a></li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="tab1">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <canvas id="bar" height="400" width="1400"></canvas>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fontweight-700" colspan="2">INTERACTIONS</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label1"></div></td>
+                                                <td class="text-left">Interaction</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label2"></div></td>
+                                                <td class="text-left">Purchase</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label3"></div></td>
+                                                <td class="text-left">Inquiry</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label4"></div></td>
+                                                <td class="text-left">Communication</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40"><div class="label-color label5"></div></td>
+                                                <td class="text-left">Visits</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade in" id="tab2">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="exampleInputName2">Campaign</label>
+                                            <select class="form-control form-movie">
+                                                <option value="">Campaign1</option>
+                                            </select>
+                                    </div>
+                                </form>
+                                <div class="divide20px"></div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div style="margin:0 auto;width:100%;">
+                                            <div style="float:left;width:5%;"> <img src="Content/img/left-arrow.png" style=" display:inline-block;position:relative;top:100px;float:left;" /></div>
+                                            <div id="visualization" style="float:left;width:90%;"></div>
+                                            <div style="float:left;width:5%;"> <img src="Content/img//right-arrow.png" style=" display:inline-block;position:relative;top:100px;float:right;" /> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix">
+                        <div class="row">
+                            <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> Shopper Engage - 2016 </div>
+                            <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/vis.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function() {
+    
+
+    var doughnutData = [
+                {
+                    value: 35,
+                    color:"#e7e99b",
+                    highlight: "#FF5A5E",
+                    label: "Web"
+                },
+                {
+                    value: 45,
+                    color: "#89578a",
+                    highlight: "#5AD3D1",
+                    label: "Mobile"
+                },
+                {
+                    value: 18,
+                    color: "#427eba",
+                    highlight: "#FFC870",
+                    label: "In-Store"
+                },
+                {
+                    value: 27,
+                    color: "#1abc9c",
+                    highlight: "#A8B3C5",
+                    label: "e-Shop"
+                }
+
+            ];
+
+    var pieData = [
+                {
+                    value: 100,
+                    color:"#e7e99b",
+                    highlight: "#FF5A5E",
+                    label: "Location 1"
+                },
+                {
+                    value: 175,
+                    color: "#89578a",
+                    highlight: "#5AD3D1",
+                    label: "Location 2"
+                },
+                {
+                    value: 87,
+                    color: "#427eba",
+                    highlight: "#FFC870",
+                    label: "Location 3"
+                },
+                {
+                    value: 220,
+                    color: "#1abc9c",
+                    highlight: "#A8B3C5",
+                    label: "Location 4"
+                },
+                {
+                    value: 60,
+                    color: "#ffacc0",
+                    highlight: "#A8B3C5",
+                    label: "Location 5"
+                }
+
+            ];
+
+    var barChartData = {
+        labels : ["30/05","31/05","01/06","02/06","03/06","04/06",'05/06'],
+        datasets : [
+            {
+                fillColor : "#e7e99b",
+                strokeColor : "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data : [15,10,16,14,13,10,15]
+            },
+            {
+                fillColor : "#89578a",
+                strokeColor : "rgba(151,187,205,0.8)",
+                highlightFill : "rgba(151,187,205,0.75)",
+                highlightStroke : "rgba(151,187,205,1)",
+                data : [5,4,6,4,3,5,7]
+            },
+            {
+                fillColor : "#427eba",
+                strokeColor : "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data : [2,3,4,2,1,2,6]
+            },
+            {
+                fillColor : "#1abc9c",
+                strokeColor : "rgba(151,187,205,0.8)",
+                highlightFill : "rgba(151,187,205,0.75)",
+                highlightStroke : "rgba(151,187,205,1)",
+                data : [20,15,17,18,14,10,15]
+            },
+            {
+                fillColor : "#ffacc0",
+                strokeColor : "rgba(151,187,205,0.8)",
+                highlightFill : "rgba(151,187,205,0.75)",
+                highlightStroke : "rgba(151,187,205,1)",
+                data : [20,15,17,18,14,10,15]
+            }
+            
+        ]
+
+    }
+
+
+var ctx = document.getElementById("donut").getContext("2d");
+window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : false});
+var ctx2 = document.getElementById("pie").getContext("2d");
+window.myPie = new Chart(ctx2).Pie(pieData);
+var ctx3 = document.getElementById("bar").getContext("2d");
+window.myBar = new Chart(ctx3).Bar(barChartData, {
+    scaleShowGridLines : false,                 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+var now = moment().minutes(0).seconds(0).milliseconds(0);
+var groupCount = 4;
+var itemCount = 20;
+
+// create a data set with groups
+
+var names = ['Purchase', 'Inquiry', 'Communication', 'Interaction'];
+var groups = new vis.DataSet();
+for (var g = 0; g < groupCount; g++) {
+    groups.add({
+        id: g,
+        content: names[g]
+    });
+}
+
+
+var items = new vis.DataSet([
+    // Group 0 - Purchase    
+    {
+        start: new Date(2010, 7, 23),
+        group: 0,
+        content: '<div> <img src="Content/img/dollar-icon.png" style="width:28px; height:28px;" title="abacsd tét"> <span style="display: block;height: 20px;border-radius: 10px;background: #C76060;line-height: 20px;text-align: center;font-size: 12px;color: #fff;position: absolute;top: 18px;right: -10px;padding-left: 4px;padding-right: 4px;"> 12 </span></div>',
+        title: 'Period A with more description on tooltip'
+    }, {
+        start: new Date(2010, 7, 23, 23, 0, 0),
+        group: 0,
+        content: '<img src="Content/img/dollar-icon.png" style="width:28px; height:28px;" '
+    }, {
+        start: new Date(2010, 7, 24, 16, 0, 0),
+        group: 0,
+        content: '<div> <img src="Content/img/dollar-icon.png" style="width:28px; height:28px;" title="abacsd tét"> <span style="display: block;height: 20px;border-radius: 10px;background: #C76060;line-height: 20px;text-align: center;font-size: 12px;color: #fff;position: absolute;top: 18px;right: -10px;padding-left: 4px;padding-right: 4px;"> 50 </span></div>',
+        title: 'Period A with more description on tooltip'
+    }, {
+        start: new Date(2010, 7, 28),
+        group: 0,
+        content: '<img src="Content/img/dollar-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 29),
+        group: 0,
+        content: '<img src="Content/img/dollar-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 8, 4, 12, 0, 0),
+        group: 0,
+        content: '<img src="Content/img/dollar-icon.png" style="width:28px; height:28px;">'
+    },
+
+    // Group 1 - Inquiry
+    {
+        start: new Date(2010, 7, 22),
+        group: 1,
+        content: '<img src="Content/img/complaint-icon.png" style="width:28px; height:28px;">'
+    },
+
+    // Group 2 - Communication    
+    {
+        start: new Date(2010, 7, 20),
+        group: 2,
+        content: '<div>Welcome</div><img src="Content/img/message-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 21),
+        group: 2,
+        content: '<div>Point Balance</div><img src="Content/img/message-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 24),
+        group: 2,
+        content: '<div>Expiry Reminder</div><img src="Content/img/chat-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 26),
+        group: 2,
+        content: '<div>Expiry Reminder</div><img src="Content/img/chat-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 30),
+        group: 2,
+        content: '<img src="Content/img/message-icon.png" style="width:28px; height:28px;">'
+    },
+
+
+
+    // Group 0 - Purchase    
+    {
+        start: new Date(2010, 7, 25),
+        group: 3,
+        content: '<img src="Content/img/like-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 27),
+        group: 3,
+        content: '<img src="Content/img/complaint-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 7, 29),
+        group: 3,
+        content: '<img src="Content/img/like-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 8, 1),
+        group: 3,
+        content: '<img src="Content/img/complaint-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 8, 3),
+        group: 3,
+        content: '<img src="Content/img/login-web-icon.png" style="width:28px; height:28px;">'
+    }, {
+        start: new Date(2010, 8, 4),
+        group: 3,
+        content: '<img src="Content/img/facebook-comment-icon.png" style="width:28px; height:28px;">'
+    },
+
+
+]);
+
+
+
+
+// create visualization
+var container = document.getElementById('visualization');
+var options = {
+    groupOrder: 'content', // groupOrder can be a property name or a sorting function,
+    autoResize: false,
+    zoomable: false
+};
+
+var timeline = new vis.Timeline(container);
+timeline.setOptions(options);
+timeline.setGroups(groups);
+timeline.setItems(items);
+
+    $('[data-toggle=tab]').each(function() {
+        var $this = $(this);
+
+        $this.on('shown.bs.tab', function() {
+            timeline.setOptions(options);
+            timeline.setGroups(groups);
+            timeline.setItems(items);
+        });
+    });
+});
+
+</script>
+</body>
+
+</html>

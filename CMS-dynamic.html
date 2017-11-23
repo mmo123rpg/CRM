@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_review_management"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Image Management">
+                <a href="CMS-image.html" class="menu menu_image_management"><span>IMAGE MANAGEMENT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dynamic Content">
+                <a href="CMS-image.html" class="menu menu_dynamic_content_selected"><span>DYNAMIC CONTENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content block-1">
+                        <div class="tab-pane">
+                            <div class="row">
+                               <div class="col-lg-12">               
+                                   <span class="action action_refresh-2 pull-right" data-placement="bottom" data-tooltip="true" data-original-title="Refresh"></span> 
+                                   <span class="action action_act pull-right" data-placement="bottom" data-tooltip="true" data-original-title="Add" data-toggle="modal" data-target="#content"></span> 
+                               </div>
+                           </div>
+                           <table class="table table-hover stripe memberson-grid dataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Name &nbsp;</th>
+                                        <th>Type &nbsp;</th>
+                                        <th>Width &nbsp;</th>
+                                        <th>Height &nbsp;</th>
+                                        <th>Allowed Channels &nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Test Email Template 20160105</td>
+                                        <td>Image</td>
+                                        <td>1024</td>
+                                        <td>768</td>
+                                        <td>Email, Web</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content" style="margin-top:-16px;">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span></div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Content Designer -->
+    <div class="modal fade" id="content" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center modal-medium60" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="forget_close" data-dismiss="modal"></a>
+                        <div class="modal-title">content designer</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-inline form-inline2">
+                            <div class="form-group">
+                                <label>Name *</label>
+                                <input type="text" class="form-control">
+                            </div>                                            
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="modal-subtitle">
+                            <div class="name">1. SPECIFY CONTENT METADATA</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <form class="form-inline">
+                                  <div class="form-group">
+                                    <label for="width">Width</label>
+                                    <input type="text" class="form-control" id="width">
+                                  </div>                                 
+                                </form>
+                            </div>
+                            <div class="col-sm-4">
+                                <!--<dl class="dl-horizontal">
+                                    <dt>Height:</dt>
+                                    <dd>&nbsp;200px</dd>
+                                </dl>-->
+                                <form class="form-inline" style="margin-bottom:16px;">
+                                  <div class="form-group">
+                                    <label for="height">Height</label>
+                                    <input type="text" class="form-control" id="height">
+                                  </div>                                 
+                                </form>
+                            </div>
+                            <div class="col-sm-4">
+                                <dl class="dl-horizontal">
+                                    <dt>Allowed Channels:</dt>
+                                    <dd>&nbsp;
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Email
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" id="inlineCheckbox2" value="option2"> Mobile
+                                        </label>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="divide32px"></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="modal-subtitle">
+                                    <div class="name">2. DEFINE SUB-CONTENT</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="table-responsive">
+                                    <table id="table-cases" class="table stripe memberson-grid dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Conditions&nbsp;</th>
+                                                <th>Images&nbsp;</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>(PORTAL= ’WT+’)</td>
+                                                <td>
+                                                    <span class="sub-content-img">
+                                                        <img class="img-responsive" src="Content/img/img-dynamic.jpg" alt="">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete" class="table-icon table-delete"></a>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit" class="table-icon table-edit"></a>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Upload" class="table-icon table-upload"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>(BIRTHDATE = ‘October’)</td>
+                                                <td>
+                                                    <span class="sub-content-img">
+                                                        <img class="img-responsive" src="Content/img/1.jpg" alt="">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete" class="table-icon table-delete"></a>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit" class="table-icon table-edit"></a>
+                                                    <a href="#" data-trigger="hover" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Upload" class="table-icon table-upload"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                <div class="divide16px"></div>
+                                <div class="text-right">
+                                    <a href="#" class="btn btn-outline pull-right" data-toggle="modal" data-target="#sub-content-detail">add</a>
+                                </div>                               
+                            </div>
+                            <div class="col-lg-6 col-xl-7">
+                                <div class="modal-subtitle">
+                                    <div class="name">3. PREVIEW EACH SUB-CONTENT</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="preview-dynamic">
+                                    <img class="img-responsive" src="Content/img/img-dynamic.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide32px"></div>
+                        <div class="modal-subtitle">
+                            <div class="name">4. SPECIFY ARGUMENTS AND PREVIEW IN BROWSER</div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-sm-8 col-md-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="https://www.google.com.vn/">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-input" type="button"  data-toggle="modal" data-target="#add-new-rule">...</button>
+                                        </span> 
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-3 text-right">
+                                <a href="https://www.google.com.vn/" class="btn btn-outline pull-right" target="_blank">open in browser</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="Save" class="btn btn-login btn-blue-green">save</button>
+                        <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sub Content Detail -->
+    <div class="modal fade" id="sub-content-detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center modal-medium" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="forget_close" data-dismiss="modal"></a>
+                        <div class="modal-title">Sub-content Detail</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Has Condition
+                          </label>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="table-cases" class="table stripe memberson-grid dataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Role &nbsp;</th>
+                                        <th>Operator &nbsp;</th>
+                                        <th>Value &nbsp;</th>
+                                        <th>Type of Value &nbsp;</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>postgroup</td>
+                                        <td>=</td>
+                                        <td>NORTH EAST</td>
+                                        <td>text</td>
+                                        <td>
+                                            <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete" class="table-icon table-delete"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>portal</td>
+                                        <td>=</td>
+                                        <td>WT+</td>
+                                        <td>text</td>
+                                        <td>
+                                            <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete" class="table-icon table-delete"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>birthdate</td>
+                                        <td>=</td>
+                                        <td>October</td>
+                                        <td>text</td>
+                                        <td>
+                                            <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete" class="table-icon table-delete"></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-right">
+                                    <a href="#" class="btn btn-outline pull-right">add new rule</a>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="Save" class="btn btn-login btn-blue-green">save</button>
+                        <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add New Rule-->
+    <div class="modal fade" id="add-new-rule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center modal-small" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="forget_close" data-dismiss="modal"></a>
+                        <div class="modal-title">SPECIFY ARGUMENTS FOR PREVIEW</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="form-group">
+                                <label class="col-lg-12 control-label">Postgroup =</label>
+                                <div class="col-lg-12">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-12 control-label">Memberno =</label>
+                                <div class="col-lg-12">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="Save" class="btn btn-login btn-blue-green">save</button>
+                        <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="Content/js/bootstrap.min.js"></script>
+    <script src="Content/js/moment.js"></script>
+    <script src="Content/js/bootstrap-datetimepicker.js"></script>
+    <script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="Content/js/jquery.typeahead.min.js"></script>
+    <script src="Content/js/bootstrap-multiselect.js"></script>
+    <script src="Content/js/owl.carousel.min.js"></script>
+    <script src="Content/js/custom.js"></script>
+    <script src="Content/js/jquery.flip.min.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+    <script src="Content/js/vis.js"></script>
+    <script src="Content/js/featherlight.js"></script>
+    <script src="Content/js/featherlight.gallery.js"></script>
+    <script>
+    $(document).ready(function() {
+        var block_height = (($(window).innerHeight()) - 121);
+        $('.block-1').css('min-height', block_height);
+
+        function resizeHeight1() {
+            //alert('abc');
+            var winHeight = $(window).innerHeight(),
+                bodyHeight = $('body').height();
+            block1Height = $('.block-1').height();
+            block4Height = $('.block-4').height();
+            var winWidth = $(window).innerWidth();
+
+
+
+            var contentHeight = winHeight - 196 - block1Height;
+            //alert('contentHieght: ' + contentHeight);                 
+            var wrapperHeight = $('.mainwrapper').height();
+            var leftbar = wrapperHeight;
+
+            //alert('wrapperHeight: ' + wrapperHeight + 'and leftbar: ' + leftbar);
+
+            $('.tab-content1').css('min-height', contentHeight);
+            $('.menu-left').css('min-height', leftbar);
+        }
+
+        resizeHeight1();
+        $('.gallery').featherlightGallery({
+            gallery: {
+                fadeIn: 300,
+                fadeOut: 300
+            },
+            openSpeed: 300,
+            closeSpeed: 300
+        });
+
+        $('input[id=lefile1]').change(function() {
+            $('#get-file-input1').val($(this).val());
+        });
+    });
+    </script>
+</body>
+
+</html>

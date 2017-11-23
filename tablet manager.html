@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/select2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header">
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>    
+        <div class="top-info">    
+            <div class="dropdown acc_info">
+                <p>Tablet Manager - Page Settings</p>                                
+            </div>                
+        </div>        
+    </div>
+</nav>
+<div class="menu-left">
+    <ul class="menu-collapse">
+        <li>
+            <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+    </ul>
+    <ul class="category">
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Self-Service Setting"> <a href="#" class="menu menu-self-service-setting"><span>Self-Service Setting</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaigns"> <a href="tablet manager.html" class="menu menu-setting_selected"><span>Page Setting</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Menu Page"> <a href="tablet manager menu page.html" class="menu menu-page"><span>Menu Page</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Carousel Configuration"> <a href="tablet manager carousel configuration.html" class="menu menu-carousel"><span>Carousel Configuration</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Feedback"> <a href="tablet manager feedback.html" class="menu menu-template"><span>Feedback</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Search Member"> <a href="#" class="menu menu-search-member"><span>Search Member</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Clienteling Settings"> <a href="#" class="menu menu-clienteling-settings"><span>Clienteling Settings</span></a></li>
+    </ul>
+    <ul class="category">
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Sales Setting"> <a href="#" class="menu menu-sales-setting"><span>Sales Setting</span></a></li>
+    </ul>
+    <ul style="border-top:4px solid #b2ebf2">
+        <li class="dropdown">
+            <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="My setting"><span data-toggle="dropdown">MY SETTTING</span></a> 
+            <ul class="dropdown-menu dropdown-menu1" id="drop1">
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="menu-log-out">
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Log out">
+            <a href="#" class="menu menu-logout"><span>LOG OUT</span></a></li>
+    </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#setting1" aria-controls="setting1" role="tab" data-toggle="tab">standard pages</a></li>
+                        <li role="presentation"><a href="#setting2" aria-controls="setting2" role="tab" data-toggle="tab">customized pages</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="setting1">
+                            <p><b><u>Page appearance logic</u></b></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>When the tablet starts it will start showing the carousel.</li>
+                                        <li>If the carousel page is turned off, the tablet will show the Menu page.</li>
+                                        <li>If the Menu page is off, the tablet will show the sign-up page.</li>
+                                        <li>If the Sing-up page is off, the tablet will show the feedback page.</li>
+                                        <li>If all pages are off the tabglet will go to the customized page assigned as the ALL OFF PAGE.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-info"> <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a> 
+                                        <i class="fa fa-commenting" aria-hidden="true"></i> &nbsp; This is normal information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide16px"></div>
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped data-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Page</th>
+                                                    <th>Time Out</th>
+                                                    <th style="width:80px;background:none;padding-left:10px;">Page Status</th>                                                
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Carousel</td>
+                                                    <td>20 seconds</td>
+                                                    <td align="center">
+                                                          <label class="switch-2">
+                                                              <input type="checkbox" checked>
+                                                              <div class="slider-2"></div>
+                                                          </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Menu</td>
+                                                    <td>15 seconds</td>
+                                                    <td align="center">
+                                                          <label class="switch-2">
+                                                              <input type="checkbox">
+                                                              <div class="slider-2"></div>
+                                                          </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sign up</td>
+                                                    <td>78 seconds</td>
+                                                    <td align="center">
+                                                          <label class="switch-2">
+                                                              <input type="checkbox">
+                                                              <div class="slider-2"></div>
+                                                          </label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide32px"></div>
+                            <div class="grey-line"></div>
+                            <div class="divide32px"></div>
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-xl-1 control-label">Allow of Page</label>
+                                    <div class="col-sm-5 col-lg-3 col-xl-3">
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="col-sm-5" style="margin:6px 0;">URL to go to when all pages are off</div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 col-xl-1 control-label">Hidden Page</label>
+                                    <div class="col-sm-5 col-lg-3 col-xl-3">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">ENABLE TAP 3 times in upper left corner to go to hidden page</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-blue-green btn-save">save</button>
+                                        <button type="button" class="btn btn-dark-red">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div role="tabpanel" class="tab-pane fade" id="setting2">
+                            <p><b><u>Customized pages</u></b></p>
+                            <p>A registerd customized page can be assigned to a menu item or as the ALL PAGE OFF link.</p>
+                            <p>The tablet application will not use the time out value or page status. It is here for the developer of the customized page to apply into the customized page logic.</p>
+                            <p>If the customized page is not using the logic a change of the time out value and page status will have no visual or functional effect.</p>
+                            <div class="divide16px"></div>
+                            <div class="divide16px"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="#" class="action action_act" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Setting" data-toggle="modal" data-target="#add"></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped data-table table-align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Page Name</th>
+                                            <th>Page URL</th>
+                                            <th>Time Out (seconds)</th>
+                                            <th style="width:80px;background:none;padding-left:10px;">Page Status</th>
+                                            <th style="width:90px;background:none;padding-left:10px;">Actions</th>                                                
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sign up 2</td>
+                                            <td>Page URL</td>
+                                            <td>20 seconds</td>
+                                            <td align="center">
+                                                  <label class="switch-2">
+                                                      <input type="checkbox" checked>
+                                                      <div class="slider-2"></div>
+                                                  </label>
+                                            </td>
+                                            <td>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit" class="table-icon table-edit"  data-toggle="modal" data-target="#edit"></a>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Delete" class="table-icon table-delete" data-toggle="modal" data-target="#delete"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sign up 3</td>
+                                            <td>Page URL</td>
+                                            <td>20 seconds</td>
+                                            <td align="center">
+                                                  <label class="switch-2">
+                                                      <input type="checkbox" checked>
+                                                      <div class="slider-2"></div>
+                                                  </label>
+                                            </td>
+                                            <td>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit" class="table-icon table-edit"  data-toggle="modal" data-target="#edit"></a>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Delete" class="table-icon table-delete" data-toggle="modal" data-target="#delete"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lucky Wheel Game</td>
+                                            <td>Page URL</td>
+                                            <td>20 seconds</td>
+                                            <td align="center">
+                                                  <label class="switch-2">
+                                                      <input type="checkbox">
+                                                      <div class="slider-2"></div>
+                                                  </label>
+                                            </td>
+                                            <td>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit" class="table-icon table-edit"  data-toggle="modal" data-target="#edit"></a>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Delete" class="table-icon table-delete" data-toggle="modal" data-target="#delete"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page name</td>
+                                            <td>Page URL</td>
+                                            <td>20 seconds</td>
+                                            <td align="center">
+                                                  <label class="switch-2">
+                                                      <input type="checkbox">
+                                                      <div class="slider-2"></div>
+                                                  </label>
+                                            </td>
+                                            <td>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Edit" class="table-icon table-edit"  data-toggle="modal" data-target="#edit"></a>
+                                                <a href="#" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Delete" class="table-icon table-delete" data-toggle="modal" data-target="#delete"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Add new page</div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Page Name</label>
+                            </div>
+                        </div>
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Page URL</label>
+                            </div>
+                        </div>
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Time Out (seconds)</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-blue-green">add</a>
+                    <a href="#" type="button" class="btn btn-dark-red" data-dismiss="modal">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Edit Date -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Edit Date</div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Page Name</label>
+                            </div>
+                        </div>
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Page URL</label>
+                            </div>
+                        </div>
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <input class="form-control"></input>
+                                <label class="control-label">Time Out (seconds)</label>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-blue-green">save</a>
+                    <a href="#" type="button" class="btn btn-dark-red" data-dismiss="modal">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/amcharts.js"></script>
+<script src="Content/js/serial.js"></script>
+<script src="Content/js/amstock.js"></script>
+<script src="Content/js/pie.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/select2.min.js"></script>
+<script src="Content/js/menu-left.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {    
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 121);
+    }
+    resizeHeight();
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+
+    $('.select2').select2({ width: '100%' });      
+});
+</script>
+</body>
+
+</html>

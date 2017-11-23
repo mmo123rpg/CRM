@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_review_management_selected"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Image Management">
+                <a href="CMS-image.html" class="menu menu_image_management"><span>IMAGE MANAGEMENT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dynamic Content">
+                <a href="CMS-dynamic.html" class="menu menu_dynamic_content"><span>DYNAMIC CONTENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content block-1">
+                        <div class="tab-pane">
+                            <div class="row">
+                                <div class="col-lg-3 col-ph-6 col-sm-5">
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <select class="form-control">
+                                                    <option selected="">Contents</option>
+                                                    <option>Brand</option>
+                                                    <option>News</option>
+                                                    <option>Store Locator</option>
+                                                </select>    
+                                                <label class="control-label">Category Group</label>                                  
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div>
+                                <div class="col-lg-3 col-ph-6 col-sm-5">
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <select class="form-control">
+                                                    <option>Card</option>
+                                                    <option>Mobile Exculsive</option>
+                                                    <option>IMM Building</option>
+                                                </select>   
+                                                <label class="control-label">Category</label>                                  
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-sm-2">
+                                    <div class="action action_upload pull-right" data-placement="bottom" data-tooltip="true" data-original-title="Upload" data-toggle="modal" data-target="#upload"></div>
+                                    <div class="divide16px"></div>
+                                </div>
+                            </div>
+                            <div class="yellow-line"></div>
+                            <div class="divide16px"></div>
+                            <div class="row top-icon">
+                                <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-ph-12">
+                                    <ul class="nav nav-pills pull-left" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">HOME</a></li>
+                                        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">TOPSHOP</a></li>
+                                        <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">WAREHOUSE</a></li>
+                                        <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">TOPMAN</a></li>
+                                    </ul>
+                                    <div class="action action-back pull-left" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Back"></div>
+                                    <div class="action action-next pull-left" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Next"></div>                                    
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-ph-12">
+                                    <div class="action action_refresh pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Reset"></div>
+                                    <div class="action action-preview pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Preview"></div>
+
+                                    <div class="action action_delete pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Delete" data-toggle="modal" data-target="#delete"></div>
+                                    <div class="action action_act pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Add"></div>
+                                </div>
+                            </div>
+                            <div class="divide8px"></div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active fade in" id="tab1" style="padding:0;">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-4 col-sm-5">
+                                            <div class="modal-subtitle">
+                                                <div class="name">Content Information</div>
+                                            </div>
+                                            <div class="divide8px"></div>
+                                            <div class="row">
+                                                <div class="col-ph-12">
+                                                    <div class="form-horizontal form-horizontal2"> 
+                                                        <div class="col-ph-12"> 
+                                                            <div class="controls form-group"> 
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>   
+                                                                <label class="control-label">Brand</label>                                  
+                                                            </div> 
+                                                        </div>  
+                                                        <div class="col-ph-12"> 
+                                                            <div class="controls form-group"> 
+                                                                <input type="text" class="form-control" value="../Content/img/1.jpg">  
+                                                                <label class="control-label">URL</label>                                  
+                                                            </div> 
+                                                        </div>                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-ph-6">
+                                                    <div class="form-horizontal form-horizontal2"> 
+                                                        <div class="col-ph-12"> 
+                                                            <div class="controls form-group"> 
+                                                                <input type="text" class="form-control datetimepicker">    
+                                                                <label class="control-label">From Date</label>                                  
+                                                            </div> 
+                                                        </div>                                       
+                                                    </div>
+                                                </div>
+                                                <div class="col-ph-6">
+                                                    <div class="form-horizontal form-horizontal2"> 
+                                                        <div class="col-ph-12"> 
+                                                            <div class="controls form-group"> 
+                                                                <input type="text" class="form-control datetimepicker">    
+                                                                <label class="control-label">End Date</label>                                  
+                                                            </div> 
+                                                        </div>                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-ph-12">
+                                                    <div class="form-horizontal form-horizontal2"> 
+                                                        <div class="col-ph-12"> 
+                                                            <div class="controls form-group"> 
+                                                                <textarea rows="5" class="form-control"></textarea>  
+                                                                <label class="control-label">Description</label>                                  
+                                                            </div> 
+                                                        </div>                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divide8px"></div>
+                                        </div>
+                                        <div class="col-xl-6 col-md-8 col-sm-7">
+                                            <div class="modal-subtitle">
+                                                <div class="name">Image Information</div>
+                                            </div>
+                                            <div class="divide8px"></div>                                          
+                                            <div class="row">
+                                                <div class="form-group-name col-lg-12">Select platform</div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Mobile</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbnail">
+                                                        <div class="img-flow">
+                                                            <a href="#">
+                                                                <img src="Content/img/1.jpg" width="100%" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Web</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbnail">
+                                                        <div class="img-flow">
+                                                            <a href="#">
+                                                                <img src="Content/img/2.jpg" width="100%" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Email</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbnail">
+                                                        <div class="img-flow">
+                                                            <a href="#">
+                                                                <img src="Content/img/1.png" width="100%" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divide8px"></div>
+                                            <div class="modal-subtitle">
+                                                <div class="name">Logo Information</div>
+                                            </div>
+                                            <div class="divide8px"></div>
+                                            <div class="row">                                               
+                                                <div class="form-group-name col-lg-12">Select platform</div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Mobile</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-responsive thumbnail-logo" src="Content/img/Memberson Logo 72 ppi.png" />
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Web</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-responsive thumbnail-logo" src="Content/img/Memberson Logo 72 ppi.png" />
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input value="" type="checkbox"> Email</label>
+                                                    </div>
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12">
+                                                                <select class="form-control">
+                                                                    <option value="">Topshop-mobile.jpg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab2" style="padding:0;">b</div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab3" style="padding:0;">c</div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab4" style="padding:0;">d</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content" style="margin-top:-16px;">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span></div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center modal-small" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="forget_close" data-dismiss="modal"></a>
+                        <div class="modal-title">message</div>
+                    </div>
+                    <div class="modal-body">
+                        <div>Are sure do you want to delete this image?</div>
+                        <div class="divide16px"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="Save" class="btn btn-login btn-blue-green">ok</button>
+                        <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Upload -->
+    <div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center modal-small" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="forget_close" data-dismiss="modal"></a>
+                        <div class="modal-title">Upload</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="form-group">
+                                <label class="control-label col-lg-12">Name</label>
+                                <div class="col-lg-12">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-12">Platform</label>
+                                <div class="col-lg-12">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Mobile
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option2"> Web
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option3"> Email
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-12">Choose file</label>
+                                <div class="col-lg-12">
+                                    <input id="lefile1" type="file" style="display:none">
+                                    <div class="input-group" style="margin-bottom:0" onclick="$('input[id=lefile1]').click();">
+                                        <input id="get-file-input1" class="form-control" type="text">
+                                        <span class="input-group-btn">
+                                                        <button type="Save" class="btn btn-input">...</button>
+                                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="Save" class="btn btn-login btn-blue-green">ok</button>
+                        <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="Content/js/bootstrap.min.js"></script>
+    <script src="Content/js/moment.js"></script>
+    <script src="Content/js/bootstrap-datetimepicker.js"></script>
+    <script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="Content/js/jquery.typeahead.min.js"></script>
+    <script src="Content/js/bootstrap-multiselect.js"></script>
+    <script src="Content/js/owl.carousel.min.js"></script>
+    <script src="Content/js/custom.js"></script>
+    <script src="Content/js/jquery.flip.min.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+    <script src="Content/js/vis.js"></script>
+    <script src="Content/js/featherlight.js"></script>
+    <script src="Content/js/featherlight.gallery.js"></script>
+    <script>
+    $(document).ready(function() {
+        var block_height = (($(window).innerHeight()) - 121);
+        $('.block-1').css('min-height', block_height);
+
+        function resizeHeight1() {
+            //alert('abc');
+            var winHeight = $(window).innerHeight(),
+                bodyHeight = $('body').height();
+            block1Height = $('.block-1').height();
+            block4Height = $('.block-4').height();
+            var winWidth = $(window).innerWidth();
+
+
+
+            var contentHeight = winHeight - 196 - block1Height;
+            //alert('contentHieght: ' + contentHeight);                 
+            var wrapperHeight = $('.mainwrapper').height();
+            var leftbar = wrapperHeight;
+
+            //alert('wrapperHeight: ' + wrapperHeight + 'and leftbar: ' + leftbar);
+
+            $('.tab-content1').css('min-height', contentHeight);
+            $('.menu-left').css('min-height', leftbar);
+        }
+
+        resizeHeight1();
+        $('.gallery').featherlightGallery({
+            gallery: {
+                fadeIn: 300,
+                fadeOut: 300
+            },
+            openSpeed: 300,
+            closeSpeed: 300
+        });
+
+        $('input[id=lefile1]').change(function() {
+            $('#get-file-input1').val($(this).val());
+        });
+    });
+    </script>
+</body>
+
+</html>

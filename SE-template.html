@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header" style="float:none;">
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+            <a href="#" class="action action_refresh" data-placement="bottom" data-tooltip="true" title="Refresh" style="margin-top:16px;margin-right:16px;"></a>
+        </div>
+    </nav>
+    <div class="menu-left menu-left-2">
+        <ul class="menu-collapse">
+            <li> <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home"> <a href="SE-home.html" class="menu menu_home"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaigns"> <a href="SE-campaigns.html" class="menu menu_campaign"><span>CAMPAIGNS</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Communications"> <a href="SE-communications.html" class="menu menu_communication"><span>COMMUNICATIONS</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Templates"> <a href="SE-template.html" class="menu menu_template_selected"><span>TEMPLATE</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown"> <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a>
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content tab-pane block-1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-ph-12">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <div class="input-group">
+                                                                <input class="form-control" type="text" id="templateNameTextSearch">
+                                                                <span class="input-group-btn">
+                                                                    <button id="saveSmsTemplate" type="button" class="btn btn-quicksearch2" onclick="campaignTemplate.SearchTemplateList()"></button>
+                                                                </span>
+                                                            </div>
+                                                            <label class="control-label">
+                                                                Search Template Name
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <label class="checkbox-inline">
+                                            <input onchange="campaignTemplate.SearchTemplateList();" id="emailType" type="checkbox" value="" checked="">
+                                            Email &nbsp;
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input onchange="campaignTemplate.SearchTemplateList();" id="smsType" type="checkbox" value="" checked="">
+                                            SMS
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input onchange="campaignTemplate.SearchTemplateList();" id="masterTemplateType" type="checkbox" value="" checked="">
+                                          Master
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 action-button">
+                                <div class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></div><a href="SE-template-MASTER.html" target="_blank" class="btn btn-blue-green pull-right" style="margin-left:8px"><i class="fa fa-plus" aria-hidden="true"></i> Master template</a>                                                                
+                                <a href="SE-template-EMAIL.html" target="_blank" class="btn btn-blue-green pull-right" style="margin-left:8px"><i class="fa fa-plus" aria-hidden="true"></i> EMAIL template</a>
+                                <a href="SE-template-SMS.html" target="_blank" class="btn btn-blue-green pull-right"><i class="fa fa-plus" aria-hidden="true"></i> sms template</a>
+                            </div>
+                        </div>
+                        <div class="divide12px"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="modal-subtitle">
+                                    <div class="name">Templates</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover stripe memberson-grid">
+                                        <thead>
+                                            <tr>
+                                                <th>Template Name &nbsp;</th>
+                                                <th>Type &nbsp;</th>
+                                                <th>Used Count &nbsp;</th>
+                                                <th>Last Modified by &nbsp;</th>
+                                                <th>Last Modified at &nbsp;</th>
+                                                <th style="background:none;width:80px;padding-left:12px">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Test Email Template 20160111</td>
+                                                <td>SMS</td>
+                                                <td>0</td>
+                                                <td>Admin</td>
+                                                <td>10/10/2016 08:00</td>
+                                                <td>
+                                                    <a href="#" class="table-icon table-usage" data-placement="bottom" data-tooltip="true" title="Usage"></a>
+                                                    <a href="#" class="table-icon table-open" data-placement="bottom" data-tooltip="true" title="Open"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test Email Template 20160111</td>
+                                                <td>SMS</td>
+                                                <td>0</td>
+                                                <td>Admin</td>
+                                                <td>10/10/2016 08:00</td>
+                                                <td>
+                                                    <a href="#" class="table-icon table-usage" data-placement="bottom" data-tooltip="true" title="Usage"></a>
+                                                    <a href="#" class="table-icon table-open" data-placement="bottom" data-tooltip="true" title="Open"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test Email Template 20160111</td>
+                                                <td>Master</td>
+                                                <td>0</td>
+                                                <td>Admin</td>
+                                                <td>10/10/2016 08:00</td>
+                                                <td>
+                                                    <a href="#" class="table-icon table-usage" data-placement="bottom" data-tooltip="true" title="Usage"></a>
+                                                    <a href="#" class="table-icon table-open" data-placement="bottom" data-tooltip="true" title="Open"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test Email Template 20160111</td>
+                                                <td>Email</td>
+                                                <td>0</td>
+                                                <td>Admin</td>
+                                                <td>10/10/2016 08:00</td>
+                                                <td>
+                                                    <a href="#" class="table-icon table-usage" data-placement="bottom" data-tooltip="true" title="Usage"></a>
+                                                    <a href="#" class="table-icon table-open" data-placement="bottom" data-tooltip="true" title="Open"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test Email Template 20160111</td>
+                                                <td>SMS</td>
+                                                <td>0</td>
+                                                <td>Admin</td>
+                                                <td>10/10/2016 08:00</td>
+                                                <td>
+                                                    <a href="#" class="table-icon table-usage" data-placement="bottom" data-tooltip="true" title="Usage"></a>
+                                                    <a href="#" class="table-icon table-open" data-placement="bottom" data-tooltip="true" title="Open"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content" style="margin-top:-16px;">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/vis.js"></script>
+<script src="http://cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
+<script src="http://cdn.ckeditor.com/4.6.1/full-all/adapters/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        function resizeHeight(element) {    
+            var block_height = (($(window).innerHeight()));
+            $('.block-1').css('min-height', block_height - 122);
+        }
+
+        resizeHeight();
+        jQuery(window).resize(function () {           
+             resizeHeight();
+        });
+
+        if (CKEDITOR.instances['emailTemplateCkEditor']) {
+            CKEDITOR.remove(CKEDITOR.instances['emailTemplateCkEditor']);
+        } else {
+            CKEDITOR.replace('emailTemplateCkEditor',
+           {
+               allowedContent: true
+           });
+        }
+    });
+</script>
+</body>
+
+</html>

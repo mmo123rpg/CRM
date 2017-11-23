@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <img src="Content/img/btn_search.png" width="30" height="30" alt="" /> </button>
+            <!-- <button type="button" class="navbar-toggle pull-left  menu-collapse-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+                <a href="Home.html" class="menu menu_home"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Cases">
+                <a href="case.html" class="menu menu_activity" target="_blank"><span>CASES</span></a></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a class="menu menu_member right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Member"><span data-toggle="dropdown">MEMBER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-search-member">search member</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-add-member">Add newmember</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Report">
+                <a href="https://cma-50.memgate.com/reports/Reportmenu.aspx" class="menu menu_report" target="_blank"><span>REPORT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dashboard">
+                <a href="http://cma-50.memgate.com/dashboard" class="menu menu_dashboard" target="_blank"><span>DASHBOARD</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher">
+                <a href="#" class="menu menu_voucher" target="_blank"><span>VOUCHER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Admin">
+                <a href="#" class="menu menu_admin" target="_blank"><span>ADMIN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaign">
+                <a href="SE-home.html" class="menu menu_campaign" target="_blank"><span>CAMPAIGN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Review Management">
+                <a href="#" class="menu menu_review_management_selected" target="_blank"><span>REVIEW MANAGEMENT</span></a></li>
+        </ul>
+    
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_content_management" target="_blank"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">location</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content tab-pane block-1">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="exampleInputName2">Movie</label>
+                                <select name="" id="" class="form-control form-movie">
+                                  <option value="">The Dark Knight</option>
+                                  <option value="">Inglourious Basterds</option>
+                                  <option value="">Django Unchained</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline" style="margin-top:10px;">
+                                    <input type="checkbox" value="">Reported
+                                </label>
+                            </div>
+                        </form>
+                        <div class="divide12px"></div>
+                        <div class="table-responsive">
+                            <table class="table table-hover stripe memberson-grid dataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Movie &nbsp;</th>
+                                        <th>Rating &nbsp;</th>
+                                        <th>Number of Reports &nbsp;</th>
+                                        <th>Review &nbsp;</th>
+                                        <th>Status &nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-toggle="modal" data-target="#review1">
+                                        <td>The Dark Knight</td>
+                                        <td>3/5</td>
+                                        <td>0</td>
+                                        <td>Pretty much an expected storyline. Nothing exciting.</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#review1">
+                                        <td>Inglourious Basterds</td>
+                                        <td>5/5</td>
+                                        <td>0</td>
+                                        <td>Firstly I'm not quite sure how I feel about the movie...</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-toggle="modal" data-target="#review2">
+                                        <td>Django Unchained</td>
+                                        <td>2/5</td>
+                                        <td>6</td>
+                                        <td>Maybe this experiment can carry on despite wasting ...</td>
+                                        <td><span class="link-red">Reported</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix">
+                        <div class="row">
+                            <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> Shopper Engage - 2016 </div>
+                            <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Review-->
+    <div class="modal fade" id="review1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-medium67" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">review</div>
+                </div>
+				<div class="box_title_search">
+                        <div class="pull-left">Movie:Inglourious Basterds</div>
+                        <div class="pull-right">
+                            <label style="margin:0">Rating: &nbsp; 5/5  </label>                                                          
+                        </div>
+                </div>
+                <div class="modal-body">
+                    
+                    <!-- <div class="header-review">
+                        <div class="row">
+                            <div class="col-ph-6">
+                                <div class="movie-review">Movie: </div>
+                            </div>
+                            <div class="col-ph-6 ">
+                                <div class="form-group pull-right">
+                                    <label>Rating:</label>
+                                    <label>5/5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="divide12px"></div>
+                    <div class="form-group-name">Review Details</div>
+                    <div class="divide8px"></div>
+                    <div class="well-review">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Reviewed by: </label>
+                                    <label style="font-weight:400;">José Martín</label>
+                                </div>
+                            </div>                                       
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Datetime: </label>
+                                    <label style="font-weight:400;">3/1/2016</label>
+                                </div>                                      
+                            </div>
+                            <div class="col-lg-12 pull-left">
+                                <p>
+                                    <em>“Firstly I'm not quite sure how I feel about the movie. In all honesty I have read the book and I can safely say the movie is far more toned down and hence more compelling to watch than it was to read, yet I felt like the sex scenes were never quite sexy just really awkward. And hence my confusion with this movie because when its not showing a sex scene the movie was actually quite comedic and Dakota Johnson kills it adding far more layers to the one-dimensional Ana of the book. Jamie Dornan on the other hand can be quite wooden (pun not intended, okay maybe it was HA) and doesn't necessarily catch the tortured soul of Christian Grey. I mean lets be honest here the books are complete shit so there's not much working for the movie from the beginning and secondary characters are given about a minute's screen time each and hence totally underutilised. It's beautifully shot and well-lit and props to the actors for being comfortable to strip down next to nothing but the movie lacks substance and doesn't explore the psychology of BDSM culture. In summation I think Dakota Johnson was the highlight of this film and I hope she finds better work as she has the acting chops. This review feels awkward sorry.”</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide16px"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-close btn-dark-red" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal Review 2-->
+    <div class="modal fade" id="review2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-medium67" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">review</div>
+                </div>
+				
+				<div class="box_title_search">
+                        <div class="pull-left">Movie:Django Unchained</div>
+                        <div class="pull-right">
+                            <label style="margin:0">Rating: &nbsp; 2/5  </label>                                                          
+                        </div>
+                </div>
+					
+					
+                <div class="modal-body">                    
+                    
+                    <div class="divide12px"></div>
+                    <div class="form-group-name">Review Details</div>
+                    <div class="divide8px"></div>
+                    <div class="well-review">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Reviewed by: </label>
+                                    <label style="font-weight:400;">José Martín</label>
+                                </div>
+                            </div>                                       
+                            <div class="col-sm-4 text-center">
+                                <div class="form-group">
+                                    <label>Datetime: </label>
+                                    <label style="font-weight:400;">3/1/2016</label>
+                                </div>                                      
+                            </div>
+                            <div class="col-sm-4 text-right">
+                                <div class="form-group">
+                                    <label>Status: </label>
+                                    <label style="font-weight:400;"><a href="#" class="link-red">Reported</a></label>
+                                </div>                                       
+                            </div>
+                            <div class="col-lg-12 pull-left">
+                                <p>
+                                    <em>“Maybe this experiment can carry on despite wasting the talent of three great actresses, but those responsible for making it should ask themselves if this boring Snow White expanded universe has anything more to give. [Full Review in Spanish]”</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide12px"></div>
+                    <div class="form-group-name">Report Details</div>
+                    <div class="divide8px"></div>
+                    <div class="review-container">
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Susan Granger </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4 text-center">
+                                    <div class="form-group">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">12/1/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <div class="form-group">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“These are real characters, not empty action figures, and they're the reason the MCU has gone from success to success while other superhero franchises have stumbled or stalled. The sad middle-aged dudes who cling so desperately to these films require constant reassurances that they're not just fun stories for children in which men wear tights.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide12px"></div>
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Oliver Lyttelton </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4">
+                                    <div class="form-group text-center">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">4/1/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group text-right">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“Like its predecessor, it's too dark and doomy to be any fun, and this time any link to the Brothers Grimm is tenuous indeed-it amounts to dropping the name of Snow White every half-hour or so.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divide12px"></div>
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Alex Zane </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4">
+                                    <div class="form-group text-center">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">4/8/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group text-right">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“Fortunately the two leads have real chemistry. Dornan makes Christian less creepy and more angsty than on the page and Johnson brings a surprising depth to Anastasia. They also know how to play certain scenes for laughs, making the film come alive.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="divide12px"></div>
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Alex Zane </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4">
+                                    <div class="form-group text-center">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">4/8/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group text-right">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“Fortunately the two leads have real chemistry. Dornan makes Christian less creepy and more angsty than on the page and Johnson brings a surprising depth to Anastasia. They also know how to play certain scenes for laughs, making the film come alive.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="divide12px"></div>
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Alex Zane </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4">
+                                    <div class="form-group text-center">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">4/8/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group text-right">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“Fortunately the two leads have real chemistry. Dornan makes Christian less creepy and more angsty than on the page and Johnson brings a surprising depth to Anastasia. They also know how to play certain scenes for laughs, making the film come alive.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="divide12px"></div>
+                        <div class="well-review">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label>Name: </label>
+                                        <label style="font-weight:400;">Alex Zane </label>
+                                    </div>
+                                </div>                                       
+                                <div class="col-sm-4">
+                                    <div class="form-group text-center">
+                                        <label>Datetime: </label>
+                                        <label style="font-weight:400;">4/8/2016</label>
+                                    </div>                                      
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group text-right">
+                                        <label>Email: </label>
+                                        <label style="font-weight:400;">email@yahoo.com</label>
+                                    </div>                                       
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pull-left">
+                                        <em>“Fortunately the two leads have real chemistry. Dornan makes Christian less creepy and more angsty than on the page and Johnson brings a surprising depth to Anastasia. They also know how to play certain scenes for laughs, making the film come alive.”</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="divide12px"></div>
+
+                    </div>
+                    <div class="divide12px"></div>
+                    <div id="reason" class="row" style="display:none;">
+                        <div class="col-lg-12">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-ph-12 control-label">Reason</label>
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id ="reason_keep" type="submit" class="btn btn-blue-green">keep review</button>
+                    <button type="submit" class="btn btn-dark-yellow ">remove review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+	
+	
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="Content/js/bootstrap.min.js"></script>
+    <script src="Content/js/moment.js"></script>
+    <script src="Content/js/bootstrap-datetimepicker.js"></script>
+    <script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="Content/js/jquery.typeahead.min.js"></script>
+    <script src="Content/js/bootstrap-multiselect.js"></script>
+    <script src="Content/js/owl.carousel.min.js"></script>
+    <script src="Content/js/custom.js"></script>
+    <script src="Content/js/jquery.flip.min.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+    <script src="Content/js/vis.js"></script>
+    <script>
+    $(document).ready(function() {
+        var block_height = (($(window).innerHeight()) - 135);
+        $('.block-1').css('min-height', block_height);
+
+		$("#reason_keep").click(function(){
+			$("#reason").css("display", "block");	
+
+		});
+    });
+    </script>
+
+	
+</body>
+
+</html>

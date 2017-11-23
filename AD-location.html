@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Location</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/bootstrap2-toggle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+      <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>
+    </nav>
+    <div class="menu-left menu-left-2">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Users">
+                <a href="AD-user.html" class="menu menu-admin-user"><span>USERS</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Locations">
+                <a href="#" class="menu menu-admin-location_selected"><span>LOCATIONS</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="One Time Code Management">
+                <a href="AD-OTC.html" class="menu menu-admin-OTC"><span>OTC MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+      <div class="mainpanel">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="content tab-pane block-1">
+                      <div class="row">
+                            <div class="col-sm-6 col-md-4 col-xl-3">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cp-title-2">
+                                            <div class="title_popup pull-left">Location Group List</div>                                    
+                                        </div>
+                                        <div class="action action_act pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Add Location Group" data-toggle="modal" data-target="#add-location-group"></div>
+                                    </div>
+                                </div>
+                                <div class="divide12px"></div>
+                                <div class=" transaction-field group-list">
+                                    <div class="row">
+                                      <div class="col-ph-9"> 
+                                          <div class="form-horizontal form-horizontal2"> 
+                                              <div class="col-ph-12"> 
+                                                  <div class="controls form-group"> 
+                                                        <div class="input-group"> 
+                                                            <input class="form-control" type="text"> 
+                                                            <span class="input-group-btn"> 
+                                                                <button type="button" class="btn btn-quicksearch2"></button> 
+                                                            </span> 
+                                                        </div>
+                                                        <label class="control-label">Search</label> 
+                                                  </div> 
+                                              </div>                                        
+                                          </div> 
+                                      </div> 
+                                    </div>
+                                    <div class="acidjs-css3-treeview treeview2">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="node-1" checked="checked">
+                                                <label for="node-1">Mall Operator 1</label>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" id="node-1-1" checked="checked">
+                                                        <label for="node-1-1">Mall 1</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="node-1-1-1">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-1-1-1">Location 1</label>                                                                                                  
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="node-1-1-2">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-1-1-2">Location 2</label>                                                                                                  
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="node-1-1-3">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-1-1-3">Location 3</label>                                                                                                  
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="node-1-2" checked="checked">
+                                                        <label for="node-1-2">Mall 2</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="node-1-2-1">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-1-2-1">Location 4</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="node-1-2-2">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-1-2-2">Location 5</label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="node-2" checked="checked">
+                                                <label for="node-2">Mall Operator 2</label>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" id="node-2-1" checked="checked">
+                                                        <label for="node-2-1">Mall 3</label>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" id="node-2-1-1">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-2-1-1">Location 6</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="node-2-1-2">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-2-1-2">Location 7</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" id="node-2-1-3">
+                                                                <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                <label for="node-2-1-3">Location 8</label>
+                                                            </li>
+                                                        </ul>
+                                                        </li>
+                                                        <li>
+                                                            <input type="checkbox" id="node-2-2" checked="checked">
+                                                            <label for="node-2-2">Mall 4</label>
+                                                            <ul>
+                                                                <li>
+                                                                    <input type="checkbox" id="node-2-2-1">
+                                                                    <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                    <label for="node-2-2-1">Location 9</label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="node-2-2-2">
+                                                                    <!-- <label><input type="checkbox" /><span></span></label> -->
+                                                                    <label for="node-2-2-2">Location 10</label>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-8 col-xl-9">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cp-title-2 pull-left">
+                                            <div class="title_popup">Location Group Details</div>
+                                        </div>
+                                        <div class="action action_refresh pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Refresh"></div>
+                                        <div class="action action_edit pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit"></div>
+                                        <div class="action action_delete pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete"></div>
+                                        <div class="action action_save pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Save"></div>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="row"> 
+                                    <div class="col-md-4">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled>  
+                                                    <label class="control-label">Code *</label> 
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled> 
+                                                    <label class="control-label">Name *</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled> 
+                                                    <label class="control-label">Description *</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                </div>  
+                                <div class="row"> 
+                                    <div class="col-md-4">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled>  
+                                                    <label class="control-label">Category *</label> 
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled> 
+                                                    <label class="control-label">Latitude</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled> 
+                                                    <label class="control-label">Longtitude</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                </div>  
+                                <div class="row"> 
+                                    <div class="col-md-4">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled>  
+                                                    <label class="control-label">Parent Location Group </label> 
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled> 
+                                                    <label class="control-label">Contact Username</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-4"> 
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <select class="form-control" disabled>
+                                                        <option value="">Select</option>
+                                                    </select>
+                                                    <label class="control-label">Status</label> 
+                                                </div> 
+                                            </div>                                        
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="row"> 
+                                    <div class="col-md-4">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" disabled>  
+                                                    <label class="control-label">Child Location Group </label> 
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                </div>     
+                                <div class="divide16px"></div>                          
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cp-title-2 pull-left">
+                                            <div class="title_popup">Location List</div>
+                                        </div>
+                                        <div class="action action_edit pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Edit"></div>
+                                        <div class="action action_delete pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Delete"></div>
+                                        <div class="action action_save pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Save"></div>
+                                    </div>
+                                </div>
+                                <div class="divide8px"></div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover stripe memberson-grid dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Code &nbsp;</th>
+                                                <th>Name &nbsp;</th>
+                                                <th>Description &nbsp;</th>
+                                                <th>Country Code &nbsp;</th>
+                                                <th style="width:20px;background:none;padding-left:10px;"><input type="checkbox"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-toggle="modal" data-target="#edit-location">L0203910141</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>Junction 8 - converse</td>
+                                                <td>SG</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="footer-fix content" style="margin-top:-16px;">
+                      <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                      <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- Modal Edit -->
+<div class="modal fade" id="edit-location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small-XXL" role="document">
+            <div class="modal-content">
+                <div class="tab-content">
+                    <div id="view-mode" class="tab-pane active" style="padding:0;">
+                        <div class="modal-header">
+                            <a class="forget_close" data-dismiss="modal"></a>
+                            <div class="modal-title"> location group</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Code *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Name *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Description *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Category *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Latitude *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control" disabled>
+                                                <label class="control-label">Longitude *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-sm-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="form-multiselect form-group"> 
+                                                <select class="form-control multiselect" multiple="multiple">
+                                                    <option value="9">Location 1</option>
+                                                    <option value="7">Location 2</option>
+                                                    <option value="8">Location 3</option>
+                                                    <option value="9">Location 4</option>
+                                                    <option value="10">Location 5</option>
+                                                    <option value="11">Location 6</option>
+                                                    <option value="12">Location 7</option>
+                                                    <option value="13">Location 8</option>
+                                                    <option value="14">Location 9</option>
+                                                    <option value="15">Location 10</option>
+                                                </select>
+                                                <label class="control-label">Parent Group *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-sm-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="form-multiselect form-group"> 
+                                                <select class="form-control multiselect" multiple="multiple">
+                                                    <option value="9">Location 1</option>
+                                                    <option value="7">Location 2</option>
+                                                    <option value="8">Location 3</option>
+                                                    <option value="9">Location 4</option>
+                                                    <option value="10">Location 5</option>
+                                                    <option value="11">Location 6</option>
+                                                    <option value="12">Location 7</option>
+                                                    <option value="13">Location 8</option>
+                                                    <option value="14">Location 9</option>
+                                                    <option value="15">Location 10</option>
+                                                </select>
+                                                <label class="control-label">Child Location *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="form-inline form-inline2">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Status *</label>                                                
+                                </div>   
+                                <div class="form-group" style="margin-bottom:0;">
+                                  <label class="switch" style="margin-top:2px">
+                                        <input type="checkbox" checked="" disabled>
+                                        <div class="slider"></div>
+                                    </label>
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div id="edit-mode" class="tab-pane" style="padding:0;">
+                        <div class="modal-header">
+                            <a class="forget_close" data-dismiss="modal"></a>
+                            <div class="modal-title"> location group</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Code *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Name *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Description *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Category *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-ph-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Latitude *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-ph-6"> 
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="controls form-group"> 
+                                                <input type="text" class="form-control">
+                                                <label class="control-label">Longitude *</label> 
+                                            </div> 
+                                        </div>                                        
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-sm-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="form-multiselect form-group"> 
+                                                <select class="form-control multiselect" multiple="multiple">
+                                                    <option value="9">Location 1</option>
+                                                    <option value="7">Location 2</option>
+                                                    <option value="8">Location 3</option>
+                                                    <option value="9">Location 4</option>
+                                                    <option value="10">Location 5</option>
+                                                    <option value="11">Location 6</option>
+                                                    <option value="12">Location 7</option>
+                                                    <option value="13">Location 8</option>
+                                                    <option value="14">Location 9</option>
+                                                    <option value="15">Location 10</option>
+                                                </select>
+                                                <label class="control-label">Parent Group *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                                <div class="col-sm-6">  
+                                    <div class="form-horizontal form-horizontal2"> 
+                                        <div class="col-ph-12"> 
+                                            <div class="form-multiselect form-group"> 
+                                                <select class="form-control multiselect" multiple="multiple">
+                                                    <option value="9">Location 1</option>
+                                                    <option value="7">Location 2</option>
+                                                    <option value="8">Location 3</option>
+                                                    <option value="9">Location 4</option>
+                                                    <option value="10">Location 5</option>
+                                                    <option value="11">Location 6</option>
+                                                    <option value="12">Location 7</option>
+                                                    <option value="13">Location 8</option>
+                                                    <option value="14">Location 9</option>
+                                                    <option value="15">Location 10</option>
+                                                </select>
+                                                <label class="control-label">Child Location *</label> 
+                                            </div> 
+                                        </div>                                         
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="form-inline form-inline2">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label>Status *</label>                                                
+                                </div>   
+                                <div class="form-group" style="margin-bottom:0;">
+                                  <label class="switch" style="margin-top:2px">
+                                        <input type="checkbox" checked="">
+                                        <div class="slider"></div>
+                                    </label>
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-blue-green" data-target="#edit-mode" data-toggle="tab" id="edit">Edit</button>
+                    <button type="Save" class="btn btn-dark-red" data-target="#view-mode" data-toggle="tab" id="cancel" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Location Group -->
+<div class="modal fade" id="add-location-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small-XXL" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Add location group</div>
+                </div>
+                <div class="modal-body">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="code"> System Generate Code
+                        </label>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Code *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Name *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Description *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Category *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Latitude *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Longitude *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="form-multiselect form-group"> 
+                                        <select class="form-control multiselect" multiple="multiple">
+                                            <option value="9">Location 1</option>
+                                            <option value="7">Location 2</option>
+                                            <option value="8">Location 3</option>
+                                            <option value="9">Location 4</option>
+                                            <option value="10">Location 5</option>
+                                            <option value="11">Location 6</option>
+                                            <option value="12">Location 7</option>
+                                            <option value="13">Location 8</option>
+                                            <option value="14">Location 9</option>
+                                            <option value="15">Location 10</option>
+                                        </select>
+                                        <label class="control-label">Parent Location Groups</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-sm-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="form-multiselect form-group"> 
+                                        <select class="form-control multiselect" multiple="multiple">
+                                            <option value="9">Location 1</option>
+                                            <option value="7">Location 2</option>
+                                            <option value="8">Location 3</option>
+                                            <option value="9">Location 4</option>
+                                            <option value="10">Location 5</option>
+                                            <option value="11">Location 6</option>
+                                            <option value="12">Location 7</option>
+                                            <option value="13">Location 8</option>
+                                            <option value="14">Location 9</option>
+                                            <option value="15">Location 10</option>
+                                        </select>
+                                        <label class="control-label">Child Location Groups</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="admin">admin</option>
+                                            <option value="WEB">WEB</option>
+                                            <option value="IPHONE">IPHONE</option>
+                                        </select>
+                                        <label class="control-label">Contact Username</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <select class="form-control">
+                                            <option value="admin">Active</option>
+                                            <option value="WEB">Inactive</option>
+                                        </select>
+                                        <label class="control-label">Status</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-blue-green" data-target="#edit-mode" data-toggle="tab" id="edit">Add</button>
+                    <button type="Save" class="btn btn-dark-red" data-target="#view-mode" data-toggle="tab" id="cancel" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Location -->
+<div class="modal fade" id="add-location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small-XXL" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Add location</div>
+                </div>
+                <div class="modal-body">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="code"> System Generate Code
+                        </label>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Code *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Name *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Description *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Category *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-ph-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Latitude *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                        <div class="col-ph-6"> 
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="controls form-group"> 
+                                        <input type="text" class="form-control">
+                                        <label class="control-label">Longitude *</label> 
+                                    </div> 
+                                </div>                                        
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-6">  
+                            <div class="form-horizontal form-horizontal2"> 
+                                <div class="col-ph-12"> 
+                                    <div class="form-multiselect form-group"> 
+                                        <select class="form-control multiselect" multiple="multiple">
+                                            <option value="9">Location 1</option>
+                                            <option value="7">Location 2</option>
+                                            <option value="8">Location 3</option>
+                                            <option value="9">Location 4</option>
+                                            <option value="10">Location 5</option>
+                                            <option value="11">Location 6</option>
+                                            <option value="12">Location 7</option>
+                                            <option value="13">Location 8</option>
+                                            <option value="14">Location 9</option>
+                                            <option value="15">Location 10</option>
+                                        </select>
+                                        <label class="control-label">Parent Location *</label> 
+                                    </div> 
+                                </div>                                         
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-blue-green" data-target="#edit-mode" data-toggle="tab" id="edit">Add</button>
+                    <button type="Save" class="btn btn-dark-red" data-target="#view-mode" data-toggle="tab" id="cancel" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Activate -->
+<div class="modal fade" id="activate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">message</div>
+                </div>
+                <div class="modal-body">
+                    <div>Are sure do you want to activate this image?</div>
+                    <div class="divide16px"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-login btn-blue-green">yes</button>
+                    <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">no</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Inactivate -->
+<div class="modal fade" id="inactivate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">message</div>
+                </div>
+                <div class="modal-body">
+                    <div>Are sure do you want to inactivate this image?</div>
+                    <div class="divide16px"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-login btn-blue-green">yes</button>
+                    <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">no</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/bootstrap2-toggle.js"></script>
+<script>
+$(document).ready(function() {    
+    var block_height = (($(window).innerHeight()) - 122);
+    $('.block-1').css('min-height', block_height);
+    $('.group-list').css('height', block_height - 75);
+
+
+    $("#edit").click(function() {
+        $(".modal-title").addClass("orange");
+    });
+    $("#cancel").click(function() {
+        $(".modal-title").removeClass("orange");
+    });
+    $('.acidjs-css3-treeview li:not(:has(> ul))').addClass("child-node");
+    $(".acidjs-css3-treeview li label").click(function() {
+      $(".acidjs-css3-treeview li label").removeClass('active-tree-node');
+        $(this).addClass('active-tree-node');
+    });
+
+    $("#confirmdialog-Ok-btn,#confirmdialog-cancel-btn").click(function() {
+        $("body").addClass(".modal-open");
+    });
+});
+</script>
+</body>
+
+</html>

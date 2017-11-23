@@ -1,0 +1,517 @@
+.card .content{position:relative;}
+.card-content span{font-weight:400;}
+.card a,.card-footer{font-weight:600}
+.card-header{padding:8px 16px;overflow:hidden;border-top-right-radius: 2px;border-top-left-radius: 2px;border-bottom:1px solid #e5e5e5;}
+.card-border {border-radius: 3px;margin-bottom: 16px;}
+	
+.card-title{padding-top: 0px;}
+.card-title2{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.card-title3{font-weight:600;font-size:16px;}
+.card-title div:first-child{font-weight:600;line-height:14px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.card-title div:last-child{ font-size:14px;}
+.card-content{padding:8px 16px;}
+
+.card-membership {border-top-right-radius: 2px;border-top-left-radius:2px;position:relative;min-height: 100px;margin-bottom:16px;margin-left:4px;padding-bottom:8px;}
+.card-memberships {border-top-right-radius: 2px;border-top-left-radius:2px;min-height: 140px;}
+.memberships-content{min-height:105px;padding-left:6px}
+
+.card-membership .content-membership {    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);}
+.card-membership .front .content {height:200px;}
+.card-membership .back .content {height:200px;}
+.card-content-membership{padding:8px 16px;font-weight:600;min-height: 100px}
+.card-footer-membership{border-top:1px solid #e5e5e5;padding:8px 16px;justify-content:space-between;display:flex;width:100%;}
+.card-footer-membership-back{border-top:none;padding:8px 16px;justify-content:space-between;display:flex;width:100%;}
+.card-membership .front  .content {height:180px; min-height:180px !important;overflow:hidden;position:relative;}
+.card-membership .back .content {height:180px; min-height:180px !important;overflow:hidden; position:relative;}
+.card-membership-select {border-top-right-radius:2px !important;border-top-left-radius:2px !important;  border:2px red solid !important;}
+.card-membership-active > i {position: absolute;right: 12px;top:12px}
+.card-membership-inactive {display:none;}
+.card-membership-inactive {display:none;}
+.panel-body-membership {padding-left:0 !important;padding-right:0 !important;}
+
+
+.card-content p,.card-content a{margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
+.card-content p:last-child{margin:0;}
+.content-head{color:$M5;font-weight:600!important;}
+.card-footer-benefit{border-top:1px solid #e5e5e5;padding:8px 16px;justify-content:space-between;display:flex;position:absolute;width:100%;bottom:0;}
+
+.card-footer-membership{font-weight:600;border-top:1px solid #e5e5e5;padding:8px 22px;justify-content:space-between;display:flex;position:absolute;width:100%;bottom:0;}
+
+.card-footer{border-top:1px solid #e5e5e5;padding:8px 16px;justify-content:space-between;display:flex;width:100%;}
+
+
+.card-footer-case{border-top:1px solid #e5e5e5;padding:8px;overflow:hidden;width:100%;}
+
+.card-image{width:30px;height:30px;float:left;padding-right: 15px}
+.front .content,.back .content{height:225px;min-height:220px;border-radius:3px;}
+.item-product{min-height:267px!important;}
+.item-product .content{min-height:250px!important;}
+.card-content-product{height:174px}
+
+.front .content-product, .back .content-product {height:225px;min-height:220px;box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.35);transition:box-shadow .3s ease;} 
+.front .content-product:hover, .back .content-product:hover{
+	box-shadow: 0px 2px 12px 0px rgba(5, 114, 142, 0.7);
+}
+.front .content, .back .content {transition:box-shadow .3s ease;} 
+.front .content:hover, .back .content:hover{
+	box-shadow: 0px 2px 12px 0px rgba(5, 114, 142, 0.7);
+}
+
+.card-footer-product {height:32px;border-top:1px solid #e5e5e5;padding:8px 16px;justify-content:space-between;display:flex;width:100%;}
+
+
+.card-shadow { box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); border:none;margin-left:3px;margin-bottom:12px !important;transition:box-shadow .3s ease; }
+.card-shadow:hover{box-shadow: 0px 2px 12px 0px rgba(5, 114, 142, 0.7);}
+
+.btn-rotate{cursor:pointer;&:hover{color:$orange;}}
+
+.card-ACTIVITY01-color{background:#464f95;color:white;}
+.card-ACTIVITY02-color{background:#e7e99b;color:#555 !important;}   
+.card-ACTIVITY03-color{background:#5a7484;color:white;}
+.card-ACTIVITY04-color{background:#d9ab47;color:white;}
+.card-ACTIVITY05-color{background:#89578a;color:white;}
+.card-ACTIVITY06-color{background:#da8c7f;color:white;}
+.card-ACTIVITY07-color{background:#a5a09a;color:white;}
+.card-ACTIVITY08-color{background:#1abc9c;color:white;}
+.card-ACTIVITY09-color{background:#78909d;color:white;}
+.card-ACTIVITY10-color{background:#d09ae2;color:white;}
+.card-CNLCRD-color{background:#81c886;color:white;}
+.card-CNLMMS-color{background:#257993;color:white;}
+.card-DEFAULT-color{background:#eee;color:$M5;font-size:16px;font-weight:600;}
+
+
+
+
+/* CASE CARD */
+.card-edge{
+	position:absolute;
+	right:0px;	
+	top:0px;
+	border-left: 16px solid transparent;
+}
+.card-ACTIVITY01-edge{
+	border-top: 16px solid #464f95;
+}
+.card-ACTIVITY02-edge{
+	border-top: 16px solid #e7e99b;
+}
+.card-ACTIVITY03-edge{
+	border-top: 16px solid #5a7484;
+}
+.card-ACTIVITY04-edge{
+	border-top: 16px solid #d9ab47;
+}
+.card-ACTIVITY05-edge{
+	border-top: 16px solid #89578a;
+}
+.card-ACTIVITY06-edge{
+	border-top: 16px solid #da8c7f;
+}
+.card-ACTIVITY07-edge{
+	border-top: 16px solid #a5a09a;
+}
+.card-ACTIVITY08-edge{
+	border-top: 16px solid #1abc9c;
+}
+.card-ACTIVITY09-edge{
+	border-top: 16px solid #78909d;
+}
+.card-ACTIVITY10-edge{
+    border-top: 16px solid #d09ae2;
+}
+.card-CNLCRD-edge{
+	border-top: 16px solid #81c886;
+}
+.card-CNLMMS-edge{
+	border-top: 16px solid #257993;
+}
+.card-DEFAULT-edge{
+	border-top: 16px solid #eee;
+}
+.card-DEFAULT-edge-benefit{
+	border-top: 16px solid #ccc;
+}
+.card-red-edge-benefit{
+	border-top: 16px solid #f07079;
+}
+.card-salmon-edge-benefit{
+	border-top: 16px solid #ffab1d;
+}
+.card-gray-edge-benefit{
+	border-top: 16px solid #00aeef;
+}
+
+
+
+/* MEMBERSHIP CARD */
+.panel-default > .panel-heading{position:relative;}
+.card-normal-edge-membership{
+	border-top: 16px solid #ddd;
+}
+.card-active-edge-membership{
+	border-top: 16px solid #39b54a;
+}
+.card-terminate-edge-membership{
+	border-top: 16px solid #f07079;
+}
+	
+.panel-heading {padding:10px 40px 10px 15px;}	
+	
+
+
+
+.card-ACTIVITY02-color  .card-title {color:#555;}
+
+
+/* them  color cho card product */
+
+.card-red {background-color: #f07079 !important;color:#fff  !important;}
+
+.card-red-benefit {background-color: #f07079 !important;color:#fff  !important;font-color:16px;font-weight:600;} /* */
+
+.card-red-selected {background-color: $red !important;color:#fff  !important;}
+
+.card-red a {color:#fff !important;}
+
+.card-grei {background-color: #eee !important;color:#fff  !important;font-color:16px;font-weight:600;}
+.card-grei-selected {background-color: #ccc !important;color:#fff  !important;}
+.card-grei a {color:#333 !important;}
+
+.card-salmon {background-color: #ffab1d !important;color:#fff !important;font-color:16px;font-weight:600; } /* */
+.card-salmon a {color:#fff !important;}
+.card-gray {background-color: #00aeef !important;color:#fff	 !important;font-color:16px;font-weight:600; } /* */
+.card-gray a {color:#fff !important;}
+.card-none-edited-row {background-color:#b7afa3  !important; color:#555; }
+.card-none-edited-row a {color:#fff !important;}
+
+
+.card-content-activities-tab {min-height:150px !important;}
+.card-content-vouchers-tab {min-height:150px !important;}
+
+.div_activity_info_card {
+	width:270px;margin-right:16px;position:relative;
+	@media (max-width: 410px) {
+		width:100%;
+	}
+	.card-content-activity-info{text-overflow: ellipsis; white-space: nowrap; overflow-x: hidden; overflow-y: auto; height: 130px;}
+}
+
+.card-no-pointer {cursor: auto;}
+
+// .card-ACTIVITY01{background: url(../img/home-action.png) 288px -24px;}
+// .card-ACTIVITY02{background: url(../img/home-action.png) 264px -24px;}
+// .card-ACTIVITY03{background: url(../img/home-action.png) 240px -24px;}
+// .card-ACTIVITY04{background: url(../img/home-action.png) 216px -24px;}
+// .card-ACTIVITY05{background: url(../img/home-action.png) 192px -24px;}
+// .card-ACTIVITY06{background: url(../img/home-action.png) 168px -24px;}
+// .card-ACTIVITY07{background: url(../img/home-action.png) 144px -24px;}
+// .card-ACTIVITY08{background: url(../img/home-action.png) 120px -24px;}
+// .card-ACTIVITY09{background: url(../img/home-action.png) 96px -24px;}
+// .card-CNLCRD{background: url(../img/home-action.png) 72px -24px;}
+// .card-CNLMMS{background: url(../img/home-action.png) 48px -24px;}
+// .card-DEFAULT{background: url(../img/home-action.png) 24px -24px;}
+
+// .checkbox-ACTIVITY01{background: url(../img/home-action.png) 288px 0px;}
+// .checkbox-ACTIVITY02{background: url(../img/home-action.png) 264px 0px;}
+// .checkbox-ACTIVITY03{background: url(../img/home-action.png) 240px 0px;}
+// .checkbox-ACTIVITY04{background: url(../img/home-action.png) 216px 0px;}
+// .checkbox-ACTIVITY05{background: url(../img/home-action.png) 192px 0px;}
+// .checkbox-ACTIVITY06{background: url(../img/home-action.png) 168px 0px;}
+// .checkbox-ACTIVITY07{background: url(../img/home-action.png) 144px 0px;}
+// .checkbox-ACTIVITY08{background: url(../img/home-action.png) 120px 0px;}
+// .checkbox-ACTIVITY09{background: url(../img/home-action.png) 96px 0px;}
+// .checkbox-CNLCRD{background: url(../img/home-action.png) 72px 0px;}
+// .checkbox-CNLMMS{background: url(../img/home-action.png) 48px 0px;}
+// .checkbox-DEFAULT{background: url(../img/home-action.png) 30px 0px;}
+
+// .grid{    margin: 0 auto;}
+.card-windgroup {
+    border-radius: 2px!important;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    border: none!important;
+    float: left;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    background:white;
+    margin-right:20px;
+    transition:box-shadow .4s ease;
+    >img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .inside{
+        padding: 8px;
+        overflow: hidden;
+        font-weight: 600;   
+        border-top: 1px solid #ddd;         
+        .text-uppercase{
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            color:black;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+        .info{
+            font-size: 13px;
+            margin-bottom: 6px;
+            color:$dark-grey;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            span{
+                color:$grey;
+            }
+        }
+    }
+    .link{
+        padding: 8px;
+        line-height: 0px;
+        background-color: #fafafa;
+        border-radius: 0 0 2px 2px;
+        font-weight:600;
+        i{
+            margin-right:5px;
+        }
+    }
+    .inside2{
+        padding: 8px 32px;
+        overflow: hidden;
+        font-weight: 600;   
+        border-top: 1px solid #ddd;         
+        .info{
+            font-size: 12px;
+            margin-bottom: 6px;
+            color:$dark-grey;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            span{
+                color:$grey;
+            }
+        }
+    }
+    .link{
+        padding: 8px;
+        line-height: 0px;
+        background-color: #fafafa;
+        border-radius: 0 0 2px 2px;
+        height:30px;
+        i{
+            margin-right:5px;
+        }
+    }
+    
+}
+.card-windgroup:hover{
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+    box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+}
+.shop-img{
+    // height: 100px;
+    // display: flex;
+    // vertical-align: middle;
+    // justify-content: center;
+    // align-items: center;
+    >img{
+        width:200px;
+        height:100px;
+    }
+}
+.card-header-windgroup{
+    width: 230px;
+    height: 61px;
+    border-radius: 2px 2px 0 0;
+    .user-image{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin: 8px;
+        border: 2px solid $green;
+    }
+    .pull-left{
+        color:$dark-grey;
+        font-weight:600;
+        .text-uppercase{
+            margin-top:4px;
+        }
+        .department{
+            font-size:12px;
+        }
+    }
+}
+.card-voucher-issued>.info{margin-bottom:3px!important;}
+
+
+
+
+
+
+
+.card1{width:200px;height:290px;}
+.card-height1{height:160px;}
+.card2{width:200px;}
+.card3{width: 230px;height: 230px;}
+.card4{width: 230px;}
+.card5{width: 360px;height:210px;margin-bottom:60px;}
+.card6{width: 225px;height:260px;margin-bottom:60px;}
+.card7{width: 250px;height:220px;}
+.card8{width: 250px;height: 180px;}
+.watermark{
+    position: absolute;
+    opacity: .54;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    pointer-events:none;
+}
+.watermark-image1 {   
+    top: 81px;
+    right: 30px;
+    width: 70%;   
+}
+.watermark-image2 {
+    top: 90px;
+    right: 55px;
+    width: 45%;
+} 
+.watermark-image3 {
+    top: 45px;
+    right: 64px;
+    width: 46%;
+}
+.watermark-image4 {
+    top: 49px;
+    right: 76px;
+    width: 35%;
+}   
+.watermark-image-vc {
+    top: -20px;
+    right: 34px;
+    width: 70%;
+}
+.watermark-image-scanning{
+    top: -6px;
+    right: 150px;
+    width: 30%;
+}
+.carpark-stamp{    
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background:url(../img/carpark.png);
+    width:40px;
+    height:40px;
+    background-repeat: no-repeat;
+}
+
+
+.voucher-management-front{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height:220px;
+    .card-vm{
+        width: 220px;
+        height: 135px;
+        border-radius:2px;    
+        border:1px solid #ddd;  
+        .vm-left{
+            width:148px;height:133px;background:#fafafa;float:left;padding:5px;
+            .vm1{
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 30px;
+            }
+            .vm2{
+                margin-top: 5px;
+                font-weight: 600;
+            }
+            .vm3{
+                font-size: 8px;
+                margin-top: 5px;
+            }
+            .bc{
+                float: left;
+                margin-top: 5px;
+            }
+            .vm4{
+                font-size: 9px;
+                float: left;
+            }
+        }
+        .vm-right{
+            width:70px;
+            height:135px;
+            float:right;
+            padding:5px;
+            .sc1{margin-top:5px;}
+            .sc2{font-size:4px;margin-top:2px;text-align: left;}
+            .sc4{
+                font-size:8px;
+                border:1px solid #ddd;
+                text-align:center;
+            }
+            .sc5{font-size:4px;margin-top:2px;text-align: center;}
+        }
+    }
+    .card-e{
+        width: 150px;
+        height: 170px;
+        border:1px solid #ddd;
+        border-radius:2px;
+        .card-e-contain{
+            height:110px;
+            color:white;
+            padding:10px;
+            border-radius:2px 2px 0 0;
+            .card-e1{
+                font-size:36px;
+                font-weight:500;
+            }
+        }
+        .card-e-img{
+            height: 60px;
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            >img{
+                height:60px;
+            }
+        }
+    }
+}
+
+.voucher-management-front2{
+    display: flex;
+    background: #f4f4f4;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height:180px;
+}
+.voucher-management-title {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:8px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    border-radius:2px;
+}
+.voucher-management-title2 {
+    background: $green;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:8px
+}

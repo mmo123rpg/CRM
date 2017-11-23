@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/select2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header">
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>    
+        <div class="top-info">    
+            <div class="dropdown acc_info">
+                <p>Tablet Manager - Feedback</p>                                
+            </div>                
+        </div>        
+    </div>
+</nav>
+<div class="menu-left">
+    <ul class="menu-collapse">
+        <li>
+            <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaigns"> <a href="tablet manager.html" class="menu menu-setting"><span>Page Setting</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Menu Page"> <a href="tablet manager menu page.html" class="menu menu-page"><span>Menu Page</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Carousel Configuration"> <a href="tablet manager carousel configuration.html" class="menu menu-carousel"><span>Carousel Configuration</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Feedback"> <a href="tablet manager feedback.html" class="menu menu-template_selected"><span>Feedback</span></a></li>
+    </ul>
+    <ul style="border-top:4px solid #b2ebf2">
+        <li class="dropdown">
+            <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="My setting"><span data-toggle="dropdown">MY SETTTING</span></a> 
+            <ul class="dropdown-menu dropdown-menu1" id="drop1">
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="menu-log-out">
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Log out">
+            <a href="#" class="menu menu-logout"><span>LOG OUT</span></a></li>
+    </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1 tab-pane">
+                    <div class="divide16px"></div>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-ph-3 col-sm-2 col-xl-1">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-ph-5 col-lg-3 col-xl-4">
+                                <input type="text" class="form-control" value="info@memberson.com, admin@memberson.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-ph-3 col-sm-2 col-xl-1">
+                                <div class="checkbox">
+                                    <label style="white-space:nowrap"><input type="checkbox">Member Number</label>
+                                </div>
+                            </label>
+                            <div class="col-ph-5 col-lg-3 col-xl-4">
+                                <input type="text" class="form-control" value="000037">
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn btn-blue-green">Look up</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-ph-3 col-sm-2 col-xl-1">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Email</label>
+                                </div>
+                            </label>
+                            <div class="col-ph-5 col-lg-3 col-xl-4">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Search for...">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-input" type="button">Save</button>
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">                
+                        <div class="col-lg-12">
+                            <div class="action action_refresh-2 pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="" data-original-title="Refresh"></div>
+                            <div class="action action_save pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="" data-original-title="Refresh"></div>
+                            <div class="action action_act pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="" data-original-title="Refresh"></div>
+                            <div class="action action_edit pull-right" data-trigger="hover" data-placement="bottom" data-tooltip="true" title="" data-original-title="Refresh"></div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Caption</th>
+                                    <th>Required</th>
+                                    <th>Type</th>
+                                    <th>Value/Regular Exp</th>
+                                    <th width="100">Order</th>
+                                    <th width="60">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Subject</td>
+                                    <td><input type="text" value="Subject" class="form-control"></td>
+                                    <td><input type="checkbox"></td>
+                                    <td>Text</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td>
+                                        <a href="#" class="table-icon table-up" data-placement="bottom" data-tooltip="true" title="" data-original-title="Up"></a>
+                                        <a href="#" class="table-icon table-down" data-placement="bottom" data-tooltip="true" title="" data-original-title="Down"></a>
+                                    </td>
+                                    <td><a href="#" class="table-icon table-delete" data-placement="bottom" data-tooltip="true" title="" data-original-title="Delete"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Comments</td>   
+                                    <td><input type="text" value="Comments" class="form-control"></td>
+                                    <td><input type="checkbox"></td>
+                                    <td>Select</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td>
+                                        <a href="#" class="table-icon table-up" data-placement="bottom" data-tooltip="true" title="" data-original-title="Up"></a>
+                                        <a href="#" class="table-icon table-down" data-placement="bottom" data-tooltip="true" title="" data-original-title="Down"></a>
+                                    </td>
+                                    <td><a href="#" class="table-icon table-delete" data-placement="bottom" data-tooltip="true" title="" data-original-title="Delete"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Category</td>
+                                    <td><input type="text" value="Category" class="form-control"></td>
+                                    <td><input type="checkbox"></td>
+                                    <td>Select</td>
+                                    <td>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Local List
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> From CRM Activity
+                                        </label>
+                                        <div style="background:#f0f0f0;padding:10px;margin-top:5px;">
+                                            <p>Feedback (Products)</p>
+                                            <p>Feedback (Service)</p>
+                                            <p>Compliments</p>
+                                            <p>Membership</p>
+                                            <p>Career Opportunities</p>
+                                            <p>Product Enquiries</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table-icon table-up" data-placement="bottom" data-tooltip="true" title="" data-original-title="Up"></a>
+                                        <a href="#" class="table-icon table-down" data-placement="bottom" data-tooltip="true" title="" data-original-title="Down"></a>
+                                    </td>
+                                    <td><a href="#" class="table-icon table-delete" data-placement="bottom" data-tooltip="true" title="" data-original-title="Delete"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/amcharts.js"></script>
+<script src="Content/js/serial.js"></script>
+<script src="Content/js/amstock.js"></script>
+<script src="Content/js/pie.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/select2.min.js"></script>
+<script src="Content/js/menu-left.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {    
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 121);
+    }
+    resizeHeight();
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+
+    $('.select2').select2({ width: '100%' });      
+});
+</script>
+</body>
+
+</html>

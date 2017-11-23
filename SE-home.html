@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">    
+    <link href="Content/css/fullcalendar.css" rel="stylesheet">
+    <link href="Content/css/fullcalendar.print.css" rel="stylesheet" media="print" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+<style>.vis-item-content.dropdown{cursor:pointer;}
+.vis-panel.vis-left{width:1px!important;}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header" style="float:none;">
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>
+    </div>
+</nav>
+<div class="menu-left">
+    <ul class="menu-collapse">
+        <li>
+            <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+            <a href="#" class="menu menu_home_selected"><span>HOME</span></a></li>
+    </ul>
+    <ul>
+        <li class="dropdown">
+            <a class="menu menu_campaign right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Campaign"><span data-toggle="dropdown">CAMPAIGNS</span></a> 
+            <ul class="dropdown-menu dropdown-menu1">
+                <li><a href="#" data-toggle="modal" data-target="#search-campaign">Search Campaign</a></li>
+                <li><a href="#">Add new Campaign</a></li>
+            </ul>
+        </li>
+    </ul>        
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Communications">
+            <a href="SE-communications.html" class="menu menu_communication"><span>COMMUNICATIONS</span></a></li>
+    </ul>
+    <ul>
+        <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Templates">
+            <a href="SE-template.html" class="menu menu_template"><span>TEMPLATE</span></a></li>
+    </ul>
+    <ul style="border-top:3px solid #b2ebf2">
+        <li class="dropdown">
+            <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+            <ul class="dropdown-menu dropdown-menu1">
+                <li><a href="#">log out</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">                       
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Timeline view</a></li>
+                        <li role="presentation"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">Campaign List</a></li>
+                        <li role="presentation"><a href="#home3" aria-controls="home3" role="tab" data-toggle="tab">calendar view</a></li>
+                        <li role="presentation"><a href="#home4" aria-controls="home4" role="tab" data-toggle="tab">communication List</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="home1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <span class="action-for-filter action-filter col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" title="Filter" data-toggle="collapse" data-target="#filter-timeline" style="margin-right:12px;margin-top:4px;"></span>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Including others' campaigns 
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="action action_refresh pull-right" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Delete"></a>
+                                    <a href="#" target="_blank" class="action action_act pull-right" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Add"></a>
+                                </div>
+                            </div>
+                            <div class="divide8px"></div>
+                            <div class="row">
+                                <div class="col-lg-12">                                
+                                    <div class="collapse" id="filter-timeline">
+                                        <div class="well">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="form-multiselect form-group">
+                                                                <select class="form-control multiselect" multiple="multiple">
+                                                                    <option>Present Month</option>
+                                                                    <option>Month 1 to Month 4</option>
+                                                                    <option>Month 5 to Month 8</option>
+                                                                    <option>Month 9 to Month 12</option>
+                                                                </select>
+                                                                <label class="control-label">Status</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label class="checkbox-inline">
+                                                      <input type="checkbox" id="CampaingFilter1" value="option1"> Campaign Group
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                      <input type="checkbox" id="CampaingFilter2" value="option2"> Campaign Category
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                      <input type="checkbox" id="CampaingFilter3" value="option3"> Campaign Type
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                      <input type="checkbox" id="CampaingFilter4" value="option1"> Campaign Location
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                      <input type="checkbox" id="CampaingFilter5" value="option2"> Campaign Creator
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <button type="button" class="btn btn-blue-green pull-right">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="pull-right" style="font-size:12px;color:#a9a9a9">Click a symbol to open communication/engagement. Click a campaign period to open Campaign</p>
+                                </div>
+                            </div>
+                            <div id="timeline-view"></div>
+                            <div class="divide32px"></div>
+                            <div class="row">
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <div style="margin-bottom:8px">
+                                        <div class="label-color label6"></div>
+                                        <span style="margin-left:12px;font-weight:600;vertical-align:middle;">Today</span>
+                                    </div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <div style="margin-bottom:8px">
+                                        <div class="label-color label7"></div>
+                                        <span style="margin-left:12px;font-weight:600;vertical-align:middle;">Campaign Period</span>
+                                    </div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <div style="margin-bottom:8px">
+                                        <div class="label-color label8"></div>
+                                        <span style="margin-left:12px;font-weight:600;vertical-align:middle;">Black Out Period</span>
+                                    </div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <div style="margin-bottom:8px">
+                                        <span><img src="Content/img/engage-mail.png" alt="" width="25px" height="25px"></span>
+                                        <span style="margin-left:12px;font-weight:600;vertical-align:middle;">Email Communication</span>
+                                    </div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <div style="margin-bottom:8px">
+                                        <span><img src="Content/img/engage-sms.png" alt="" width="25px" height="25px"></span>
+                                        <span style="margin-left:12px;font-weight:600;vertical-align:middle;">SMS Communication</span>
+                                    </div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">Block Detail Level:</div>
+                                                <select class="form-control" style="min-width:70px;">
+                                                    <option value="">High</option>
+                                                    <option value="">Low</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="divide8px"></div>
+                                </div>
+                                <div class="col-ph-6 col-sm-4 col-lg-3 col-xl-2">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">Timeline View Range:</div>
+                                                <select class="form-control" style="min-width:70px;">
+                                                    <option value="">2 weeks</option>
+                                                    <option value="">4 weeks</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="home2">
+                            <div class="row">
+                                <div class="col-ph-6">
+                                    <span class="action-for-filter action-filter col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" title="Filter" data-toggle="collapse" data-target="#SE-home"></span>
+                                </div>
+                                <div class="col-ph-6">
+                                    <a href="#" class="action action_refresh pull-right" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Delete"></a>
+                                    <a href="SE-add-new-campaign.html" target="_blank" class="action action_act pull-right" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Add new campaign"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="collapse" id="SE-home">
+                                        <div class="well">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="form-multiselect form-group">
+                                                                <select class="form-control multiselect" multiple="multiple">
+                                                                    <option>Role</option>
+                                                                    <option>Retailer</option>
+                                                                    <option>Corporate User</option>
+                                                                    <option>Mall CSA</option>
+                                                                    <option>Mall Operator</option>
+                                                                    <option>Mall Management</option>
+                                                                    <option>Mall Finance</option>
+                                                                    <option>Mall Marketing</option>
+                                                                    <option>Mall User Admin</option>
+                                                                    <option>WG Operator</option>
+                                                                    <option>WG Finance</option>
+                                                                    <option>WG User Admin</option>
+                                                                </select>
+                                                                <label class="control-label">Status</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="form-multiselect form-group">
+                                                                <select class="form-control multiselect" multiple="multiple">
+                                                                    <option>Role</option>
+                                                                    <option>Retailer</option>
+                                                                    <option>Corporate User</option>
+                                                                    <option>Mall CSA</option>
+                                                                    <option>Mall Operator</option>
+                                                                    <option>Mall Management</option>
+                                                                    <option>Mall Finance</option>
+                                                                    <option>Mall Marketing</option>
+                                                                    <option>Mall User Admin</option>
+                                                                    <option>WG Operator</option>
+                                                                    <option>WG Finance</option>
+                                                                    <option>WG User Admin</option>
+                                                                </select>
+                                                                <label class="control-label">Time Period</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="form-horizontal form-horizontal2">
+                                                        <div class="col-ph-12">
+                                                            <div class="controls form-group">
+                                                                <input type="password" class="form-control" value="123456" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Remove">
+                                                                <label class="control-label">Date</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3"></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <span class="action-for-filter action_clearform pull-right" data-placement="bottom" data-tooltip="true" title="" data-original-title="Clear Filter"></span>
+                                                    <button type="button" class="btn btn-blue-green pull-right">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide8px"></div>
+                            <div class="chart-name" style="font-size:16px;cursor:pointer" data-toggle="collapse" data-target="#timeline" aria-expanded="false" aria-controls="timeline">
+                                Campaign List &nbsp;
+                                <i class="fa icon-collapse"></i>
+                            </div>
+                            <div class="collapse" id="timeline">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover stripe memberson-grid data-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Campaign Name &nbsp;</th>
+                                                        <th>Campaign Category &nbsp;</th>
+                                                        <th>Start Date &nbsp;</th>
+                                                        <th>End Date &nbsp;</th>
+                                                        <th>Purpose &nbsp;</th>
+                                                        <th>Targeted &nbsp;</th>
+                                                        <th width="50px">Stage &nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Campaign 1</td>
+                                                        <td>Campaign category</td>
+                                                        <td>1/1/2016</td>
+                                                        <td>11/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-running">Running</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 2</td>
+                                                        <td>Campaign category</td>
+                                                        <td>2/1/2016</td>
+                                                        <td>9/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-scheduled">Scheduled</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 3</td>
+                                                        <td>Campaign category</td>
+                                                        <td>3/1/2016</td>
+                                                        <td>6/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-completed">Completed</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 4</td>
+                                                        <td>Campaign category</td>
+                                                        <td>15/1/2016</td>
+                                                        <td>18/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-running">Running</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 5</td>
+                                                        <td>Campaign category</td>
+                                                        <td>13/1/2016</td>
+                                                        <td>16/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-scheduled">Scheduled</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 6</td>
+                                                        <td>Campaign category</td>
+                                                        <td>9/1/2016</td>
+                                                        <td>22/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-completed">Completed</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 7</td>
+                                                        <td>Campaign category</td>
+                                                        <td>4/1/2016</td>
+                                                        <td>22/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-running">Running</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 8</td>
+                                                        <td>Campaign category</td>
+                                                        <td>20/1/2016</td>
+                                                        <td>23/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-scheduled">Scheduled</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 9</td>
+                                                        <td>Campaign category</td>
+                                                        <td>16/1/2016</td>
+                                                        <td>28/2/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-completed">Completed</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 10</td>
+                                                        <td>Campaign category</td>
+                                                        <td>7/1/2016</td>
+                                                        <td>19/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-running">Running</span></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Campaign 11</td>
+                                                        <td>Campaign category</td>
+                                                        <td>8/1/2016</td>
+                                                        <td>12/1/2016</td>
+                                                        <td>Promotion</td>
+                                                        <td>Test</td>
+                                                        <th><span class="table-status status-scheduled">Scheduled</span></th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide32px"></div>
+                            <div class="chart-name" style="font-size:16px;">
+                                Campaign Schedule
+                            </div>
+                            <p style="margin:16px 0;color:#05728e"><i>(*)Drag on the timeline to view other days</i></p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="divide16px"></div>
+                                    <div id="visualization"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="home3">
+                            <ul class="nav nav-tabs-2" role="tablist">
+                                <li role="presentation" class="active"><a href="#communication" aria-controls="communication" role="tab" data-toggle="tab">Communication Calendar</a></li>
+                                <li role="presentation"><a href="#gift" aria-controls="gift" role="tab" data-toggle="tab">Gift Calendar</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active fade in" id="communication" style="padding:0">
+                                    <div id='calendar'></div>
+                                    <div class="divide32px"></div>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xl-2">
+                                            <div style="margin-bottom:8px">
+                                                <div class="label-color label1"></div><span style="margin-left:12px;font-weight:600;vertical-align:middle;font-size:16px">Scheduled</span></div>
+                                            <p>In the queue to be picked up by the system at various stages and the sending date/time is today or future date.</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xl-2">
+                                            <div style="margin-bottom:8px">
+                                                <div class="label-color"><img src="Content/img/check-ok.png" alt="" width="25"></div>
+                                                <span style="margin-left:12px;font-weight:600;vertical-align:middle;font-size:16px">Completed </span></div>
+                                            <p>Completed.</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xl-2">
+                                            <div style="margin-bottom:8px">
+                                                <div class="label-color"><img src="Content/img/exclamation.png" alt="" width="25"></div>
+                                                <span style="margin-left:12px;font-weight:600;vertical-align:middle;font-size:16px">Requires Attention</span></div>
+                                            <p>Requires user interaction in order to proceed and the sending date/time is today or future date.</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xl-2">
+                                            <div style="margin-bottom:8px">
+                                                <div class="label-color label3"></div><span style="margin-left:12px;font-weight:600;vertical-align:middle;font-size:16px">Overdue </span></div>
+                                            <p>Scheduled or Requires Attention but the sending date/time is earlier than today.</p>
+                                        </div>  
+                                        <div class="col-sm-3 col-xl-2">
+                                            <div style="margin-bottom:8px">
+                                                <div class="label-color label4"></div><span style="margin-left:12px;font-weight:600;vertical-align:middle;font-size:16px">Discarded </span></div>
+                                            <p>Discarded</p>
+                                        </div>                                
+                                    </div> 
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="gift" style="padding:0"></div>
+                            </div>                            
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="home4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="action action_refresh-2 pull-right"  data-trigger="hover" data-placement="bottom" data-tooltip="true" title="Refresh"></div>
+                                </div>
+                            </div>
+                            <div class="divide12px"></div>
+                            <div class="table-responsive">
+                                <table class="table table-hover stripe memberson-grid data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Campaign &nbsp;</th>
+                                            <th>Template &nbsp;</th>
+                                            <th>Type &nbsp;</th>
+                                            <th>Name &nbsp;</th>
+                                            <th>Created on &nbsp;</th>
+                                            <th>Generate on &nbsp;</th>
+                                            <th>Send on &nbsp;</th>
+                                            <th>Recipients &nbsp;</th>
+                                            <th>Stage &nbsp;</th>
+                                            <th width="10px" style="background:none;padding-left:6px;">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Opened Communication Demo 1</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>08/03/2017 11:30</td>
+                                            <td>09/03/2017 11:30</td>
+                                            <td class="text-right">16</td>
+                                            <td><span class="table-status-2 status-red">Overdue</span></td>
+                                            <td><a href="SE-communication-edit-email.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo 2</td>
+                                            <td>Template Demo456</td>
+                                            <td>SMS</td>
+                                            <td>ABC</td>
+                                            <td>11/03/2017 11:30</td>
+                                            <td>12/03/2017 11:30</td>
+                                            <td>13/03/2017 11:30</td>
+                                            <td class="text-right">8</td>
+                                            <td><span class="table-status-2 status-red">Overdue</span></td>
+                                            <td><a href="SE-communication-edit-sms.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>   
+                                        <tr>
+                                            <td>Opened Communication Demo 3</td>
+                                            <td>Template Demo456</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>1/03/2017 11:30</td>
+                                            <td>2/03/2017 11:30</td>
+                                            <td>3/03/2017 11:30</td>
+                                            <td class="text-right">9</td>
+                                            <td><span class="table-status-2 status-green">Processing on Server Failed</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>                                                                                     
+                                        <tr>
+                                            <td>Opened Communication Demo 4</td>
+                                            <td>Template Demo789</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>15/03/2017 11:30</td>
+                                            <td>16/03/2017 11:30</td>
+                                            <td>17/03/2017 11:30</td>
+                                            <td class="text-right">17</td>
+                                            <td><span class="table-status-2 status-green">Uploading</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                    
+                                        <tr>
+                                            <td>Opened Communication Demo 5</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>abc</td>
+                                            <td>21/03/2017 11:30</td>
+                                            <td>22/03/2017 11:30</td>
+                                            <td>23/03/2017 11:30</td>
+                                            <td class="text-right">21</td>
+                                            <td><span class="table-status-2 status-green">Processing</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                    
+                                        <tr>
+                                            <td>Opened Communication Demo 6</td>
+                                            <td>Template Demo789</td>
+                                            <td>SMS</td>
+                                            <td>123</td>
+                                            <td>1/03/2017 11:30</td>
+                                            <td>5/03/2017 11:30</td>
+                                            <td>6/03/2017 11:30</td>
+                                            <td class="text-right">82</td>
+                                            <td><span class="table-status-2 status-green">Scheduled for Generation</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo 7</td>
+                                            <td>Template Demo789</td>
+                                            <td>SMS</td>
+                                            <td>123</td>
+                                            <td>1/03/2017 11:30</td>
+                                            <td>5/03/2017 11:30</td>
+                                            <td>6/03/2017 11:30</td>
+                                            <td class="text-right">12</td>
+                                            <td><span class="table-status-2 status-grey">Discard</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Uploading Failed</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Processing on Server Failed</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Awaiting Confirmation</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Scheduled for Generation</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Generating</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Uploading</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Processing</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Opened Communication Demo</td>
+                                            <td>Template Demo123</td>
+                                            <td>Email</td>
+                                            <td>123</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td>07/03/2017 11:30</td>
+                                            <td class="text-right">0</td>
+                                            <td><span class="table-status-2 status-green">Confirmed</span></td>
+                                            <td><a href="SE-communication-edit.html" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search Campaign -->
+<div class="modal fade" id="search-campaign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Search Campaign</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-ph-6 col-lg-4">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12"> 
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Campaign Name">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-quicksearch2"></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-ph-6 col-lg-6">
+                          <div class="checkbox">
+                              <label>
+                                  <input type="checkbox">Allow wildcard characters</label>
+                          </div>
+                        </div>                   
+                    </div>
+                    <div class="height-search-campaign">
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Campaign_Spring test</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;23/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;16/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>TEST 20170313.1047</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;23/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;16/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Campaign 7</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;4/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;3/12/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Test 20170315.0949</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;9/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;10/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Test MS camp</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;1/3/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;8/03/2016 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Campaign 4</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;8/9/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;12/9/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>Campaign 6</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;4/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;8/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>TEST 20170313.1047</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;23/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;16/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                      <div class="divide16px"></div>
+                      <div class="well-review-2">
+                          <div class="row">                            
+                              <div class="col-sm-12">
+                                  <div style="font-size:16px;margin-bottom:6px"><b>TEST 20170313.1047</b></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Promotion</dd>
+                                  </dl>
+                              </div>                                       
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt></dt>
+                                      <dd>Birthday</dd>
+                                  </dl>                                  
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>From:</dt>
+                                      <dd>&nbsp;&nbsp;23/12/2016 00:00:00</dd>
+                                  </dl>                                         
+                              </div>
+                              <div class="col-sm-3">
+                                  <dl class="dl-horizontal">
+                                      <dt>To:</dt>
+                                      <dd>&nbsp;&nbsp;16/03/2017 23:59:59</dd>
+                                  </dl>                                         
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="divide32px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.min.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/fullcalendar.min.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/vis.js"></script>
+<script src="Content/js/custom.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {    
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 121);
+    }
+    resizeHeight();
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+    var container = document.getElementById('visualization');
+
+    var now = moment().minutes(0).seconds(0).milliseconds(0);
+    var groupCount = 1;
+    var itemCount = 11;
+
+
+    var names = [' '];
+    var groups = new vis.DataSet();
+    for (var g = 0; g < groupCount; g++) {
+        groups.add({
+            id: g,
+            content: names[g]
+        });
+    }
+    
+    var items = new vis.DataSet
+    ([
+      {id: 1,group:0, content: 'Campaign 1', start: '2016-1-1', end: '2016-1-2','className': 'campaign-timeline-running'},
+      {id: 2,group:0, content: 'Campaign 2', start: '2016-1-2', end: '2016-1-3','className': 'campaign-timeline-scheduled'},
+      {id: 3,group:0, content: 'Campaign 3', start: '2016-1-3', end: '2016-1-4','className': 'campaign-timeline-completed'},
+      {id: 4,group:0, content: 'Campaign 4', start: '2016-1-6', end: '2016-1-7','className': 'campaign-timeline-running'},
+      {id: 5,group:0, content: 'Campaign 5', start: '2016-1-9', end: '2016-1-14','className': 'campaign-timeline-scheduled'},
+      {id: 6,group:0, content: 'Campaign 6', start: '2016-1-8', end: '2016-1-10','className': 'campaign-timeline-completed'},
+      {id: 7,group:0, content: 'Campaign 7', start: '2016-1-7', end: '2016-1-22','className': 'campaign-timeline-running'},
+      {id: 8,group:0, content: 'Campaign 8', start: '2016-1-2', end: '2016-1-23','className': 'campaign-timeline-scheduled'},
+      {id: 9,group:0, content: 'Campaign 9', start: '2016-1-8', end: '2016-1-28','className': 'campaign-timeline-completed'},
+      {id: 10,group:0, content: 'Campaign 10', start: '2016-1-10', end: '2016-1-19','className': 'campaign-timeline-running'},
+      {id: 11,group:0, content: 'Campaign 11', start: '2016-1-7', end: '2016-1-12','className': 'campaign-timeline-scheduled'}
+    ]);
+
+
+    // Configuration for the Timeline
+    var options = {
+      stack:true,
+      verticalScroll:true,
+      height:200
+    };
+
+    // Create a Timeline
+    // var timeline = new vis.Timeline(container, items, options);
+    var timeline = new vis.Timeline(container);
+    timeline.setOptions(options);
+    timeline.setGroups(groups);
+    timeline.setItems(items);
+
+
+    var items = new vis.DataSet();
+    var groups = new vis.DataSet([
+        {
+            id: 'group1', content:'1'
+        },
+        {
+            id: 'group3', content:'2'
+        },
+        {
+            id: 'group4a', content:'3'
+        },
+        {
+            id: 'group4b', content:'4'
+        },
+        {
+            id: 'group2a', content:'5'
+        },
+        {
+            id: 'group2b', content:'6'
+        },
+        {
+            id: 'group6a', content:'7'
+        },
+        {
+            id: 'group6b', content:'8'
+        },
+        {
+            id: 'group7a', content:'9'
+        },
+        {
+            id: 'group7b', content:'10'
+        }
+    ]);
+    // add items to the DataSet
+    items.add([
+        {id: 'null', content: '', start: '2017-06-07', end: '2017-06-23',group:'group1'},
+
+        {
+            id: '1', 
+            start: '2017-06-07', 
+            end: '2017-06-23', 
+            group:'group2a', 
+            content: 'Special spring sales (F&B)', 
+            className: 'white'
+        },           
+        {
+            id: '2', 
+            start: '2017-06-09', 
+            end: '2017-06-23', 
+            group:'group2b', 
+            type: 'background', 
+            className: 'green'
+        },
+        {
+            id: '3', 
+            start: '2017-06-07', 
+            end: '2017-06-12', 
+            group:'group2b', 
+            type: 'background', 
+            className: 'grey'
+        },  
+        {
+            id: '4', 
+            start: '2017-06-07', 
+            end: '2017-06-08' ,
+            group:'group2b', 
+            content: '<div class="text-center">10:30</div><img src="Content/img/engage-sms.png" style="width:20px; height:20px;"><div class="text-center" style="font-size:10px;">SENDING</div>',
+        },  
+        {
+            id: '4b', 
+            start: '2017-06-10', 
+            end: '2017-06-11' ,
+            group:'group2b', 
+            content: '<div class="text-center">12:30</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="text-center" style="font-size:10px;">SENDING</div>',
+        },           
+        {
+            id: '5', 
+            content: 'River boat competition', 
+            start: '2017-05-11', 
+            end: '2017-07-1',
+            group:'group4a', 
+            className: 'white'
+        },
+        {
+            id: '6',
+            start: '2017-05-11', 
+            end: '2017-07-1', 
+            type: 'background', 
+            group:'group4b',
+            className: 'green'},       
+        {
+            id: '7',
+            start: '2017-06-19', 
+            end: '2017-06-20', 
+            group:'group4b', 
+            content: '<a href="google.com.vn" id="popup" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="com-timeline-status">&nbsp;</div><img src="Content/img/engage-multiple.png" style="width:25px; height:25px;"><div class="com-timeline-status">&nbsp;</div></a><div class="dropdown-menu dropdown-timeline" aria-labelledby="popup"><div class="item"><div class="com-timeline-status">16:30</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completed</div></div><div class="item"><div class="com-timeline-status">22:30</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Scheduled<br>for<br>Generation</div></div><div class="item"><div class="com-timeline-status">16:30</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completed</div></div><div class="item"><div class="com-timeline-status">16:30</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completed</div></div></div>'
+        },
+        {
+            id: '7b',
+            start: '2017-06-20', 
+            end: '2017-06-21', 
+            group:'group4b', 
+            content: '<div class="com-timeline-status">16:32</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completed</div>'
+        },
+        {
+            id: '7c',
+            start: '2017-06-21', 
+            end: '2017-06-22', 
+            group:'group4b', 
+            content: '<div class="com-timeline-status">16:32</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completed</div>'
+        },
+        {
+            id: '7d',
+            start: '2017-06-22', 
+            end: '2017-06-23', 
+            group:'group4b', 
+            content: '<div class="com-timeline-status">16:32</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Completeddddd</div>'
+        },
+        {
+            id: '7e',
+            start: '2017-06-22', 
+            end: '2017-06-23', 
+            group:'group4b', 
+            content: '<div class="com-timeline-status">16:32</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="com-timeline-status">Scheduled<br>for<br>Generation </div>'
+        },
+        {
+            id: '8', 
+            content: 'Walk the top', 
+            start: '2017-06-26', 
+            end: '2017-07-1',
+            group:'group6a', 
+            className: 'white'},
+        {
+            id: '9',
+            start: '2017-06-26', 
+            end: '2017-07-1', 
+            type: 'background', 
+            group:'group6b',
+            className: 'green'},       
+        {
+            id: '10',
+            start: '2017-06-27', 
+            end: '2017-06-28', 
+            group:'group6b', 
+            content: '<div class="text-center">22:10</div><img src="Content/img/engage-mail.png" style="width:20px; height:20px;"><div class="text-center" style="font-size:10px;">COMPLETE</div>'},
+
+        {
+            id: 'today', 
+            start: '2017-06-23', 
+            end: '2017-06-24', 
+            type: 'background', 
+            className: 'today'},
+        {
+            id: 'background_all', 
+            start: '2017-07-01', 
+            end: '2017-07-02', 
+            type: 'background',
+            content:'New Opening Onouncement', 
+            className: 'black-out-period'
+        },
+        {
+            id: '11', 
+            content: 'Walk the top', 
+            start: '2017-06-26', 
+            end: '2017-07-1',
+            group:'group7a', 
+            className: 'white'},
+        
+       
+    ]);
+
+    var container = document.getElementById('timeline-view');
+    var options = {
+        // orientation:'top'
+        start: '2017-06-5',
+        end: '2017-07-5',
+        height:600,
+        orientation: {item: 'top'},
+        zoomable:false,
+        moment: vis.moment.utc,
+        margin: {
+            item : {
+              horizontal : -80
+            }
+        },
+    };
+
+    var timeline = new vis.Timeline(container, items, groups, options);
+
+
+    var conf = {
+        eventStartEditable  :false,
+        customButtons: {
+            exclamation: {                
+                icon: 'left-single-arrow'
+            }
+        },
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'exclamation'
+        },
+        height: 750,  
+        navLinks: false, // can click day/week names to navigate views
+        editable: true,      
+        eventLimit: 4,
+        events: [
+            {
+                id:1,
+                title: 'Communication 1\n Scheduled',
+                start: '2017-11-07',
+                start: '2017-11-07',
+                class: 'green'
+            },
+            {
+                id:1,
+                title: 'Communication 2\n Completed',
+                start: '2017-11-07',
+                start: '2017-11-07',
+                class: 'green',
+                imageurl:'Content/img/check-ok.png'
+            },
+            {
+                id:2,
+                title: 'Communication 3\n  Requires Attention',
+                start: '2017-11-07',
+                end:'2017-11-07',
+                class: 'green',
+                imageurl:'Content/img/exclamation.png'
+            },           
+            {
+                id:1,
+                title: 'Communication 4\n Overdue',
+                start: '2017-11-07',
+                start: '2017-11-07',
+                color:'#e76d6a'
+            },           
+            {
+                id:1,
+                title: 'Communication 5\n Discarded',
+                start: '2017-11-07',
+                start: '2017-11-07',
+                color:'#8a96a2'
+            }
+        ],
+        eventRender: function(event, eventElement) {
+            if (event.imageurl) {
+                eventElement.find(".fc-content").prepend("<img src='" + event.imageurl +"' width='16' height='14'>");
+            }
+            if (event.class == "green") {
+               eventElement.addClass('com-green');
+            }
+        }
+    }
+    
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('#calendar').fullCalendar(conf);
+
+        function handler1() {
+            $('#calendar').fullCalendar('removeEvents', 1);
+            conf.eventLimit = false;
+            $(".fc-exclamation-button").one("click", handler2);
+        }
+
+        function handler2() {
+            $('#calendar').fullCalendar('destroy');  
+            conf.eventLimit = 4;      
+            $('#calendar').fullCalendar(conf);
+            $(".fc-exclamation-button").one("click", handler1);
+        }
+        $(".fc-exclamation-button").one("click", handler1);
+    });    
+
+    $('.vis-item-content').addClass('dropdown');
+
+});
+</script>
+</body>
+
+</html>

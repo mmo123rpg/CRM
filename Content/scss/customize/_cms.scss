@@ -1,0 +1,132 @@
+.img-flow {
+  max-height: 300px;
+  overflow: hidden;
+  width: 100%;
+  img {
+      width: 100%;
+  }
+}
+.grid{margin:0 auto}
+.grey-line{background:#e5e5e5;height:1px;width:100%}
+.blue-line{background:$M3;height:1px;width:100%}
+.thumbnail-logo{margin-bottom:12px;}
+.top-icon .action{margin-bottom:8px;}
+.gallery2{max-width:100%;display:block;width:64px;height:64px;overflow:hidden;border-radius:4px;}
+.preview-dynamic{max-height: 300px;overflow: auto;}
+.matrix-link{
+  background:none!important;
+  a{
+    color:$M2;
+  }
+}
+
+.cms-card {
+    width: 240px;
+    height: 320px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px #e6e6e6;
+    cursor: default;
+    background: #f1eff0
+}
+.cms-card .mask, .cms-card .content {
+    width: 220px;
+    height: 320px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    @include text-overflow;
+}
+.cms-card img {
+    display: block;
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+.cms-card h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom:16px;
+}
+.cms-card p {
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    text-align: center
+}
+.cms-card a {
+    display: inline-block;
+}
+
+
+
+
+.cms-card-fifth img {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.cms-card-fifth .mask {
+   background-color: #f5f6f7;
+   -webkit-transform: translateX(-250px);
+   -moz-transform: translateX(-250px);
+   -o-transform: translateX(-250px);
+   -ms-transform: translateX(-250px);
+   transform: translateX(-250px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.cms-card-fifth h2 {
+   background: rgba(255, 255, 255, 0.5);
+   color: #000;
+   -webkit-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   -moz-box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+   box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.cms-card-fifth p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   color: #333;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.cms-card-fifth:hover .mask {
+   -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+.cms-card-fifth:hover img {
+   -webkit-transform: translateX(250px);
+   -moz-transform: translateX(250px);
+   -o-transform: translateX(250px);
+   -ms-transform: translateX(250px);
+   transform: translateX(250px);
+}
+.cms-card-fifth:hover p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}

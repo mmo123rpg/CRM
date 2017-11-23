@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/select2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header">
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>
+        <div class="top-info">
+            <div class="dropdown acc_info">
+                <p>Profile Import</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="menu-left">
+  <ul class="menu-collapse">
+      <li>
+          <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+  </ul>
+  <ul>
+      <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+          <a href="sE-home.html" class="menu menu_home"><span>HOME</span></a></li>
+  </ul>
+  <ul>
+      <li class="dropdown">
+          <a class="menu menu_campaign right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Campaign"><span data-toggle="dropdown">CAMPAIGNS</span></a>
+          <ul class="dropdown-menu dropdown-menu1">
+              <li><a href="#" data-toggle="modal" data-target="#search-campaign">Search Campaign</a></li>
+              <li><a href="#">Add new Campaign</a></li>
+          </ul>
+      </li>
+  </ul>
+  <ul>
+      <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Communications">
+          <a href="SE-communications.html" class="menu menu_communication"><span>COMMUNICATIONS</span></a></li>
+  </ul>
+  <ul>
+      <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Templates">
+          <a href="SE-template.html" class="menu menu_template"><span>TEMPLATE</span></a></li>
+  </ul>
+  <ul>
+      <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Profile Import">
+          <a href="#" class="menu menu-profile-import-selected"><span>PROFILE IMPORT</span></a></li>
+  </ul>
+  <ul style="border-top:3px solid #b2ebf2">
+      <li class="dropdown">
+          <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a>
+          <ul class="dropdown-menu dropdown-menu1">
+              <li><a href="#">log out</a></li>
+          </ul>
+      </li>
+  </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">
+                    <div class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <a href="#" class="action-for-filter action-filter col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" title="" data-toggle="collapse" data-target="#voucher-filter-3" data-original-title="Filter"  style="margin-right:20px"></a>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Show imports done by other users
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <a href="#" class="action action_refresh pull-right"></a>
+                                <a href="#" class="action action_act pull-right" data-toggle="modal" data-target="#add"></a>
+                                <a href="#" class="pull-right" style="margin-right:20px;margin-top:5px">Download import template</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="collapse" id="voucher-filter-3">
+                                    <div class="well">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Name</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Usage</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 col-sm-12 col-ph-3 control-label control-label-sm">Platform</label>
+                                                        <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                            <select class="form-control">
+                                                                <option value='0'>All</option>
+                                                                <option value='1'>SMS</option>
+                                                                <option value='1'>Email</option>
+                                                                <option value='1'>Mobile</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <span class="action-for-filter action_clearform pull-right" data-placement="bottom" data-tooltip="true" title="" data-original-title="Clear Filter"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover dataTable  table-align-middle" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr role="row">
+                                        <th>Date/Time</th>
+                                        <th>User</th>
+                                        <th>File Name</th>
+                                        <th>Tot Records</th>
+                                        <th>New Added</th>
+                                        <th>Updated</th>
+                                        <th>Rejected</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>15/05/2017 10:32</td>
+                                        <td>LisaK</td>
+                                        <td>Cake_show_new_contacts.csv</td>
+                                        <td>3,652</td>
+                                        <td>3.103</td>
+                                        <td>546</td>
+                                        <td>3</td>
+                                        <td><a href="#" class="btn btn-blue-green">download results</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Import Marketing List</div>
+                </div>
+                <div class="modal-body">
+                    <p><b>Import Logics </b></p>
+                    <ul>
+                        <li>If an email address in the imported file already exist in a profile that is not marked as a hotel list then the profile will be tagged with the selected hotel list tag.</li>
+                        <li>If an email address in the imported file already part of a hotel list then the imported data will merge and update only empty fields in the existing profile with data from the file.</li>
+                        <li> If an email address in the imported file does not exist a profile will be created and tagged with the selected hotel list tag.</li>
+                    </ul>
+                    <div class="divide12px"></div>
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="col-lg-12">
+                            <div class="controls form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-input" data-toggle="modal" data-target="#edit-subject">...</button>
+                                    </span>
+                                </div>
+                                <label class="control-label">Select file to import</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="col-lg-12">
+                            <div class="controls form-group">
+                                <select class="form-control"><option value="">Select</option></select>
+                                <label class="control-label">Select list tag</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-blue-green">star import</a>
+                    <a href="#" type="button" class="btn btn-dark-red" data-dismiss="modal">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/amcharts.js"></script>
+<script src="Content/js/serial.js"></script>
+<script src="Content/js/amstock.js"></script>
+<script src="Content/js/pie.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/select2.min.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 121);
+    }
+    resizeHeight();
+    jQuery(window).resize(function () {
+         resizeHeight();
+    });
+
+    $('.select2').select2({ width: '100%' });
+});
+</script>
+</body>
+
+</html>

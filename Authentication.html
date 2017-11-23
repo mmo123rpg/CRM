@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>CRM Shopper V6</title>
+
+<!-- Bootstrap -->
+<link href="Content/css/bootstrap.min.css" rel="stylesheet">
+<link href="Content/css/normalize.css" rel="stylesheet">
+<link href="Content/css/styles.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container login_container" style="padding:16px 32px;">    
+    <div class="row">
+      <div class="divide16px"></div>
+      <div class="col-lg-12 text-center">
+        <img src="Content/img/Memberson Logo 72 ppi.png" width="200" alt="" />
+      </div>
+      <div class="divide32px"></div>
+      <div class="col-xs-12 text-center">
+        <h4>Authentication Information</h4> 
+<div class="divide20px"></div>
+
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <form class="login_leftcontent">
+              <div class="form-horizontal">                                      
+                  
+                  <dl class="dl-horizontal">
+                      <dt>Username:</dt>
+                      <dd>&nbsp;&nbsp;demo</dd>
+                      <dt>Location:</dt>
+                      <dd>&nbsp;&nbsp;Asscot</dd>
+                      <dt>Language:</dt>
+                      <dd>&nbsp;&nbsp;English</dd>
+                      <dt>Timezone:</dt>
+                      <dd>&nbsp;&nbsp;UTC +08:00)Kualar Lumpur, Singapore</dd>
+                  </dl>
+              </div>
+              <div class="divide20px"></div>
+              <button type="submit" class="btn btn-login  btn-block btn-shadow">log out</button>
+              <div class="divide20px"></div>
+          </form>
+      </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="Content/js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="Content/js/bootstrap.min.js"></script>
+<script>
+$(window).ready(centerDiv);
+$(window).resize(centerDiv);
+
+function centerDiv() {
+    var winHeight = $(window).innerHeight(),
+        divHeight = $('.container').height();
+  if (winHeight - divHeight > 0 )
+  {
+    $('.container').css('marginTop', (winHeight - divHeight) / 2 );    
+  }
+  else  
+  {
+    $('.container').css('marginTop', 0 );  
+  }  
+}
+</script>
+</body>
+</html>

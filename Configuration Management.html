@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+
+<div class="container">
+    <div class="content tab-pane">
+        <div class="row">
+            <div class="col-lg-6 title_popup">
+                <h3><b>CONFIGURATION MANAGEMENT</b></h3>
+            </div>
+            <div class="col-lg-6 pull-right">
+                <img src="Content/img/Memberson Logo 72 ppi.png" alt="" width="200px">
+            </div>
+        </div>
+        <div class="grey-line"></div>
+        <div class="divide32px"></div>
+          <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                  <ul class="nav nav-tabs-config" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Web.config</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SSO</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">JSON</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active fade in" id="home" style="padding:0">
+                <div class="divide32px"></div>
+                <div class="modal-subtitle">
+                    <div class="name">AppSettings</div>
+                </div>
+                <div class="divide16px"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="2.0.0.0">
+                                    <label class="control-label">webpagesVersion</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="http://dev2.memgate.com/Auth/">
+                                    <label class="control-label">Issuer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="http://localhost:8698/">
+                                    <label class="control-label">ReplyParty</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="b2024837-ac79-41ae-af26-b8f89dc72bac">
+                                    <label class="control-label">DefaultUserToken</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="en-US_dd/MM/yyyy,ja-JP_yyyy/MM/dd,zh-CN_yyyy/MM/dd">
+                                    <label class="control-label">AllDateTimeFormat</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="en-US_{0:C},ja-JP_{0:C},zh-CN_{0:C}">
+                                    <label class="control-label">AllCurrencyFormat</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="https://blaster-service.memgate.com/blasterhost/">
+                                    <label class="control-label">ClientSettingsBlasterUrl</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="http://cma-50.memgate.com/dashboard">
+                                    <label class="control-label">UrlForReportModule</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="PROFILE_INFO_CUSTOMVALIDATE">
+                                    <label class="control-label">CustomValidationFileName</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="en-US/English,ja-JP/日本語,zh-CN/中文">
+                                    <label class="control-label">AllLanguage</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="Review_Module_configuration">
+                                    <label class="control-label">ReviewModuleConfigFileName</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="en-US/English,ja-JP/日本語,zh-CN/中文">
+                                    <label class="control-label">TimlineConfigFileName</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="Address_Configuration">
+                                    <label class="control-label">AddressConfigurationFilename</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="CMA_CASE_CONFIGS">
+                                    <label class="control-label">CaseInfoCofigFileName</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="Client_Module_Configuration">
+                                    <label class="control-label">ClientModuleAccessFileName</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divide16px"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                            <dt style="padding-top:5px;">ClientValidationEnabled:</dt>
+                            <dd>&nbsp;&nbsp;
+                                <label class="switch-2">
+                                      <input type="checkbox" checked>
+                                      <div class="slider-2"></div>
+                                  </label>
+                              </dd>
+                            <dt style="padding-top:5px;">CheckModuleAccess:</dt>
+                            <dd>&nbsp;&nbsp;
+                                <label class="switch-2">
+                                      <input type="checkbox">
+                                      <div class="slider-2"></div>
+                                  </label>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                            <dt style="padding-top:5px;">PreserveLoginUrl:</dt>
+                            <dd>&nbsp;&nbsp;
+                                <label class="switch-2">
+                                      <input type="checkbox">
+                                      <div class="slider-2"></div>
+                                  </label>
+                              </dd>
+                            <dt style="padding-top:5px;">DisplayMessageFriendlyForServiceError:</dt>
+                            <dd>&nbsp;&nbsp;
+                                <label class="switch-2">
+                                      <input type="checkbox" checked>
+                                      <div class="slider-2"></div>
+                                  </label>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="divide16px"></div>
+                <div class="text-center">
+                    <button class="btn btn-blue-green">Update</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile" style="padding:0;min-height:661px;">
+                <div class="divide32px"></div>
+                <div class="modal-subtitle">
+                    <div class="name">Authentication</div>
+                </div>
+                <div class="divide16px"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <input type="text" class="form-control" value="2.0.0.0">
+                                    <label class="control-label">Issuer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                            <dt style="padding-top:5px;">EnableCheckbox_UserWindowsAuth:</dt>
+                            <dd>&nbsp;&nbsp;
+                                <label class="switch-2">
+                                      <input type="checkbox" checked>
+                                      <div class="slider-2"></div>
+                                  </label>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="divide16px"></div>
+                <div class="text-center">
+                    <button class="btn btn-blue-green">Update</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="messages" style="padding:0;min-height:661px;">
+                <div class="divide32px"></div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div class="form-horizontal form-horizontal2">
+                            <div class="col-ph-12">
+                                <div class="controls form-group">
+                                    <select class="form-control">
+                                        <option value="">CASE</option>
+                                    </select>
+                                    <label class="control-label">Select Module</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table  stripe memberson-grid">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Code</th>
+                                <th>ColorMode</th>
+                                <th>IconName</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-toggle="modal" data-target="#update">
+                                <td>Default</td>
+                                <td></td>
+                                <td>#eee</td>
+                                <td>Icon-default.png</td>
+                            </tr>
+                            <tr data-toggle="modal" data-target="#update">
+                                <td>Compliment</td>
+                                <td>ACTIVITY02</td>
+                                <td>#eee</td>
+                                <td>Icon-feedback.png</td>
+                            </tr>
+                            <tr data-toggle="modal" data-target="#update">
+                                <td>Inquiry</td>
+                                <td>ACTIVITY01</td>
+                                <td>#eee</td>
+                                <td>Icon-compliment.png</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+          </div>
+    </div>
+</div>
+<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-small" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">update</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-horizontal form-horizontal2">
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control" value="Compliment">
+                                        <label class="control-label">Name</label> 
+                                    </div>
+                                </div>    
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control" value="ACTIVITY02">
+                                        <label class="control-label">Code</label> 
+                                    </div>
+                                </div>   
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control" value="ACTIVITY02">
+                                        <label class="control-label">Code</label> 
+                                    </div>
+                                </div>    
+                                <div class="col-ph-12">
+                                    <div class="controls form-group">
+                                        <input type="text" class="form-control" value="Icon-compliment.jpg">
+                                        <label class="control-label">IconName</label> 
+                                    </div>
+                                </div>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="Save" class="btn btn-login btn-blue-green">save</button>
+                    <button type="Save" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+	
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/vis.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	
+</body>
+
+</html>

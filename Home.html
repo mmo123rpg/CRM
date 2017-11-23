@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Homepage</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <img src="Content/img/btn_search.png" width="30" height="30" alt="" />
+            </button>
+            <button type="button" class="navbar-toggle pull-left menu-collapse-left">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="pull-left" src="Content/img/memberson_logo.png" width="60" height="60" alt="" />
+            <div class="top-info">
+                <div class="dropdown acc_info">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-acc" aria-labelledby="dLabel">
+                        <li><a href="#">MR. XU RONG - 0021686 5789 5467 87987 5789</a></li>
+                        <li><a href="#">Hide personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#clear-personal-data">Clear personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#edit-personal-data">Edit personal data</a></li>
+                        <li><a href="#">Refresh</a></li>
+                    </ul>
+                </div>
+                <ul class="nav acc_action" style="display:none;">
+                    <li class="action action_hide" data-placement="bottom" data-tooltip="true" title="Hide personal data"></li>
+                    <li class="action action_clear" data-placement="bottom" data-tooltip="true" title="Clear personal data" data-toggle="modal" data-target="#clear-personal-data"></li>
+                    <li class="action action_edit" data-placement="bottom" data-tooltip="true" title="Edit personal data" data-toggle="modal" data-target="#edit-personal-data"></li>
+                    <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                        <label for="email">Quick search:</label>
+                        <div class="input-group" id="quicksearch-width">
+                            <div class="typeahead-container">
+                                <div class="typeahead-field">
+                                    <input id="country_v1-query" autocomplete="off" class="form-control" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-close btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-width" href="#">Separated link</a></li>
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- /btn-group -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control select-padding">
+                            <option value="" selected="">Customer No.</option>
+                            <option>Member No.</option>
+                            <option>Card NO.</option>
+                            <option>NRIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-quicksearch"><img src="Content/img/btn_search.png" width="30" height="30" alt="" /></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+                <a href="Home.html" class="menu menu_home_selected"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Cases">
+                <a href="case.html" class="menu menu_activity" target="_blank"><span>CASES</span></a></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a class="menu menu_member right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Member"><span data-toggle="dropdown">MEMBER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-search-member">search member</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-add-member">Add newmember</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Report">
+                <a href="https://cma-50.memgate.com/reports/Reportmenu.aspx" class="menu menu_report" target="_blank"><span>REPORT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dashboard">
+                <a href="http://cma-50.memgate.com/dashboard" class="menu menu_dashboard" target="_blank"><span>DASHBOARD</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher">
+                <a href="#" class="menu menu_voucher" target="_blank"><span>VOUCHER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Admin">
+                <a href="#" class="menu menu_admin" target="_blank"><span>ADMIN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaign">
+                <a href="SE-home.html" class="menu menu_campaign" target="_blank"><span>CAMPAIGN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Review Management">
+                <a href="Review.html" class="menu menu_review_management" target="_blank"><span>REVIEW MANAGEMENT</span></a></li>
+        </ul>
+    
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_content_management" target="_blank"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1" id="drop1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">change timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change location</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change language</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content activity-content" style="padding:32px 16px;">
+                        <p>
+                            <h2><b><span class="home-color"> Introduction </span> </b> </h2> Congratulations! You are about to experience the powerful Memberson Shopper Series of products and we will start with a short introduction of the <b><span class="home-color"> ShopperCRM V6™ </span> </b>which is the powerful CRM platform to manage Shopper Customer Relationship and this introduces all the powerful CRM functionality in detail. ShopperCRM V6™ runs on web platform so it’s easily for users to access anywhere. Below is more detail on each functionalities of the application:
+                        </p>
+                        <p>
+                            The <b><span class="home-color">Home screen </span></b> may show different buttons depending on your user right settings. You can navigate between different modules by using the navigation buttons. The Home button takes you back to this start screen.
+                        </p>
+                        <button class="btn btn-blue-green" role="button" data-toggle="collapse" href="#ShopperManagement" aria-expanded="false" aria-controls="ShopperManagement">
+                            Shopper Management
+                        </button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left:32px;">
+                                <h5> <b><span class="home-color">  1. &nbsp; Shopper Info </span> </b></h5>
+                                <p class="home-sub-content"> Personal information of the registered members </p>
+                                <h5> <b><span class="home-color"> 2.  &nbsp; Family Details </span> </b></h5>
+                                <p class="home-sub-content">Here family members can be added to a shopper profile and will then usually share the same benefits as the main shopper profile holder. Please note that the system manages family members are differently from Relations (relations links profiles). </p>
+                                <h5> <b><span class="home-color"> 3. &nbsp; Interests</span>  </b></h5>
+                                <p class="home-sub-content">This represents interests that the member may have. </p>
+                                <h5> <b><span class="home-color"> 4.&nbsp;  Membership Details </span> </b></h5>
+                                <p class="home-sub-content">If you are registering a new shopper as a member, then select the membership type that applies for the shopper. If the shopper is using a sign-up up promotion, then select the appropriate promotion from the Promotion list box and the sign-up promotion privilege will be automatically applied by the system. Most often a sign-up promotion means lowering the Qualification for becoming a member.
+                                    <p>
+                                        <p class="home-sub-content">The Remark is a free text field for additional information that is good to know about the registering member. (When a profile is viewed the remark tab shows first if there any remark text written for the Shopper). </p>
+                                        <h5> <b><span class="home-color">5.&nbsp;  Search Shoppers</span>   </b></h5>
+                                        <p class="home-sub-content">Click the search icon to open the search window. There are three available search options, by Shopper Details, Receipt Details or Special Property Details. Each section is organized in its own tab. </p>
+                            </div>
+                        </div>
+                        <div class="divide20px"> </div>
+                        <button class="btn btn-blue-green" role="button" data-toggle="collapse" href="#ShopperProfile" aria-expanded="false" aria-controls="ShopperProfile">
+                            Shopper Profile
+                        </button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left:32px;">
+                                <h5> <b><span class="home-color"> 1.  &nbsp; Tags, Addresses and Contact Preference </span></b></h5>
+                                <p class="home-sub-content"> <b><span class="home-color">Tags:</span></b> Categorize and segment shoppers and a shopper can have multiple tags in the profile. Some tags are issued by automation to show if a customer belongs to a specific customer segment. Some tags are issued by system users using the marketing module and in some cases a tag might be given to a specific shopper profile on one by one basis to indicate something, for example black listing a shopper if they have attempted any fraud.</p>
+                                <p class="home-sub-content"> <b><span class="home-color">Addresses: </span></b> Shopper’s different addresses and contact information is displayed based on the system configuration. Sometimes multiple address options are available. </p>
+                                <p class="home-sub-content"> <b><span class="home-color">Contact Preference:</span> </b> Option of Opt-in/Opt-out Email, and SMS. There might be multiple options available depending on how the system has been configured. </p>
+                                <h5> <b> <span class="home-color">2.  &nbsp;  Shopper Summary, Info, Interests, Password, Remarks and Document  </span></b></h5>
+                                <p class="home-sub-content"><b><span class="home-color">Summary: </span></b> The Summary Tab shows important shopper and membership related information like IC number, Date of Birth, Member No, Membership Type, Membership Expiry date, Member Since, Membership Status, etc. IC/passport number, Date of Birth, and Expiry Date can be edited in editing mode. </p>
+                                <p class="home-sub-content"><b><span class="home-color">Info:</span> </b>The Info Tab holds additional customized shopper data like Nationality, Gender, income range, etc. that may be used for customer segmentation. </p>
+                                <p class="home-sub-content"><b><span class="home-color">Interests</span> </b> The shopper interests are managed in the interest tab. Marketing and Mailings are usually targeted by shopper interests. </p>
+                                <p class="home-sub-content"><b><span class="home-color">Remarks</span> </b> The Remark tab is a free text field for any remarks related to the shopper. The remark tab will be showing as the default tab for profiles that have any information in the tab. Often 3trd party systems like an integrated Point of Sale system is configured to show any remark information to the store or service staff. </p>
+                                <p class="home-sub-content"><b><span class="home-color">Document </span></b> This tab is to display documents related to particular shopper. Click on an item line to open a document. </p>
+                                <br>
+                                <h5> <b><span class="home-color">3.&nbsp; Show/Hide/Remove Personal Data </span>  </b></h5>
+                                <p class="home-sub-content">Personal data usually includes Phone (H), Phone (O), Mobile, Email, and IC/Passport. </p>
+                                <p class="home-sub-content">All this information will be hashed as default. If you have enough rights (E.g., Admin role), then you can show/remove the personal data. Please note that when personal data is removed, it is not possible to reverse. </p>
+                                <h5> <b><span class="home-color">4.&nbsp; Memberships  </span> </b></h5>
+                                <p class="home-sub-content">All memberships connected with a shopper. A shopper can have multiple memberships connected to their shopper profile. Memberships marked in red color are expired or terminated. </p>
+                                <h5> <b><span class="home-color">5.&nbsp; Activities   </span> </b></h5>
+                                <p class="home-sub-content">The bottom part of the profile screen displays shows a status bar that list the current situation of total open activities that have to be taken care of. </p>
+                                <p class="home-sub-content">The status bar groups activities by activity type. The number of uncompleted activities of each type is written in parentheses. A click on an activity type redirects to the Home page listing all open activities.</p>
+                                <h5> <b><span class="home-color">6.&nbsp; Spending  </span>   </b></h5>
+                                <p class="home-sub-content">The spending Tab lists all purchases for a selected membership. With the ShopperLoyalty™ module each transaction that qualifies for points will also generate a point record. To see which point records that are related to a transaction it is easiest to sort by the date column. Spending totals, transaction numbers, average spending, point balance, points earned, points used and points expiry are visible in the summary section of the spending tab. </p>
+                                <h5> <b><span class="home-color">7.&nbsp; Benefits (only with ShopperLoyalty™ module)      </b></h5>
+                                <p class="home-sub-content"> Discount benefits are listed in the discount tab. Benefits are automatically generated when a membership is created, renewed or upgraded. </p>
+                                <h5> <b><span class="home-color">8.&nbsp; Vouchers    </span></b></h5>
+                                <p class="home-sub-content"> The voucher tab list all vouchers issued to a shopper. Clicking on a voucher item will enable action buttons at the lower section of the screen, depending on the status of the selected voucher (Issue, Approve, Print, Collect, Utilize, Edit or Refund). </p>
+                                <h5> <b><span class="home-color">9.&nbsp; Communications  </span>   </b></h5>
+                                <p class="home-sub-content"> In the communications tab all the communications (Email & SMS) sent to a shopper are listed. The status column shows the status of the communication (Schedule for generation, Sent or Failed). </p>
+                                <h5> <b><span class="home-color">10.&nbsp; Campaigns     </span> </b></h5>
+                                <p class="home-sub-content"> The campaign tab list all campaigns in where the shopper has been targeted. This includes scheduled, running and completed campaigns and the status column shows the current status of each campaign. </p>
+                                <h5> <b><span class="home-color">11.&nbsp;Member Renewal History (only with ShopperLoyalty™ module)     </span>  </b></h5>
+                                <p class="home-sub-content"> Display all the member renewal historic records in this grid. User will be able to see the Renew Date, Member Number, Valid From and Expiry Date. </p>
+                            </div>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script>
+    function resizeHeight() {
+        var block_height = (($(window).innerHeight()));
+        $('.activity-content').css('min-height', block_height - 105);
+    }
+    $(document).ready(function () {
+        resizeHeight();
+    });
+   
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+</script>
+    
+</body>
+
+</html>

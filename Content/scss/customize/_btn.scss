@@ -1,0 +1,55 @@
+.btn {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight:600;
+    font-size: 14px;
+	text-align: center;
+    text-transform:uppercase;
+    min-height:30px;
+}
+.btn-margin{margin:5px;}
+.btn-com-3{
+    font-size:13px;
+    @media (max-width: 768px){
+        margin:12px 0;
+    }
+}
+/*.btn-login,.btn-close{min-width:100px;}
+.btn-au{background:#047390;min-width:125px;height:30px;font-weight:600;}
+.btn-au:hover{opacity:.9;-webkit-box-shadow:1px 2px 6px 0px rgba(0,0,0,0.4);-moz-box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.4);box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.4);}
+
+.btn-green,.btn-login,.btn-add{background:#4a8981;min-width:125px;height:30px;font-weight:600;}
+.btn-red,.btn-close,.btn-delete2{background: #4a6a99; min-width:125px;height:30px !important;color:#fff !important;font-weight:600;}
+.btn-blue{background:#F5A940;min-width:125px;height:30px;font-weight:600;}
+.btn-green:hover,.btn-login:hover,.btn-add:hover,.btn-red:hover,.btn-close:hover,.btn-delete2:hover,.btn-blue:hover{opacity:.9;-webkit-box-shadow:1px 2px 6px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.4);
+box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.4);}*/
+.btn-disabled{pointer-events:none}
+.btn-multiselect{
+    background: $input-field url(../img/arrow.png) no-repeat right;
+    border: 1px solid #eee;
+    text-align: left;
+    text-transform: initial;
+    overflow: hidden;
+    font-weight:500!important;
+    padding-top: 17px;
+    font-size:14px;
+    padding-left:10px;
+    padding-right:25px;
+    @media (min-width: $screen-xl-min){
+        font-size:16px;
+    }
+}
+.table-multiselect .btn-multiselect{
+    font-size:14px;
+    padding: $padding-base-vertical $padding-base-horizontal;
+}
+.table-multiselect>tbody>tr>td{vertical-align: middle}
+.btn-dropdown{height:30px;min-width:30px;padding:0px;z-index:1000;position:absolute;}
+.btn-quicksearch{width:50px;min-width: auto;background-color:transparent !important;}
+.disable-button {opacity: 0.3;}
+
+
+.btn-filer-caret {background: url('../img/arrow2.png') no-repeat right #fff !important;
+	border:1px solid #ddd; 
+}

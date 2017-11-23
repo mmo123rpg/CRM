@@ -1,0 +1,574 @@
+.action {
+    cursor: pointer;
+    width: 30px;
+    display: block;
+    height: 30px;
+    margin-left: 8px;
+    float: right;
+    z-index: 1;
+}
+
+.action_complete {
+    background: url(../img/complete_action.png);
+}
+
+.action_upload {
+    background: url(../img/btn-upload.png)
+}
+
+.action_upload:hover {
+    background: url(../img/btn-upload-hover.png)
+}
+
+.action_refresh {
+    background: url(../img/btn-refresh.png)
+}
+
+.action_refresh_disabled {
+    background: url(../img/btn-refresh-disable.png)
+}
+
+.action_refresh:hover {
+    background: url(../img/btn-refresh-hover.png);
+}
+
+.action_menu {
+    background: url(../img/btn-menu.png)
+}
+
+.action_menu:hover {
+    background: url(../img/btn-menu-hover.png)
+}
+
+.action_calendar {
+    background: url(../img/btn-calendar.png)
+}
+
+.action_calendar:hover {
+    background: url(../img/btn-calendar-hover.png)
+}
+.action_hide {
+    background: url(../img/btn-hide.png)
+}
+
+.action_hide:hover {
+    background: url(../img/btn-hide-hover.png)
+}
+
+.action_show {
+    background: url(../img/btn-showdata.png)
+}
+
+.action_show:hover {
+    background: url(../img/btn-showdata-hover.png)
+}
+
+.action_graphic_view {
+    background: url(../img/btn-graphicview.png)
+}
+
+.action_graphic_view:hover {
+    background: url(../img/btn-graphicview-hover.png)
+}
+
+.action_edit {
+    background: url(../img/btn-edit.png)
+}
+
+.action_edit:hover {
+    background: url(../img/btn-edit-hover.png)
+}
+
+.action_clear {
+    background: url(../img/btn-clear.png)
+}
+
+.action_clear:hover {
+    background: url(../img/btn-clear-hover.png)
+}
+
+.action_act {
+    background: url(../img/btn-add.png)
+}
+
+.action_act_disabled {
+    background: url(../img/btn-add-disable.png)
+}
+
+.action_act:hover {
+    background: url(../img/btn-add-hover.png)
+}
+
+.action_remove {
+    background: url(../img/btn-remove.png)
+}
+
+.action_remove_disabled {
+    background: url(../img/btn-remove-hover.png)
+}
+
+.action_upgrade {
+    background: url(../img/btn-upgrade.png)
+}
+
+.action_upgrade_disabled {
+    background: url(../img/btn-upgrade-disable.png)
+}
+
+.action_upgrade:hover {
+    background: url(../img/btn-upgrade-hover.png)
+}
+
+.action_delete {
+    background: url(../img/btn-delete.png)
+}
+
+.action_delete_disabled {
+    background: url(../img/btn-delete-disable.png)
+}
+
+.action_delete:hover {
+    background: url(../img/btn-delete-hover.png)
+}
+
+.action_approve {
+    background: url(../img/btn-approve.png)
+}
+
+.action_approve:hover {
+    background: url(../img/btn-approve-hover.png)
+}
+
+.action_refund {
+    background: url(../img/btn_refund.png)
+}
+
+.action_refund:hover {
+    background: url(../img/btn_refund-hover.png)
+}
+
+.action_refund_disable {
+    background: url(../img/btn-refund-disable.png)
+}
+
+.action_collect {
+    background: url(../img/btn_collect.png)
+}
+
+.action_collect:hover {
+    background: url(../img/btn_collect-hover.png)
+}
+
+.action_collect_disable {
+    background: url(../img/btn-collect-disable.png)
+}
+
+.action_issue {
+    background: url(../img/btn_issue.png)
+}
+
+.action_issue:hover {
+    background: url(../img/btn_issue-hover.png)
+}
+
+.action_issue_disable {
+    background: url(../img/btn-issue-disable.png)
+}
+
+.action_terminate {
+    background: url(../img/btn-terminate.png)
+}
+
+.action_terminate:hover {
+    background: url(../img/btn-terminate-hover.png)
+}
+
+.action_terminate_disabled {
+    background: url(../img/btn-terminate-disable.png)
+}
+
+.action_renew {
+    background: url(../img/btn-renew.png)
+}
+
+.action_renew:hover {
+    background: url(../img/btn-renew-hover.png)
+}
+
+.action_renew_disabled {
+    background: url(../img/btn-renew-disable.png)
+}
+
+.action_next100 {
+    background: url(../img/btn-next100.png)
+}
+
+.action_next100:hover {
+    background: url(../img/btn-next100-hover.png)
+}
+
+.action_save {
+    background: url(../img/btn_save.png)
+}
+
+.action_save:hover {
+    background: url(../img/btn_save-hover.png)
+}
+
+.action_up {
+    background: url(../img/btn-up.png)
+}
+
+.action_up:hover {
+    background: url(../img/btn-up-hover.png)
+}
+
+.action_down {
+    background: url(../img/btn-down.png)
+}
+
+.action_down:hover {
+    background: url(../img/btn-down-hover.png)
+}
+
+.action_utilize {
+    background: url(../img/btn-ultilize.png)
+}
+
+.action_utilize:hover {
+    background: url(../img/btn-ultilize-hover.png)
+}
+
+.action_refresh-2 {
+    background: url(../img/btn-refresh.png);
+}
+
+.action_refresh-2:hover {
+    background: url(../img/btn-refresh-hover.png)
+}
+
+.action-refresh-targetlist {
+    background: url(../img/btn-refresh-2-target.png);
+}
+
+.action-refresh-targetlist:hover {
+    background: url(../img/btn-refresh-2-target-hover.png)
+}
+.action-point {
+    background: url(../img/btn-point.png)
+}
+
+.action-point:hover {
+    background: url(../img/btn-point-hover.png)
+}
+
+.action-point-add {
+    background: url(../img/btn-point-add.png)
+}
+
+.action-point-add:hover {
+    background: url(../img/btn-point-add-hover.png)
+}
+
+.action-point-remove {
+    background: url(../img/btn-point-remove.png)
+}
+
+.action-point-remove:hover {
+    background: url(../img/btn-point-remove-hover.png)
+}
+.action-point-transfer {
+    background: url(../img/btn-point-transfer.png)
+}
+
+.action-point-transfer:hover {
+    background: url(../img/btn-point-transfer-hover.png)
+}
+.action-filter {
+    background: url(../img/btn-filter.png)
+}
+
+.action-filter:hover {
+    background: url(../img/btn-filter-hover.png)
+}
+
+.action_folder {
+    background: url(../img/btn-folder.png)
+}
+
+.action_folder:hover {
+    background: url(../img/btn-folder-hover.png)
+}
+.action_digitize_voucher {
+    background: url(../img/btn-digitize-voucher.png)
+}
+
+.action_digitize_voucher:hover {
+    background: url(../img/btn-digitize-voucher-hover.png)
+}
+
+.action_extend_voucher {
+    background: url(../img/btn-extend-voucher.png)
+}
+
+.action_extend_voucher:hover {
+    background: url(../img/btn-extend-voucher-hover.png)
+}
+
+.action_transfer_voucher {
+    background: url(../img/btn-transfer-voucher.png)
+}
+
+.action_transfer_voucher:hover {
+    background: url(../img/btn-transfer-voucher-hover.png)
+}
+
+.action_void_voucher:hover {
+    background: url(../img/btn-void-voucher-hover.png)
+}
+
+.action_void_voucher {
+    background: url(../img/btn-void-voucher.png)
+}
+
+.action_clearform {
+    background: url(../img/btn-clearform.png)
+}
+
+.action_clearform:hover {
+    background: url(../img/btn-clearform-hover.png)
+}
+
+.action_more {
+    background: url(../img/btn-more.png)
+}
+
+.action_more:hover {
+    background: url(../img/btn-more-hover.png)
+}
+.action_link {
+    background: url(../img/btn-link.png)
+}
+
+.action_link:hover {
+    background: url(../img/btn-link-hover.png)
+}
+.action_unlink {
+    background: url(../img/btn-unlink.png)
+}
+
+.action_unlink:hover {
+    background: url(../img/btn-unlink-hover.png)
+}
+.action_fetch {
+    background: url(../img/btn-fetch.png)
+}
+.action_fetch:hover {
+    background: url(../img/btn-fetch-hover.png)
+}
+
+.action-clear-pass {
+    background: url(../img/btn-clear-pass.png)
+}
+.action-clear-pass:hover {
+    background: url(../img/btn-clear-pass-hover.png)
+}
+
+.action-reset-pass {
+    background: url(../img/btn-reset-pass.png)
+}
+.action-reset-pass:hover {
+    background: url(../img/btn-reset-pass-hover.png)
+}
+
+.action-change-pass {
+    background: url(../img/btn-change-pass.png)
+}
+.action-change-pass:hover {
+    background: url(../img/btn-change-pass-hover.png)
+}
+
+.action-next {
+    background: url(../img/btn-next.png)
+}
+.action-next:hover {
+    background: url(../img/btn-next-hover.png)
+}
+.action-back {
+    background: url(../img/btn-back.png)
+}
+.action-back:hover {
+    background: url(../img/btn-back-hover.png)
+}
+.action-print {
+    background: url(../img/btn-print.png)
+}
+.action-print:hover {
+    background: url(../img/btn-print-hover.png)
+}
+.action-preview {
+    background: url(../img/btn-preview.png)
+}
+.action-preview:hover {
+    background: url(../img/btn-preview-hover.png)
+}
+.action-organizer {
+    background: url(../img/btn-organize.png)
+}
+.action-organizer:hover {
+    background: url(../img/btn-organize-hover.png)
+}
+.action-export {
+    background: url(../img/btn-export.png)
+}
+.action-export:hover {
+    background: url(../img/btn-export-hover.png)
+}
+.action-history {
+    background: url(../img/btn-history.png)
+}
+.action-history:hover {
+    background: url(../img/btn-history-hover.png)
+}
+.action-freegiftvoucher {
+    background: url(../img/btn-freegiftvoucher.png)
+}
+.action-freegiftvoucher:hover {
+    background: url(../img/btn-freegiftvoucher-hover.png)
+}
+.action-purchasevoucher {
+    background: url(../img/btn-purchasevoucher.png)
+}
+.action-purchasevoucher:hover {
+    background: url(../img/btn-purchasevoucher-hover.png)
+}
+.action-voidvoucher {
+    background: url(../img/btn-voidvoucher.png)
+}
+.action-voidvoucher:hover {
+    background: url(../img/btn-voidvoucher-hover.png)
+}
+.action-copy {
+    background: url(../img/btn-copy.png)
+}
+.action-copy:hover {
+    background: url(../img/btn-copy-hover.png)
+}
+.action-redeem {
+    background: url(../img/btn-redeem.png)
+}
+.action-redeem:hover {
+    background: url(../img/btn-redeem-hover.png)
+}
+.action-send-message {
+    background: url(../img/btn-send-message.png)
+}
+.action-send-message:hover {
+    background: url(../img/btn-send-message-hover.png)
+}
+.action-generate {
+    background: url(../img/btn-generate.png)
+}
+.action-generate:hover {
+    background: url(../img/btn-generate-hover.png)
+}
+.action-ungenerate {
+    background: url(../img/btn-ungenerate.png)
+}
+.action-ungenerate:hover {
+    background: url(../img/btn-ungenerate-hover.png)
+}
+.action-confirm {
+    background: url(../img/btn-confirm.png)
+}
+.action-confirm:hover {
+    background: url(../img/btn-confirm-hover.png)
+}
+.action-unconfirm {
+    background: url(../img/btn-unconfirm.png)
+}
+.action-unconfirm:hover {
+    background: url(../img/btn-unconfirm-hover.png)
+}
+.action-export-excel {
+    background: url(../img/btn-export-excel.png)
+}
+.action-export-excel:hover {
+    background: url(../img/btn-export-excel-hover.png)
+}
+.action-export-text {
+    background: url(../img/btn-export-text.png)
+}
+.action-export-text:hover {
+    background: url(../img/btn-export-text-hover.png)
+}
+.action-discard {
+    background: url(../img/btn-discard.png)
+}
+.action-discard:hover {
+    background: url(../img/btn-discard-hover.png)
+}
+.action-create-OTC {
+    background: url(../img/btn-create-OTC.png)
+}
+.action-create-OTC:hover {
+    background: url(../img/btn-create-OTC-hover.png)
+}
+.action-capture {
+    background: url(../img/btn-capture.png)
+}
+.action-capture:hover {
+    background: url(../img/btn-capture-hover.png)
+}
+.action-info {
+    background: url(../img/btn-info.png)
+}
+.action-info:hover {
+    background: url(../img/btn-info-hover.png)
+}
+.action-estimate {
+    background: url(../img/btn-estimate.png)
+}
+.action-estimate:hover {
+    background: url(../img/btn-estimate-hover.png)
+}
+.action-search {
+    background: url(../img/btn-search.png)
+}
+.action-search:hover {
+    background: url(../img/btn-search-hover.png)
+}
+
+.target-remove {
+    background: url(../img/target_remove.png);
+    width:26px;height:26px;
+}
+.target-remove:hover {
+    background: url(../img/target_remove_hover.png);
+}
+
+.target-refresh {
+    background: url(../img/target_refresh.png);
+    width:26px;height:26px;
+}
+.target-refresh:hover {
+    background: url(../img/target_refresh_hover.png);
+}
+
+li.active > .action[aria-expanded="true"] {
+    display: none;
+}
+.action-disabled{
+    opacity:.5;
+    cursor:initial;
+}
+.action-for-filter {
+    cursor: pointer;
+    width: 30px;
+    display: block;
+    height: 30px;
+    margin-left: 8px;
+    float: left;
+}
+
+.action-clear-pass-disable,.action-reset-pass-disable,.action-change-pass-disable{opacity: 0.32;}

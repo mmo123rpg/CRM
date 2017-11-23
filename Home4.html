@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Homepage</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <img src="Content/img/btn_search.png" width="30" height="30" alt="" />
+            </button>
+            <button type="button" class="navbar-toggle pull-left menu-collapse-left">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="pull-left" src="Content/img/memberson_logo.png" width="60" height="60" alt="" />
+            <div class="top-info">
+                <div class="dropdown acc_info">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-acc" aria-labelledby="dLabel">
+                        <li><a href="#">MR. XU RONG - 0021686 5789 5467 87987 5789</a></li>
+                        <li><a href="#">Hide personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#clear-personal-data">Clear personal data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#edit-personal-data">Edit personal data</a></li>
+                        <li><a href="#">Refresh</a></li>
+                    </ul>
+                </div>
+                <ul class="nav acc_action" style="display:none;">
+                    <li class="action action_hide" data-placement="bottom" data-tooltip="true" title="Hide personal data"></li>
+                    <li class="action action_clear" data-placement="bottom" data-tooltip="true" title="Clear personal data" data-toggle="modal" data-target="#clear-personal-data"></li>
+                    <li class="action action_edit" data-placement="bottom" data-tooltip="true" title="Edit personal data" data-toggle="modal" data-target="#edit-personal-data"></li>
+                    <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-form navbar-right" role="search">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <li class="action action_refresh-2" data-placement="bottom" data-tooltip="true" title="Refresh"></li>
+                        <label for="email">Quick search:</label>
+                        <div class="input-group" id="quicksearch-width">
+                            <div class="typeahead-container">
+                                <div class="typeahead-field">
+                                    <input id="country_v1-query" autocomplete="off" class="form-control" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-close btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-width" href="#">Separated link</a></li>
+                                    <li><a class="dropdown-width" href="#">Action</a></li>
+                                    <li><a class="dropdown-width" href="#">Another action</a></li>
+                                    <li><a class="dropdown-width" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- /btn-group -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control select-padding">
+                            <option value="" selected="">Customer No.</option>
+                            <option>Member No.</option>
+                            <option>Card NO.</option>
+                            <option>NRIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-quicksearch"><img src="Content/img/btn_search.png" width="30" height="30" alt="" /></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Home">
+                <a href="Home.html" class="menu menu_home_selected"><span>HOME</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Cases">
+                <a href="case.html" class="menu menu_activity" target="_blank"><span>CASES</span></a></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a class="menu menu_member right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Member"><span data-toggle="dropdown">MEMBER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-search-member">search member</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#Modal-add-member">Add newmember</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Report">
+                <a href="https://cma-50.memgate.com/reports/Reportmenu.aspx" class="menu menu_report" target="_blank"><span>REPORT</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Dashboard">
+                <a href="http://cma-50.memgate.com/dashboard" class="menu menu_dashboard" target="_blank"><span>DASHBOARD</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher">
+                <a href="#" class="menu menu_voucher" target="_blank"><span>VOUCHER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Admin">
+                <a href="#" class="menu menu_admin" target="_blank"><span>ADMIN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Campaign">
+                <a href="SE-home.html" class="menu menu_campaign" target="_blank"><span>CAMPAIGN</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Review Management">
+                <a href="Review.html" class="menu menu_review_management" target="_blank"><span>REVIEW MANAGEMENT</span></a></li>
+        </ul>
+    
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Content Management">
+                <a href="CMS-content.html" class="menu menu_content_management" target="_blank"><span>CONTENT MANAGEMENT</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1" id="drop1">
+                    <li><a href="#">log out</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-password">change password</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-timezone">change timezone</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change location</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-location">change language</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                        <div class="content" style="padding:32px 16px;">
+                            <h2><b><span class="home-color"> SMS Character Counting </span> </b> </h2>
+                            <p>Created by Ye Htut Lwin, last modified on Apr 05, 2017</p>
+                            <h3>General guidelines for how SMS length is counted</h3>
+                            <p>The following defines the rules involved in counting the number of messages that will be used when sending an SMS.</p>
+                            <p>First of all, there are 3 different character groups as follows:</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left:32px;">
+                                    <h5> <b><span class="home-color">  1. GSM 7 bit characters </span> </b></h5>
+                                    <pre class="code">@   Δ   SP  0   ¡   P   ¿   p
+£   _   !   1   A   Q   a   q
+$   Φ   "   2   B   R   b   r
+¥   Γ   #   3   C   S   c   s
+è   Λ   ¤   4   D   T   d   t
+é   Ω   %   5   E   U   e   u
+ù   Π   &amp;   6   F   V   f   v
+ì   Ψ   '   7   G   W   g   w
+ò   Σ   (   8   H   X   h   x
+Ç   Θ   )   9   I   Y   i   y
+LF  Ξ   *   :   J   Z   j   z
+Ø   ESC +   ;   K   Ä   k   ä
+ø   Æ   ,   &lt;   L   Ö   l   ö</pre>
+                                    <h5> <b><span class="home-color">  2. GSM 8 bit characters </span> </b></h5>
+                                    <p>|, ^, {, }, €, [, ~, ] and \</p>
+                                    <h5> <b><span class="home-color">  3. Unicode characters </span> </b></h5>
+                                    <p>Other characters that do not belong to GSM (7-bit or 8-bit) group that have to use Unicode encoding to display.</p>
+                                </div>
+                            </div>
+                            <h3>Evaluation of message count</h3>
+                            <p>There are two types of encoding used by SMS. They are:</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left:32px;">
+                                    <h5> <b><span class="home-color">  GSM encoding   </span> </b></h5>
+                                    <p>This is used when all of the characters in an SMS message belong to either GSM 7-bit or GSM 8-bit group.</p>
+                                    <p>Each character can take one or two slots depending on their group:</p>
+                                    <ul><li>Each GSM 7-bit character in this message takes up ONE character slot.</li><li>Each GSM 8-bit character in this message takes up TWO character slots.</li></ul>
+                                    <p>If the number of character slots in a message is less than or equal to <b>160</b>, then a single SMS will be used.</p>
+                                    <p>If the number of character slots in a message is more than 160, then the message will be split to multiple concatenated SMSes. In this case, each SMS can contain 153 character slots only.</p>
+                                    <div class="divide8px"> </div>
+                                    <h5> <b><span class="home-color">  Unicode encoding   </span> </b></h5>
+                                    <p>This is used when ANY character in the SMS message belongs to Unicode characters group.</p>
+                                    <p>If Unicode is used, every character in the message will be encoded as Unicode regardless of which group they belong to.</p>
+                                    <p>Every character takes up ONE character slot regardless of the group.</p><p>If the number of character slots in a message is less than or equal to 70, then a single SMS will be used.</p>
+                                    <p>If the number of character slots in a message is more than 70, then the message will be split to multiple concatenated SMSes. In this case, each SMS can contain 67 character slots only.</p>
+                                </div>
+                            </div>
+                            <div class="divide32px"></div>
+                            <p>Ref:</p>
+                            <p><span><a href="https://www.textmagic.com/free-tools/sms-length-calculator" target="_blank">https://www.textmagic.com/free-tools/sms-length-calculator</a></span></p>
+                            <p><span><a href="https://github.com/danxexe/sms-counter" target="_blank">https://github.com/danxexe/sms-counter</a><br></span></p>
+        
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-fix content">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="Content/js/bootstrap.min.js"></script>
+    <script src="Content/js/moment.js"></script>
+    <script src="Content/js/bootstrap-datetimepicker.js"></script>
+    <script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="Content/js/jquery.typeahead.min.js"></script>
+    <script src="Content/js/bootstrap-multiselect.js"></script>
+    <script src="Content/js/owl.carousel.min.js"></script>
+    <script src="Content/js/custom.js"></script>
+    <script src="Content/js/jquery.flip.min.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+    <script>
+    $(function() {
+        $("#resizable").resizable({
+            handles: {
+                's': '#handle'
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        
+        $(".dropdown").hover(function(){
+            var winHeight = $(window).innerHeight();
+            
+            var scrollTop     = $(window).scrollTop(),
+            elementOffset = $('#drop1').offset().top,
+            distance      = (elementOffset - scrollTop);
+            
+            if (distance > (winHeight / 2)) {
+                $('.dropdown-menu1').css({"top": "auto", "bottom": "0"})
+            }
+            else {
+                $('.dropdown-menu1').css({"top": "0", "bottom": "auto"})
+            }
+                    
+        });
+
+        $(".card").flip();
+        var owl = $(".owl-demo");
+
+        owl.owlCarousel({
+            itemsCustom: [
+                [1800, 5],
+                [1500, 4],
+                [1200, 3],
+                [800, 2],
+                [700, 1]
+            ],
+            navigation: true,
+            pagination: false,
+            rewindNav: false,
+            scrollPerPage: true,
+            autoHeight: true,
+            navigationText: [
+                "<i class='fa fa-2x fa-angle-left'></i>",
+                "<i class='fa fa-2x fa-angle-right'></i>"
+            ],
+        });
+
+        // Custom Navigation Events
+        $(".next").click(function() {
+            owl.trigger('owl.next');
+        })
+        $(".prev").click(function() {
+            owl.trigger('owl.prev');
+        })
+
+        // $(window).ready(resizeHeight);
+        // $(window).resize(resizeHeight);
+
+        // // function resizeHeight() {
+        // //     var winHeight = $(window).innerHeight(),
+        // //         divHeight = (winHeight - 595),
+        // //         winWidth = $(window).innerWidth();
+        // //   if (winWidth > 1200)
+        // //   {
+
+        // //       if (divHeight > 0 )
+        // //     {
+        // //       $('.maincontainer').css('height', divHeight );    
+        // //     }
+        // //   }
+
+        // // }
+        // 
+        function resizeHeight1() {
+          //alert('abc');
+                              var winHeight = $(window).innerHeight(),
+                                  bodyHeight = $('body').height();
+                              block1Height = $('.block-1').height();
+                              block4Height = $('.block-4').height();
+                              var winWidth = $(window).innerWidth();
+
+
+      
+                              var contentHeight = winHeight - 196 - block1Height;
+          //alert('contentHieght: ' + contentHeight);                 
+          var wrapperHeight = $('.mainwrapper').height();
+          var leftbar = wrapperHeight;
+          
+          //alert('wrapperHeight: ' + wrapperHeight + 'and leftbar: ' + leftbar);
+                                                  
+          $('.tab-content1').css('min-height', contentHeight);
+          $('.menu-left').css('min-height', leftbar);
+        }
+
+        resizeHeight1();
+    });
+    </script>
+</body>
+
+</html>

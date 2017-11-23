@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/css/normalize.css" rel="stylesheet">
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css"> 
+<style>
+@media print {
+    .page-break {page-break-after: always;}
+}
+</style>   
+</head>
+
+<body>
+    <div class="container-fluid contain-center container-print">
+        <div class="page-break">
+            <div class="divide16px"></div>                
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="thumbnail" style="padding-top:10px;background:#f5f6f7">
+                                <img src="Content/img/engage-mail.png" width="70px" height="70px;" style="margin-bottom:5px;">
+                                <p class="text-center" style="font-weight:600;">Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-8">
+                            <dl class="dl-horizontal">
+                                <dt>Name:&nbsp;&nbsp;</dt>
+                                <dd>Test Sender 20170309</dd>
+                                <dt>Subject:&nbsp;&nbsp;</dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </div>                                
+                </div>
+                <div class="col-md-3">
+                    <dl class="dl-horizontal">
+                        <dt>Created on:</dt>
+                        <dd>&nbsp;&nbsp;24/03/2016 11:30</dd>
+                        <dt>Generated On:</dt>
+                        <dd>&nbsp;&nbsp;</dd>
+                        <dt>Sent on:</dt>
+                        <dd>&nbsp;&nbsp;24/03/2016 14:50</dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl class="dl-horizontal">
+                        <dt>Template:</dt>
+                        <dd>&nbsp;&nbsp;201603214 - The last chance...</dd>
+                        <dt>Campaign:</dt>
+                        <dd>&nbsp;&nbsp;2016 March - EDM2 - Collect...</dd>
+                        <dt>Recipients:</dt>
+                        <dd>&nbsp;&nbsp;3</dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl class="dl-horizontal">                            
+                        <dt>Sent:</dt>
+                        <dd>&nbsp;&nbsp;3</dd>
+                        <dt>Failures:</dt>
+                        <dd>&nbsp;&nbsp;0</dd>
+                        <dt>Bounces:</dt>
+                        <dd>&nbsp;&nbsp;0</dd>     
+                        <dt>Pending:</dt>
+                        <dd>&nbsp;&nbsp;0</dd>                                 
+                    </dl>
+                </div>
+            </div>
+            <div class="divide32px"></div>            
+        </div>
+        <div class="page-break">
+            <div class="modal-subtitle">
+                <div class="no-number"></div>
+                <div class="name">Unique Opens (as of 8-11-2016)</div>                
+            </div>
+            <div class="divide16px"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <dl class="dl-horizontal">
+                        <dt>Total Unique Open Count:</dt>
+                        <dd style="white-space:nowrap">&nbsp;&nbsp;21<a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                        <dt>Not-open Count:</dt>
+                        <dd>&nbsp;&nbsp;8 <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                    </dl>
+                </div>
+                <div class="col-sm-5">
+                    <div class="divide8px"></div>
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 Days Unique Open Count</div>
+                    <div id="linebar1" style="width:100%;height:400px"></div>
+                </div>           
+            </div>
+            <div class="divide32px"></div>
+        </div>
+        <div class="page-break">
+            <div class="modal-subtitle">
+                <div class="name">Total Opens (as of 8-11-2016)</div>
+            </div>
+            <div class="divide16px"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <dl class="dl-horizontal">
+                        <dt>Total Open Count:</dt>
+                        <dd>&nbsp;&nbsp;29 <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                        <dt>&nbsp;</dt>
+                        <dd>&nbsp;</dd>
+                    </dl>
+                </div>
+                <div class="col-sm-5">
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 days Open Count</div>
+                    <div id="linebar2" style="width:100%;height:400px"></div>
+                    <div class="divide8px"></div>
+                    <div id="pie1" style="width:100%;height:400px"></div>
+                </div>
+            </div> 
+        </div>
+        <div class="page-break">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div id="pie2" style="width:100%;height:400px"></div>
+                    <div class="table-responsive">
+                        <table class="table table-hover stripe memberson-grid">
+                            <thead>
+                                <tr>
+                                    <th>Date &nbsp;</th>
+                                    <th>Opens &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/11/2016</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>02/11/2016</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>03/11/2016</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>04/11/2016</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>05/11/2016</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>06/11/2016</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>07/11/2016</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover stripe memberson-grid">
+                            <thead>
+                                <tr>
+                                    <th>Browser &nbsp;</th>
+                                    <th>Opens &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GoogleImageProxy</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Safari</td>
+                                    <td>52</td>
+                                </tr>
+                                <tr>
+                                    <td>Chrome Mobile</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>Chrome</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>IE</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Others</td>
+                                    <td>15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover stripe memberson-grid">
+                            <thead>
+                                <tr>
+                                    <th>OS &nbsp;</th>
+                                    <th>Opens &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>iOS</td>
+                                    <td>52</td>
+                                </tr>
+                                 <tr>
+                                    <td>Android</td>
+                                    <td>25</td>
+                                </tr>
+                                 <tr>
+                                    <td>Windows</td>
+                                    <td>12</td>
+                                </tr>
+                                 <tr>
+                                    <td>Max OS</td>
+                                    <td>5</td>
+                                </tr>
+                                 <tr>
+                                    <td>Linus</td>
+                                    <td>2</td>
+                                </tr>
+                                 <tr>
+                                    <td>Others</td>
+                                    <td>69</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="divide32px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-break">
+            <div class="modal-subtitle">
+                <div class="no-number"></div>
+                <div class="name">Unique Clicks (as of 8-11-2016)</div>
+            </div>
+            <div class="divide16px"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <dl class="dl-horizontal">
+                        <dt>Unique Clicks:</dt>
+                        <dd>&nbsp;&nbsp;99 (206.00 %) <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                        <dt>Click List:</dt>
+                        <dd>&nbsp;&nbsp;5 <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                        <dt>Not-click List:</dt>
+                        <dd>&nbsp;&nbsp;5 <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                    </dl>
+                </div>
+                <div class="col-sm-5">
+                    <div class="divide8px"></div>
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 days Individual Unique Clicks</div>
+                    <div id="groupbar1" style="width:100%;height:400px"></div> 
+                    <div class="divide8px"></div>
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 days Total Unique Clicks</div>
+                    <div id="bar1" style="width:100%;height:400px"></div> 
+                </div>
+            </div>
+        </div>
+        <div class="page-break">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div id="pie3" style="width:100%;height:400px"></div>  
+                    <div style="color: #05728e;padding: 5px 0px;border-bottom:2px solid #05728e;font-weight:600">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="line-height:30px;">Unique Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover stripe memberson-grid">
+                            <thead>
+                                <tr>
+                                    <th>Url &nbsp;</th>
+                                    <th>Clicks &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>http://name.com/promotion</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>http://name.com/gift</td>
+                                    <td>31</td>
+                                </tr>
+                                <tr>
+                                    <td>http://name.com/voucher</td>
+                                    <td>28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="divide32px"></div>
+                    <div style="color: #05728e;padding: 5px 0px;border-bottom:2px solid #05728e;font-weight:600">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="line-height:30px;">First 7 days Unique Click Count</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover stripe memberson-grid">
+                            <thead>
+                                <tr>
+                                    <th>Url &nbsp;</th>
+                                    <th>D1 &nbsp;</th>
+                                    <th>D2</th>
+                                    <th>D3</th>
+                                    <th>D4</th>
+                                    <th>D5</th>
+                                    <th>D6</th>
+                                    <th>D7</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>http://name.com/gift</td>
+                                    <td>11</td>
+                                    <td>7</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>http://name.com/promotion</td>
+                                    <td>10</td>
+                                    <td>8</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>http://name.com/voucher</td>
+                                    <td>8</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="divide32px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-break">
+            <div class="modal-subtitle">
+                <div class="no-number"></div>
+                <div class="name">Total Clicks (as of 8-11-2016)</div>
+            </div>
+            <div class="divide16px"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <dl class="dl-horizontal">
+                        <dt>Total Clicks:</dt>
+                        <dd>&nbsp;&nbsp;121 (252.00 %) <a href="#" data-placement="right" data-trigger="hover" data-tooltip="true" title="Download">&nbsp<i class="fa fa-download" aria-hidden="true"></i></a></dd>
+                    </dl>
+                </div>
+                <div class="col-sm-5">
+                    <div class="divide8px"></div>
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 days Individual Total Clicks</div>
+                    <div id="groupbar2" style="width:100%;height:400px"></div>
+                    <div class="divide8px"></div>
+                    <div style="font-size:15px;color:#05728e;font-weight:600;margin-left:8px">First 7 days Total Clicks</div>
+                    <div id="bar2" style="width:100%;height:400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-break">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div id="pie4" style="width:100%;height:400px"></div>
+                    <div style="color: #05728e;padding: 5px 0px;border-bottom:2px solid #05728e;font-weight:600">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="line-height:30px;">Total Clicks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover stripe memberson-grid">
+                        <thead>
+                            <tr>
+                                <th>Url &nbsp;</th>
+                                <th>Clicks &nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>http://name.com/promotion</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>http://name.com/voucher</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>http://name.com/gift</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="divide32px"></div>
+                <div style="color: #05728e;padding: 5px 0px;border-bottom:2px solid #05728e;font-weight:600">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="line-height:30px;">First 7 days Total Clicks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover stripe memberson-grid">
+                        <thead>
+                            <tr>
+                                <th>Url &nbsp;</th>
+                                <th>D1 &nbsp;</th>
+                                <th>D2</th>
+                                <th>D3</th>
+                                <th>D4</th>
+                                <th>D5</th>
+                                <th>D6</th>
+                                <th>D7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>http://name.com/gift</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>http://name.com/promotion</td>
+                                <td>11</td>
+                                <td>9</td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>http://name.com/voucher</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="divide32px"></div> 
+                </div>                
+            </div>
+        </div>
+    </div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/amcharts.js"></script>
+<script src="Content/js/serial.js"></script>
+<script src="Content/js/amstock.js"></script>
+<script src="Content/js/pie.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+    AmCharts.makeChart("linebar1",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "trendLines": [],
+            "graphs": [
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "id": "AmGraph-1",
+                    "columnWidth": 0.18,
+                    "labelText": "[[value]]",
+                    "title": "Unique Opens",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "fillColors": "#3261B3",
+                    "lineAlpha": 1,
+                    "lineColor": "#3260b2",
+                },
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "bullet": "round",
+                    "id": "AmGraph-2",
+                    "labelText": "[[value]]",
+                    "lineThickness": 2,
+                    "title": "Accumulative",
+                    "valueField": "column-2",
+                }
+            ],
+            "guides": [],
+            "valueAxes": [
+                {
+                    "id": "ValueAxis-1",
+                    "title": "Axis title"
+                }
+            ],
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+                "enabled": true,
+                "useGraphSettings": true
+            },
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": "6",
+                    "column-2": "6"
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": "4",
+                    "column-2": "10"
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": "4",
+                    "column-2": "14"
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": "3",
+                    "column-2": "17"
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": "2",
+                    "column-2": "19"
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": "1",
+                    "column-2": "20"
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": "1",
+                    "column-2": "21"
+                }
+            ]
+        }
+    );
+    AmCharts.makeChart("linebar2",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "theme": "default",
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "fontFamily": "Open Sans",
+            "graphs": [
+                {
+                    "balloonColor": "#3261B3",
+                    "balloonText": "[[title]] of [[category]] is [[value]]",
+                    "clustered": false,
+                    "color": "#3261B3",
+                    "columnWidth": 0.18,
+                    "fillAlphas": 1,
+                    "fillColors": "#3261B3",
+                    "includeInMinMax": false,
+                    "labelText": "[[value]]",
+                    "title": "Opens",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "lineAlpha": 1,
+                    "lineColor": "#3260b2",
+                },
+                {
+                    "balloonColor": "#ca988d",
+                    "balloonText": "[[title]] of [[category]] is [[value]]",
+                    "bullet": "round",
+                    "fillColors": "#ca988d",
+                    "labelText": "[[value]]",
+                    "lineThickness": 2,
+                    "title": "Accumulative",
+                    "valueField": "column-2"
+                }
+            ],      
+            "legend": {
+                "enabled": true,
+                "useGraphSettings": true,
+                "switchable": false,    
+            },
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                    "minimum": 0
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": "7",
+                    "column-2": "7"
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": "8",
+                    "column-2": "15"
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": "5",
+                    "column-2": "20"
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": "5",
+                    "column-2": "25"
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": "2",
+                    "column-2": "27"
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": "1",
+                    "column-2": "28"
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": "1",
+                    "column-2": "29"
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("pie1",
+        {
+        "type": "pie",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+        "titleField": "category",
+        "valueField": "column-1",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "enabled": true,
+            "align": "center",
+            "markerType": "circle",
+            "position": "right",
+        },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "GoogleImageProxy",
+                    "column-1": "60"
+                },
+                {
+                    "category": "Mobile Safari",
+                    "column-1": "52"
+                },
+                {
+                    "category": "Chrome Mobile",
+                    "column-1": "25"
+                },
+                {
+                    "category": "Chrome",
+                    "column-1": "7"
+                },
+                {
+                    "category": "IE",
+                    "column-1": "6"
+                },
+                {
+                    "category": "Others",
+                    "column-1": "15"
+                }
+            ]
+        }
+    );
+    
+    AmCharts.makeChart("pie2",
+        {
+        "type": "pie",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+        "titleField": "category",
+        "valueField": "column-1",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "enabled": true,
+            "align": "center",
+            "markerType": "circle",
+            "position": "right",
+        },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "iOS",
+                    "column-1": "52"
+                },
+                {
+                    "category": "Android",
+                    "column-1": "25"
+                },
+                {
+                    "category": "Windows",
+                    "column-1": "12"
+                },
+                {
+                    "category": "Max OS",
+                    "column-1": "5"
+                },
+                {
+                    "category": "Linux",
+                    "column-1": "2"
+                },
+                {
+                    "category": "Others",
+                    "column-1": "69"
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("groupbar1",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "borderColor": "white",
+            "trendLines": [],
+            "graphs": [
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "fillColors": "#e76d6a",
+                    "labelText": "[[value]]",
+                    "lineAlpha": 1,
+                    "lineColor": "#e76d6a",
+                    "id": "AmGraph-1",
+                    "title": "http://name.com/gift",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "columnWidth": 0.6
+                },
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "fillColors": "#588185",
+                    "labelText": "[[value]]",
+                    "lineAlpha": 1,
+                    "lineColor": "#588185",
+                    "id": "AmGraph-2",
+                    "title": "http://name.com/promotion",
+                    "type": "column",
+                    "valueField": "column-2",
+                    "columnWidth": 0.6
+                },
+                {
+                    "id": "AmGraph-3",
+                    "fillAlphas": 1,
+                    "fillColors": "#fea815",
+                    "labelText": "[[value]]",
+                    "lineAlpha": 1,
+                    "lineColor": "#fea815",
+                    "title": "http://name.com/voucher",
+                    "type": "column",
+                    "valueField": "column-3",
+                    "columnWidth": 0.6
+                }
+            ],
+            "legend": {
+                "enabled": true,
+                "useGraphSettings": true,
+                "switchable": false,    
+            },
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                    "minimum": 0
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": 11,
+                    "column-2": 10,
+                    "column-3": 8
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": 7,
+                    "column-2": 8,
+                    "column-3": 8
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": 5,
+                    "column-2": 8,
+                    "column-3": 5
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": 3,
+                    "column-2": 6,
+                    "column-3": 3
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": 2,
+                    "column-2": 3,
+                    "column-3": 2
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": 2,
+                    "column-2": 3,
+                    "column-3": 1
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": 1,
+                    "column-2": 2,
+                    "column-3": 1
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("bar1",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "trendLines": [],
+            "graphs": [
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "id": "AmGraph-1",
+                    "columnWidth": 0.18,
+                    "labelText": "[[value]]",
+                    "title": "Unique Opens",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "fillColors": "#3261B3",
+                    "lineAlpha": 1,
+                    "lineColor": "#3260b2",
+                }
+            ],
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": "29"
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": "27"
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": "18"
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": "12"
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": "7"
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": "6"
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": "4"
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("pie3",
+        {
+        "type": "pie",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+        "titleField": "category",
+        "valueField": "column-1",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "enabled": true,
+            "align": "center",
+            "markerType": "circle",
+            "position": "bottom",
+        },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "http://name.com/gift",
+                    "column-1": "31"
+                },
+                {
+                    "category": "http://name.com/promotion",
+                    "column-1": "40"
+                },
+                {
+                    "category": "http://name.com/voucher",
+                    "column-1": "28"
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("groupbar2",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "borderColor": "white",
+            "trendLines": [],
+            "graphs": [
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "fillColors": "#e76d6a",
+                    "lineAlpha": 1,
+                    "lineColor": "#e76d6a",
+                    "labelText": "[[value]]",
+                    "id": "AmGraph-1",
+                    "title": "http://name.com/gift",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "columnWidth": 0.6
+                },
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "fillColors": "#588185",
+                    "lineAlpha": 1,
+                    "lineColor": "#588185",
+                    "labelText": "[[value]]",
+                    "id": "AmGraph-2",
+                    "title": "http://name.com/promotion",
+                    "type": "column",
+                    "valueField": "column-2",
+                    "columnWidth": 0.6
+                },
+                {
+                    "id": "AmGraph-3",
+                    "fillAlphas": 1,
+                    "fillColors": "#fea815",
+                    "lineAlpha": 1,
+                    "lineColor": "#fea815",
+                    "labelText": "[[value]]",
+                    "title": "http://name.com/voucher",
+                    "type": "column",
+                    "valueField": "column-3",
+                    "columnWidth": 0.6
+                }
+            ],
+            "legend": {
+                "enabled": true,
+                "useGraphSettings": true,
+                "switchable": false,    
+            },
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                    "minimum": 0
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": 12,
+                    "column-2": 11,
+                    "column-3": 9
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": 5,
+                    "column-2": 9,
+                    "column-3": 9
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": 6,
+                    "column-2": 8,
+                    "column-3": 7
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": 3,
+                    "column-2": 6,
+                    "column-3": 5
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": 3,
+                    "column-2": 4,
+                    "column-3": 4
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": 2,
+                    "column-2": 4,
+                    "column-3": 3
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": 2,
+                    "column-2": 3,
+                    "column-3": 3
+                }
+            ]
+        }
+    );
+
+    AmCharts.makeChart("bar2",
+        {
+            "type": "serial",
+            "categoryField": "category",
+            "startDuration": 1,
+            "categoryAxis": {
+                "gridPosition": "start"
+            },
+            "trendLines": [],
+            "graphs": [
+                {
+                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "id": "AmGraph-1",
+                    "columnWidth": 0.18,
+                    "labelText": "[[value]]",
+                    "title": "Unique Opens",
+                    "type": "column",
+                    "valueField": "column-1",
+                    "fillColors": "#3261B3",
+                    "lineAlpha": 1,
+                    "lineColor": "#3260b2",
+                }
+            ],
+            "guides": [],
+            "valueAxes": [
+                {
+                    "id": "ValueAxis-1",
+                    "title": "Axis title"
+                }
+            ],
+            "categoryAxis": {
+                "axisColor": "#eeeeee",
+                "gridColor": "white",
+            },
+            "valueAxes": [
+                {
+                    "gridColor": "white",
+                    "axisColor": "#eeeeee",
+                }
+            ],
+            "dataProvider": [
+                {
+                    "category": "01 Nov",
+                    "column-1": "32"
+                },
+                {
+                    "category": "02 Nov",
+                    "column-1": "26"
+                },
+                {
+                    "category": "03 Nov",
+                    "column-1": "21"
+                },
+                {
+                    "category": "04 Nov",
+                    "column-1": "14"
+                },
+                {
+                    "category": "05 Nov",
+                    "column-1": "11"
+                },
+                {
+                    "category": "06 Nov",
+                    "column-1": "9"
+                },
+                {
+                    "category": "07 Nov",
+                    "column-1": "8"
+                }
+            ]
+        }
+    );
+    
+    AmCharts.makeChart("pie4",
+        {
+        "type": "pie",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+        "titleField": "category",
+        "valueField": "column-1",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "enabled": true,
+            "align": "center",
+            "markerType": "circle",
+            "position": "bottom",
+        },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "http://name.com/gift",
+                    "column-1": "36"
+                },
+                {
+                    "category": "http://name.com/promotion",
+                    "column-1": "45"
+                },
+                {
+                    "category": "http://name.com/voucher",
+                    "column-1": "40"
+                }
+            ]
+        }
+    );
+    
+});
+</script>
+</body>
+
+</html>

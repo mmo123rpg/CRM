@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>CRM Shopper V6</title>
+
+<!-- Bootstrap -->
+<link href="Content/css/bootstrap.min.css" rel="stylesheet">
+<link href="Content/css/normalize.css" rel="stylesheet">
+<link href="Content/css/styles.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<div class="container login_container contain-center">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <img src="Content/img/Memberson Logo 72 ppi.png" width="200" alt="" />
+            <div class="divide16px"> </div>   
+            <img src="content/img/404.png" width="140" />
+            <div class="divide16px"> </div>   
+        </div>
+        <div class="col-lg-12">
+            <p>404 error</p>
+            <p>Không tìm thấy trang web! Xin vui lòng quay về <a href="index.html" style="text-decoration:underline;"> trang chủ </a> hoặc trở lại <a href="#" style="text-decoration:underline;">trang vừa truy cập</p>
+        </div>    
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog modal-small vertical-align-center" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <a class="forget_close" data-dismiss="modal"></a>
+            <div class="modal-title">Forgot your password?</div>                                                     
+        </div>
+        <div class="modal-body">
+            <div class="instruction">Enter your email address you've registered with you. We'll send you reset link to that address</div>
+            <div class="divide16px"></div>
+            <div class="form-horizontal form-horizontal2">
+                <div class="form-group">
+                    <label class="col-lg-12 control-label">Username</label>
+                    <div class="col-lg-12">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-12 control-label">Email Address</label>
+                    <div class="col-lg-12">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-login btn-blue-green">submit</button>
+          <button type="submit" class="btn btn-close btn-dark-red" data-dismiss="modal">cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="Content/js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="Content/js/bootstrap.min.js"></script>
+<script>
+$(window).ready(centerDiv);
+$(window).resize(centerDiv);
+
+function centerDiv() {
+    var winHeight = $(window).innerHeight(),
+        divHeight = $('.contain-center').height();
+  if (winHeight - divHeight > 0 )
+  {
+    $('.contain-center').css('marginTop', (winHeight - divHeight) / 2 );    
+  }
+  else  
+  {
+    $('.contain-center').css('marginTop', 0 );  
+  }  
+}
+</script>
+</body>
+</html>

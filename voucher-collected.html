@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <img src="Content/img/btn_search.png" width="30" height="30" alt="" /> </button>
+            <!-- <button type="button" class="navbar-toggle pull-left  menu-collapse-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+            <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60"> </div>
+        </div>
+    </nav>
+    <div class="menu-left">
+        <ul class="menu-collapse">
+            <li>
+                <a href="#" class="menu menu_expand"><span>MENU</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Issued">
+                <a href="voucher-issued.html" class="menu menu-voucher-issued"><span>VOUCHER ISSUED</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Collected">
+                <a href="#" class="menu menu-voucher-collected-selected"><span>VOUCHER COLLECTED</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Master">
+                <a href="voucher-master.html" class="menu menu-voucher-master"><span>VOUCHER MASTER</span></a></li>
+        </ul>
+        <ul>
+            <li data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Voucher Physic">
+                <a href="voucher-physic.html" class="menu menu-voucher-physic"><span>VOUCHER PHYSIC</span></a></li>
+        </ul>
+        <ul style="border-top:3px solid #b2ebf2">
+            <li class="dropdown">
+                <a href="#" class="menu menu_user right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="User"><span data-toggle="dropdown">USER</span></a> 
+                <ul class="dropdown-menu dropdown-menu1">
+                    <li><a href="#">log out</a></li>
+                </ul>
+            </li>
+        </ul>        
+    </div>
+    <div class="mainwrapper">
+        <div class="mainpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content block-1">
+                        <div class="tab-pane">
+                            <div class="row">
+                                    <div class="col-lg-6 col-sm-6"> 
+                                        <span class="action-for-filter action-filter col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" title="" data-toggle="collapse" data-target="#voucher-filter-2" data-original-title="Filter"></span> 
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <nav class="sub-tab pull-right">
+                                            <ul class="nav" role="tablist">
+                                                <li role="presentation" class="active">
+                                                    <a href="#card2a" aria-controls="card2a" role="tab" data-toggle="tab" class="action action_graphic_view" aria-expanded="true" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Switch view"></a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#table2a" aria-controls="table2a" role="tab" data-toggle="tab" class="action action_menu" data-placement="bottom" data-trigger="hover" data-tooltip="true" data-original-title="Switch view"></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="action action-export col-lg-3 col-sm-12" data-placement="bottom" data-tooltip="true" data-original-title="Export"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="collapse" id="voucher-filter-2">
+                                            <div class="well">                 
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 col-sm-12 col-ph-3 control-label">Type</label>
+                                                                <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                                    <select class="form-control" id='mySelect2'>
+                                                                        <option value='0'>Cash</option>
+                                                                        <option value='1'>Product</option>
+                                                                        <option value='1'>Service</option>
+                                                                        <option value='1'>Car Park</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 col-sm-12 col-ph-3 control-label">Subtype</label>
+                                                                <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                                    <select class="form-control">
+                                                                        <option>Retailer</option>
+                                                                        <option>Mall</option>
+                                                                        <option>Partner</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 col-sm-12 col-ph-3 control-label">Location</label>
+                                                                <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                                    <div class="input-group quicksearch-width">
+                                                                        <div class="typeahead-container">
+                                                                            <div class="typeahead-field">
+                                                                                <input autocomplete="off" class="form-control country_v1-query" type="text" value="" placeholder="Location" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="input-group-btn">
+                                                                            <button type="button" class="btn btn-input btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                                                            <ul class="dropdown-width dropdown-menu dropdown-menu-right dropdown-typehead">
+                                                                                <li><a href="#">Far East</a></li>
+                                                                                <li><a href="#">CMA</a></li>
+                                                                                <li><a href="#">Plaza Singapura</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 col-sm-12 col-ph-3 control-label">Datetime</label>
+                                                                <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                                    <input type="text" class="form-control datetimepicker" placeholder="22/01/2016">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 col-sm-12 col-ph-3 control-label">Search</label>
+                                                                <div class="col-lg-9 col-sm-12 col-ph-9">
+                                                                    <div class="input-group" style="margin-bottom:0;">
+                                                                        <input class="form-control" type="text">
+                                                                        <span class="input-group-btn">
+                                                                            <button type="button" class="btn btn-quicksearch2"></button>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                                        <span class="action-for-filter action_clearform pull-right" data-placement="bottom" data-tooltip="true" title="" data-original-title="Clear Filter"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade active in" id="card2a" style="padding:0">
+                                        <div class="tab-card-view">
+                                            <ul class="nav nav-tabs" role="tablist" id="myTab2" style="display:none">
+                                                <li role="presentation" class="active"><a href="#Physical2" aria-controls="Physical2" role="tab" data-toggle="tab">Physical2</a></li>
+                                                <li role="presentation"><a href="#Electronic2" aria-controls="Electronic2" role="tab" data-toggle="tab">Electronic2</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade in active" id="Physical2" style="padding:0;">
+                                                    <div class="row view-detail">
+                                                        <div class="col-sm-4 view"><i>(*) Click on the voucher to view detail</i></div>
+                                                        <div class="col-sm-8 total">
+                                                            <span><strong>Total Denomination:</strong> 25.00</span> &nbsp; &nbsp; &nbsp;
+                                                            <span><strong>Total Pay to:</strong> 6.00</span> &nbsp; &nbsp; &nbsp;
+                                                            <span><strong>Quantity:</strong> 6</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="grid">
+                                                                <div class="card-windgroup card5">
+                                                                    <div class="flip">
+                                                                        <div class="front">
+                                                                            <div class="purchase-voucher-left">
+                                                                                <div class="voucher-info1">$150</div>
+                                                                                <div class="voucher-info2">ONE HUNDREDS FIFTY DOLLARS</div>
+                                                                                <div class="voucher-info3">Date Expiry: 31/12/2016</div>
+                                                                                <div class="barcode">
+                                                                                    <img src="Content/img/barcode.png" alt="">
+                                                                                </div>
+                                                                                <div class="voucher-info4">118333333332259</div>
+                                                                            </div>
+                                                                            <div class="purchase-voucher-right">
+                                                                                <div class="text-center voucher-info6">
+                                                                                    <img src="Content/img/barcode-small.png" alt="">
+                                                                                    <div class="manage text-left">Manage this voucher in the V-aap iOS & Android apps.</div>
+                                                                                    <div class="manage text-left"><a href="#" class="link-green">http://www.v-app.com/</a></div>
+                                                                                    <img class="QRCode" src="Content/img/QRCode.png" alt="">
+                                                                                    <a href="#" class="secret-code">Mobile Code</a>
+                                                                                    <div class="manage text-center">Voucher invalid once the sticker above has been peeled off</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="back">
+                                                                            <div class="inside card-voucher-issued">
+                                                                                <div class="info">Collect Location:<span> Highlander</span></div>
+                                                                                <div class="info">Collect Datetime:<span> 08/08/2016 14:07</span></div>
+                                                                                <div class="info">Serial Number:<span> CHIPROMOB0000000029D</span></div>
+                                                                                <div class="info">Name:<span> $10 CHIJMES Voucher</span></div>
+                                                                                <div class="info">Type:<span> Product</span></div>
+                                                                                <div class="info">Subtype:<span> Mall</span></div>
+                                                                                <div class="info">Status:<span> Used</span></div>
+                                                                                <div class="info">Form:<span> E</span></div>
+                                                                                <div class="info">Pay to Retailer:<span> 10.00</span></div>
+                                                                                <div class="info">Collect From:<span> InStore</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="Electronic2" style="padding:0;">
+                                                    <div class="row view-detail">
+                                                        <div class="col-sm-4 view"><i>(*) Click on the voucher to view detail</i></div>
+                                                        <div class="col-sm-8 total">
+                                                            <span><strong>Total Denomination:</strong> 25.00</span> &nbsp; &nbsp; &nbsp;
+                                                            <span><strong>Total Pay to:</strong> 7.00</span> &nbsp; &nbsp; &nbsp;
+                                                            <span><strong>Quantity:</strong> 6</span>
+                                                        </div>
+                                                    </div>                                                    
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="grid">
+                                                                <div class="card-windgroup card6 card-voucher-collected">
+                                                                    <div class="flip">
+                                                                        <div class="front">
+                                                                            <div class="electronic-contain red">
+                                                                                <div class="electronic1">5</div>
+                                                                                <div class="electronic2">CASH VOUCHER</div>
+                                                                            </div>
+                                                                            <div class="electronic-img">
+                                                                                <img class="img-responsive" src="Content/img/logo1.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="back">
+                                                                            <div class="inside">
+                                                                                <div class="info">Collect Location:<span> Highlander</span></div>
+                                                                                <div class="info">Collect Datetime:<span> 08/08/2016 14:07</span></div>
+                                                                                <div class="info">Serial Number:<span> CHIPROMOB0000000029D</span></div>
+                                                                                <div class="info">Name:<span> $10 CHIJMES Voucher</span></div>
+                                                                                <div class="info">Type:<span> Product</span></div>
+                                                                                <div class="info">Subtype:<span> Mall</span></div>
+                                                                                <div class="info">Status:<span> Used</span></div>
+                                                                                <div class="info">Form:<span> E</span></div>
+                                                                                <div class="info">Pay to Retailer:<span> 10.00</span></div>
+                                                                                <div class="info">Collect From:<span> InStore</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade home-content" id="table2a" style="padding:0">
+                                        <div class="row view-detail">
+                                            <div class="col-sm-12 total">
+                                                <span><strong>Total Denomination:</strong> 25.00 &nbsp; &nbsp; &nbsp;</span>
+                                                <span><strong>Total Pay to:</strong> 8.00 &nbsp; &nbsp; &nbsp;</span> 
+                                                <span><strong>Quantity:</strong> 6</span>
+                                            </div>
+                                        </div>
+                                        <div class="height24"></div>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover dataTable" cellspacing="0" width="100%">
+                                                <thead>
+                                                        <tr>
+                                                            <th>Collect Location</th>
+                                                            <th>Collect Date</th>
+                                                            <th>Serial Number</th>
+                                                            <th>Member Number</th>
+                                                            <th>Name</th>
+                                                            <th>Type</th>
+                                                            <th>Subtype</th>
+                                                            <th>Form</th>
+                                                            <th>Denomination</th>
+                                                            <th>Pay to Retailer</th>
+                                                            <th>Collect from</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bobby's Restaurant & Bar</td>
+                                                            <td>04/08/2016 11:31</td>
+                                                            <td>CHIPARK0000000165P  </td>
+                                                            <td>VAAP6500002483SG</td>
+                                                            <td>$10 CHIJMES Voucher </td>
+                                                            <td>CarPark</td>
+                                                            <td>Retailer</td>
+                                                            <td>E</td>
+                                                            <td>3.00</td>
+                                                            <td>0.00</td>
+                                                            <td>InStore</td>
+                                                        </tr>
+                                                    </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div class="footer-fix content" style="margin-top:-16px;">
+                        <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson<span>&reg;</span> ShopperCRM v6 - 2015 </div>
+                        <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="js/jquery.flip.min.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="Content/js/bootstrap-colorselector.js"></script>
+<script src="Content/js/chosen.jquery.js"></script>
+<script>
+$(document).ready(function() {
+    var block_height = (($(window).innerHeight()) - 120);
+    $('.block-1').css('min-height', block_height);
+    
+    function resizeHeight1() {
+      //alert('abc');
+                          var winHeight = $(window).innerHeight(),
+                              bodyHeight = $('body').height();
+                          block1Height = $('.block-1').height();
+                          var winWidth = $(window).innerWidth();                              
+                          var contentHeight = winHeight - 196 - block1Height;
+      //alert('contentHieght: ' + contentHeight);                 
+      var wrapperHeight = $('.mainwrapper').height();
+      var leftbar = wrapperHeight;
+      
+      //alert('wrapperHeight: ' + wrapperHeight + 'and leftbar: ' + leftbar);
+                                              
+      $('.tab-content1').css('min-height', contentHeight);
+      $('.menu-left').css('min-height', leftbar);
+    }
+
+    resizeHeight1();
+
+    var $container = $('.grid');
+    $container.masonry({
+        columnWidth: '.card',
+        itemSelector: '.card',
+        gutter: 40,
+        isFitWidth: true,
+    });
+
+    $(".flip").flip();
+
+    $('#mySelect').on('change', function(e) {
+        $('#myTab li a').eq($(this).val()).tab('show');
+    });
+    $('#mySelect2').on('change', function(e) {
+        $('#myTab2 li a').eq($(this).val()).tab('show');
+    });
+
+    $(".edit-shop-information1").click(function() {
+        $(".disabled-shop-information1 input,.disabled-shop-information1 select,.disabled-shop-information1 textarea").prop('disabled', false);
+        $(".hide-shop-information1,.disabled-shop-information1 .asterisk").show().removeClass("hide");
+        $(".location-checked").addClass("hide");
+        $(".disabled-shop-information1 .pointer-none").removeClass('pointer-none');
+        $(".disabled-shop-information1 .form-image").parent().css({
+            "border":"1px solid #f5f6f7",
+            "text-align":"center",
+            "width":"100%",
+            "border-radius":"4px"
+        });
+    });
+
+    $(".edit-shop-information2").click(function() {
+        $(".disabled-shop-information2 input,.disabled-shop-information2 select,.disabled-shop-information2 textarea").prop('disabled', false);
+        $(".hide-shop-information2,.disabled-shop-information2 .asterisk,.disabled-shop-information2 .input-group-addon").show().removeClass("hide");
+        $(".disabled-shop-information2 .form-image").css("border","1px solid #ccc");
+        $(".chosen-select").trigger("chosen:updated");
+    });
+
+    $(".chosen-select").chosen();
+
+    $('.colorselector_1').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor1").val(color);
+          }
+    });
+    $('.colorselector_2').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor2").val(color);
+          }
+    });
+    $('.colorselector_3').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor3").val(color);
+          }
+    });
+    $('.colorselector_4').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor4").val(color);
+          }
+    });
+    $('.colorselector_5').colorselector({
+          callback: function (value, color, title) {
+              $(".colorColor5").val(color);
+          }
+    });
+
+});
+</script>
+</body>
+
+</html>

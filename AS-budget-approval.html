@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="Content/css/select2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="topbar_">
+    <div class="navbar-header">
+        <div class="pull-left menu-collapse-left logo-memberson logo-toggle" width="60" height="60" > </div>    
+        <div class="top-info">    
+            <div class="dropdown acc_info">
+                <p>Budget Approval</p>                                
+            </div>                
+        </div>        
+    </div>
+</nav>
+<div class="menu-left">
+    <ul class="menu-collapse">
+        <li>
+            <a href="#" class="menu menu_expand"></a><span>MENU</span></li>
+    </ul>
+    <ul>
+        <li class="dropdown">
+            <a href="#" class="menu menu-setting right-arrow" data-toggle="dropdown" data-trigger="hover" data-placement="bottom" data-tooltip="true" data-original-title="Approval etting"></a> <span data-toggle="dropdown">Approval Setting</span>
+            <ul class="dropdown-menu dropdown-menu1">
+                <li><a href="AS-contact-policy.html">Contact Policy</a></li>
+                <li><a href="AS-approvals.html">Approvals</a></li>
+                <li><a href="AS-blackout-dates.html">Blackout Dates</a></li>
+                <li><a href="AS-block-list.html">Block List</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="mainwrapper">
+    <div class="mainpanel">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content block-1">
+                    <div class="modal-body">
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3>You are approving the following</h3>
+                                <div class="divide16px"></div>
+                                <div class="border-lightblue">
+                                    <dl class="dl-horizontal">
+                                        <dt>Communication Name:</dt>
+                                        <dd>&nbsp;&nbsp;Communicate 001</dd>
+                                        <dt>Target List:</dt>
+                                        <dd>&nbsp;&nbsp;200,000</dd>
+                                        <dt>Send Date:</dt>
+                                        <dd>&nbsp;&nbsp;07/02/2017 10:00:00 AM</dd>
+                                    </dl>
+                                </div>
+                                <div class="divide32px"></div>
+                                <a href="#" type="button" class="btn btn-blue-green">Approve</a>
+                                <a href="#" type="button" class="btn btn-dark-red" data-toggle="modal" data-target="#reject">Reject</a>
+                                <div class="divide32px"></div>
+                                <div class="blue-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-fix content" style="margin-top:-16px;">
+                    <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                    <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Reject -->
+<div class="modal fade" id="reject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Reason for reject</div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="col-ph-12">
+                            <div class="controls form-group">
+                                <textarea class="form-control" rows="6"></textarea>
+                                <label class="control-label">Reason</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-blue-green">OK</a>
+                    <a href="#" type="button" class="btn btn-dark-red" data-dismiss="modal">cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/amcharts.js"></script>
+<script src="Content/js/serial.js"></script>
+<script src="Content/js/amstock.js"></script>
+<script src="Content/js/pie.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script src="Content/js/select2.min.js"></script>
+<script>
+$(document).ready(function() {
+    function resizeHeight(element) {    
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 121);
+    }
+    resizeHeight();
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+
+    $('.select2').select2({ width: '100%' });      
+});
+</script>
+</body>
+
+</html>

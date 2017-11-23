@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRM Shopper V6 - Info Page</title>
+    <!-- Bootstrap -->
+    <link href="Content/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="content block-1">
+                <div class="tab-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Email Communication for Campaign Name - Communication Status</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-horizontal form-horizontal2"> 
+                                    <div class="col-ph-12"> 
+                                        <div class="controls form-group"> 
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">Name</label> 
+                                        </div> 
+                                    </div>                                         
+                                </div> 
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="#" class="action action_delete" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Cancel"></a>  
+                                <a href="#" class="action action_edit" id="edit" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Edit"></a>  
+                                <a href="#" class="action action-generate" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Generate"></a> 
+                                <a href="#" class="action action-send-message" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Send test messages" data-toggle="modal" data-target="#send-test-message"></a> 
+                                <a href="#" class="action action-discard" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Discard"></a> 
+                                <a href="#" class="action action-export-text" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Export to text"></a>   
+                                <a href="#" class="action action-export-excel" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Export to excel"></a>   
+                                <a href="#" class="action action-confirm" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Confirm"></a>  
+                                <a href="#" class="action action-unconfirm" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="Unconfirm"></a>                                     
+                            </div>
+                        </div>
+                        <div class="divide16px"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="modal-subtitle">
+                                    <div class="name">template</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <select class="form-control">
+                                                              <option>Role</option>
+                                                              <option>Retailer</option>
+                                                              <option>Corporate User</option>
+                                                              <option>Mall CSA</option>
+                                                              <option>Mall Operator</option>
+                                                              <option>Mall Management</option>
+                                                              <option>Mall Finance</option>
+                                                              <option>Mall Marketing</option>
+                                                              <option>Mall User Admin</option>
+                                                              <option>WG Operator</option>
+                                                              <option>WG Finance</option>
+                                                              <option>WG User Admin</option>
+                                                        </select>
+                                                    <label class="control-label">Template Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="border">
+                                                <iframe src="http://www.w3schools.com" id="iframe">
+                                                  <p>Your browser does not support iframes.</p>
+                                                </iframe> 
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="modal-subtitle">
+                                    <div class="name">Schedule and notifications</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="row"> 
+                                    <div class="col-ph-6">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control datetimepicker2" value="06/12/2015" disabled>
+                                                    <label class="control-label">Send Messages on</label> 
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                    <div class="col-ph-6">  
+                                        <div class="form-horizontal form-horizontal2"> 
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <select class="form-control" disabled>
+                                                        <option value=""></option>
+                                                        <option value="">0:00</option>
+                                                        <option value="">0:30</option>
+                                                        <option value="">1:00</option>
+                                                        <option value="">1:30</option>
+                                                        <option value="">2:00</option>
+                                                        <option value="">2:30</option>
+                                                        <option value="" selected="">3:00</option>
+                                                        <option value="">3:30</option>
+                                                        <option value="">4:00</option>
+                                                        <option value="">4:30</option>
+                                                        <option value="">5:00</option>
+                                                        <option value="">5:30</option>
+                                                        <option value="">6:00</option>
+                                                        <option value="">7:30</option>
+                                                        <option value="">8:00</option>
+                                                        <option value="">8:30</option>
+                                                        <option value="">9:00</option>
+                                                        <option value="">9:30</option>
+                                                        <option value="">10:00</option>
+                                                        <option value="">10:30</option>
+                                                        <option value="">11:00</option>
+                                                        <option value="">11:30</option>
+                                                        <option value="">12:00</option>
+                                                        <option value="">12:30</option>
+                                                    </select>  
+                                                    <label class="control-label">Select Time</label>                            
+                                                </div> 
+                                            </div>                                         
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="row">
+                                    <div class="col-ph-4 col-sm-3 col-xl-2">
+                                        <label class="control-label">Notify when</label>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" disabled>Generated</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" disabled>Confirmed</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" disabled>Completed</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="divide16px"></div>
+                                    </div>
+                                    <div class="col-ph-8 col-sm-9 col-xl-10">
+                                         <label class="control-label">Notify by</label>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" disabled>Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control" value="mail@mail.com" disabled="">
+                                                            <label class="control-label">Notification Receiver Emails</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" disabled>SMS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div class="form-horizontal form-horizontal2">
+                                                    <div class="col-ph-12">
+                                                        <div class="controls form-group">
+                                                            <input type="text" class="form-control" value="8957648" disabled="">
+                                                            <label class="control-label">Notification Receiver Mobiles</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="modal-subtitle">
+                                    <div class="name">Email settings</div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <select class="form-control" disabled>
+                                                        <option value="">test sender</option>
+                                                    </select>
+                                                    <label class="control-label">Sender Profile</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12">
+                                                <div class="controls form-group">
+                                                    <input type="text" class="form-control" value="Test@Test.com" disabled>
+                                                    <label class="control-label">Reply to</label> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" disabled checked> Advertisement
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <div class="input-group"> 
+                                                        <span class="input-group-addon">&lt;ADV&gt;</span>
+                                                        <input class="form-control" type="text" value="Hello [@FirstName], [@ICNumber]" disabled> 
+                                                        <span class="input-group-btn"> 
+                                                            <button type="button" class="btn btn-input disabled" data-toggle="modal" data-target="#edit-subject">...</button> 
+                                                        </span> 
+                                                    </div>
+                                                    <label class="control-label" style="margin-left:50px">Subject</label> 
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <input type="text" class="form-control" value="Test" disabled>
+                                                    <label class="control-label">Sender Mask</label> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-horizontal form-horizontal2">
+                                            <div class="col-ph-12"> 
+                                                <div class="controls form-group"> 
+                                                    <select class="form-control" disabled>
+                                                        <option value="">Marketing Message</option>
+                                                        <option value="">System Message</option>
+                                                    </select>
+                                                    <label class="control-label">Message Type</label> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" disabled checked> Do not send to duplicate recipents
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" disabled checked> Include 'View in browser' link
+                                            </label>
+                                        </div>
+                                        <div class="divide16px"></div>
+                                    </div>
+                                </div>
+                                <div class="divide16px"></div>
+                                <div class="modal-subtitle">
+                                    <div class="name">Approval</div>
+                                </div>
+                                <div class="divide8px"></div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <a href="#" class="action action-history" data-trigger="hover" data-tooltip="true" data-placement="bottom" title="History" data-toggle="modal" data-target="#history"></a>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-align-middle table-hover table-striped memberson-grid data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name &nbsp;</th>
+                                                <th>Status &nbsp;</th>
+                                                <th>Approve Date &nbsp;</th>
+                                                <th>Approved by &nbsp;</th>
+                                                <th style="background:none;padding-left:10px;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Budget Approve</td>
+                                                <td><span class="table-status-2 status-orange">New</span></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a href="#" class="btn btn-blue-green" data-toggle="modal" data-target="#budget-approve">Submit</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manager Approve</td>
+                                                <td><span class="table-status-2 status-red">Requested</span></td>
+                                                <td>07/02/2017</td>
+                                                <td>Mika Sirtola</td>
+                                                <td><a href="#" class="btn btn-dark-red" data-toggle="modal" data-target="#budget-approve">submit</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fianl Approve</td>
+                                                <td><span class="table-status-2 status-grey-green">Rejected</span></td>
+                                                <td>08/02/2017</td>
+                                                <td>Xu Rong</td>
+                                                <td><a href="#" class="btn btn-dark-red" data-toggle="modal" data-target="#budget-approve">submit</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fianl Approve</td>
+                                                <td><span class="table-status-2 status-blue">Approved</span></td>
+                                                <td>08/02/2017</td>
+                                                <td>Xu Rong</td>
+                                                <td><a href="#" class="btn btn-dark-red" data-toggle="modal" data-target="#budget-approve">submit</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="footer-fix content" style="margin-top:-16px;">
+                <div class="footer-copyright" style="text-align:left;"> Copyright by Memberson </div>
+                <div class="footer-timezone " style="text-align:right;"> Timezone: (UTC+08:00) Kuala Lumpur, Singapore</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit Subject -->
+<div class="modal fade" id="edit-subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Edit Subject using data-bidings</div>                                                    
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" rows="3" value="[@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID][@Address2][@Address2][@ActorID]"></textarea> 
+                    <div class="instruction">
+                      <p>Double click on one of the following fields to insert them at the cursor position.</p>
+                    </div>
+                    <div class="divide16px"></div>
+                    <div class="form-group-name">Field List</div>                   
+                    <div class="field-list">
+                        <table class="table table-hover stripe memberson-grid data-table">
+                            <thead>
+                                <tr>
+                                    <th>Keyword &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HomePhone</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>HomePhone</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>HomePhone</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                                <tr>
+                                    <td>ICNumber</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="divide8px"></div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-margin btn-blue-green btn-min">Ok</a>
+                    <a class="btn btn-margin btn-dark-red btn-min" data-dismiss="modal">cancel</a>           
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Send Test Messages -->
+<div class="modal fade" id="send-test-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">Test Communication</div>                                                    
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-horizontal2">
+                        <div class="form-group-name">1. Please fill in the recipient addresses separated by comma. Maximum allowed recipient count is 5.</div>
+                        <div class="divide12px"></div>
+                        <div class="form-horizontal form-horizontal2"> 
+                            <div class="col-ph-12"> 
+                                <div class="controls form-group"> 
+                                    <input type="text" class="form-control">
+                                    <label class="control-label">Address</label> 
+                                </div> 
+                            </div>                                        
+                        </div> 
+                        <div class="divide16px"></div>
+                        <div class="form-group-name">2. Please fill in the test data to be used.</div>
+                        <div class="divide8px"></div>
+                        <div class="row">
+                            <div class="col-ph-6">
+                                <div class="form-horizontal form-horizontal2"> 
+                                    <div class="col-ph-12"> 
+                                        <div class="controls form-group"> 
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">labelControl1</label> 
+                                        </div> 
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col-ph-6">
+                                <div class="form-horizontal form-horizontal2"> 
+                                    <div class="col-ph-12"> 
+                                        <div class="controls form-group"> 
+                                            <input type="text" class="form-control">
+                                            <label class="control-label">labelControl2</label> 
+                                        </div> 
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-margin btn-blue-green btn-min">Reset Test Data</a>
+                    <a class="btn btn-margin btn-blue-green btn-min">Send</a>
+                    <a class="btn btn-margin btn-dark-red btn-min" data-dismiss="modal">cancel</a>               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Budget Approve -->
+<div class="modal fade" id="budget-approve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-medium">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">BUDGET APPROVE</div>
+                </div>
+                <div class="modal-body">
+                    <p>You are submitting the following for Budget Approve</p>
+                    <div class="well">
+                        <dl class="dl-horizontal">
+                            <dt>Communication Name:</dt>
+                            <dd>&nbsp;&nbsp;Communicate 001</dd>
+                            <dt>Target List:</dt>
+                            <dd>&nbsp;&nbsp;200,000</dd>
+                            <dt>Send Date:</dt>
+                            <dd>&nbsp;&nbsp;07/02/2017 10:00:00 AM</dd>
+                        </dl>
+                    </div>
+                    <div class="divide16px"></div>
+                    <p>The followal user(s) will receive approval request </p>
+                    <div class="table-responsive">
+                        <table class="table table-align-middle table-hover table-striped memberson-grid data-table">
+                            <thead>
+                                <tr>
+                                    <th style="background:none;padding-left:10px;width:20px"><input type="checkbox"></th>
+                                    <th>Username &nbsp;</th>
+                                    <th>Email &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Alan Smith</td>
+                                    <td>alan.smith@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Serene</td>
+                                    <td>serene.ng@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Xu Rong</td>
+                                    <td>rong.xu@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="AS-budget-approval.html" target="_blank" type="button" class="btn btn-blue-green btn-save">submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- History -->
+<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content modal-medium">
+                <div class="modal-header">
+                    <a class="forget_close" data-dismiss="modal"></a>
+                    <div class="modal-title">History</div>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-align-middle table-hover table-striped memberson-grid data-table">
+                            <thead>
+                                <tr>
+                                    <th>User &nbsp;></th>
+                                    <th>Actions &nbsp;</th>
+                                    <th>Datetime &nbsp;</th>
+                                    <th>Remarks &nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alan Smith</td>
+                                    <td>Submitted</td>
+                                    <td>07/02/2017 10:00:00 AM</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Alan Smith</td>
+                                    <td>Submitted</td>
+                                    <td>07/02/2017 10:00:00 AM</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Alan Smith</td>
+                                    <td>Rejected</td>
+                                    <td>07/02/2017 10:00:00 AM</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Alan Smith</td>
+                                    <td>Approved</td>
+                                    <td>07/02/2017 10:00:00 AM</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Mika Sirtola</td>
+                                    <td>Rejected</td>
+                                    <td>07/02/2017 10:00:00 AM</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="budget-approval.html" target="_blank" type="button" class="btn btn-blue-green btn-save">submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Content/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="Content/js/bootstrap.min.js"></script>
+<script src="Content/js/moment.js"></script>
+<script src="Content/js/bootstrap-datetimepicker.js"></script>
+<script src="Content/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="Content/js/jquery.typeahead.min.js"></script>
+<script src="Content/js/bootstrap-multiselect.js"></script>
+<script src="Content/js/owl.carousel.min.js"></script>
+<script src="Content/js/chart.js"></script>
+<script src="Content/js/custom.js"></script>
+<script src="Content/js/jquery.flip.min.js"></script>
+<script src="Content/js/jquery-ui.js"></script>
+<script>
+    $(document).ready(function() {
+    function resizeHeight(element) {    
+        var block_height = (($(window).innerHeight()));
+        $('.block-1').css('min-height', block_height - 45);
+        $('.border').css({"min-height": block_height - 316, "border": "1px solid #f2f2f2"});
+        $('#iframe').css('min-height', block_height - 316);
+    }
+
+    resizeHeight();
+    jQuery(window).resize(function () {           
+         resizeHeight();
+    });
+
+    $("#edit").click(function() {
+        $(this).removeClass("action_edit").addClass("action_save");
+        $("input,select,textarea,.btn").prop('disabled', false).removeClass("disabled");
+    });
+    $('.datetimepicker2').datetimepicker({
+        icons: {
+            time: 'fa fa-clock-o',
+            date: 'fa fa-calendar',
+            up: 'fa fa-angle-up',
+            down: 'fa fa-angle-down ',
+            previous: 'fa fa-arrow-left',
+            next: 'fa fa-arrow-right',
+            today: 'fa fa-list-alt',
+            clear: 'fa fa-scissors'
+        },
+        collapse: true,
+        format: 'DD-MM-YYYY'
+    });
+
+    $('#example').multiselect({
+        enableClickableOptGroups: true,
+        enableCollapsibleOptGroups: true,
+        enableFiltering: true,
+        includeSelectAllOption: true
+    });
+});
+</script>
+</body>
+
+</html>

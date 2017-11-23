@@ -1,0 +1,218 @@
+/*
+ * CSS3 Treeview enabler for IE8
+ * @namespace window.AcidJs
+ * @class CSS3Treeview
+ * @version 3.0
+ * @author Martin Ivanov
+ * @url developer website: http://wemakesites.net/
+ * @url developer twitter: https://twitter.com/#!/wemakesitesnet
+ * @url developer blog http://acidmartin.wordpress.com/
+ **/
+
+/*
+ * Do you like this solution? Please, donate:
+ * https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QFUHPWJB2JDBS
+ **/
+
+.acidjs-css3-treeview,
+.acidjs-css3-treeview *
+{
+    padding: 0;
+    list-style: none;
+    position:relative;
+    // transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    // .fa{
+    //     margin:-1px 0;
+    //     &:before{
+    //         font-size: 20px;
+    //     }
+    // }
+}
+
+.acidjs-css3-treeview ul:before{
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #ddd;
+}
+
+.acidjs-css3-treeview li
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+        margin: 0;
+    padding: 0 1.5em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.acidjs-css3-treeview li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid #ddd;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+.acidjs-css3-treeview li:last-child:before{
+    background:#f5f6f7;
+    height:auto;
+    top:1em;
+    bottom:0;
+}
+.acidjs-css3-treeview label[for]::before,
+.acidjs-css3-treeview label span::before
+{
+    font-family:'FontAwesome' ;
+    content: "\f0da";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    text-align: center;
+    color: #54616a;
+    font-size: 12px;
+    padding: 14px 0;
+    line-height: 0px;
+}
+
+.acidjs-css3-treeview label span::before
+{
+    font-family:'FontAwesome';
+    content: "";
+    color: #1375b3;
+    font-size:10px;
+    border-radius:2px;
+    border: 1px solid #ccc;
+    padding:1px;
+    margin-top: 2px;
+    margin-right: -5px;
+    line-height:15px;
+}
+.acidjs-css3-treeview li:empty{font-size:40px;}
+.acidjs-css3-treeview li ul
+{
+    margin: 0 0 0 22px;
+}
+
+.acidjs-css3-treeview *
+{
+    vertical-align: middle;
+}
+
+
+
+.acidjs-css3-treeview input[type="checkbox"]
+{
+    display: none;
+}
+
+.acidjs-css3-treeview label
+{
+    cursor: pointer;
+    font-size: 14px;
+    display: inline;
+    width: 100%;
+    margin:0;
+    white-space:nowrap;
+}
+
+.acidjs-css3-treeview label[for]::before
+{
+    -webkit-transform: translatex(-5px);
+    -moz-transform: translatex(-5px);
+    -ms-transform: translatex(-5px);
+    -o-transform: translatex(-5px);
+    transform: translatex(-5px);
+}
+
+.acidjs-css3-treeview label span::before
+{
+    -webkit-transform: translate(-6px,3px);
+    -moz-transform: translate(-6px,3px);
+    -ms-transform: translate(-6px,3px);
+    -o-transform: translate(-6px,3px);
+    transform: translate(-6px,3px);
+}
+// .treeview2{
+//     label[for]::before{
+//         -webkit-transform: translatex(-15px);
+//         -moz-transform: translatex(-15px);
+//         -ms-transform: translatex(-15px);
+//         -o-transform: translatex(-15px);
+//         transform: translatex(-15px);
+//     }
+//     label span::before
+//     {
+//         -webkit-transform: translatex(0px);
+//         -moz-transform: translatex(0px);
+//         -ms-transform: translatex(0px);
+//         -o-transform: translatex(0px);
+//         transform: translatex(0px);
+//     }
+// }
+.acidjs-css3-treeview input[type="checkbox"][id]:checked ~ label[for]::before
+{
+    content: "\f0d7";
+}
+.acidjs-css3-treeview li.child-node input[type="checkbox"][id] ~ label[for]::before
+{
+    // content: ""!important;
+    // content: "\f068"!important;
+    display:none;
+}
+.acidjs-css3-treeview input[type="checkbox"][id]:not(:checked) ~ ul
+{
+    display: none;
+}
+
+.acidjs-css3-treeview label:not([for])
+{
+    margin: 0;
+}
+
+
+
+.acidjs-css3-treeview label input:checked + span::before
+{
+    content: "\f00c";
+    opacity: 1;
+    color:$M1;
+}
+.node-hide {
+   display:none;
+}
+// .acidjs-css3-treeview ul li i{font-size:20px;cursor:pointer;margin-right:10px;}
+// .acidjs-css3-treeview ul li.selected-node > label{color: $yellow;}
+// .location-group  label span::before{display:none!important;}
+// .location-group label[for]::before
+// {
+//     -webkit-transform: translatex(-10px);
+//     -moz-transform: translatex(-10px);
+//     -ms-transform: translatex(-10px);
+//     -o-transform: translatex(-10px);
+//     transform: translatex(-10px);
+// }
+.active-tree-node{
+    background: $orange;
+    color:white;
+    label[for]::before{
+        background: $orange;
+        color:white;
+    }
+    label span::before{
+        background:white;
+        border:1px solid white;
+    }
+}
+
+li.active-tree-node:before{background:$orange!important}

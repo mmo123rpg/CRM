@@ -1,0 +1,106 @@
+.tag{
+  display:inline-block; 
+  min-width: 70px;
+  float:left;
+  margin-right:8px;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+
+.tag img {
+	display:block;
+	margin: 0 auto; 
+
+	}
+.tag-close{
+	content:'';
+	background:url(../img/btn_tag_delete.png) no-repeat ;
+	cursor:pointer;
+	position:relative;
+	width:10px;
+	height:10px;
+	float:right;
+	top:0px;
+	right:0px;
+}
+
+.tag-close1{
+	content:'';
+	background:url(../img/btn_tag_delete.png) no-repeat ;
+	cursor:pointer;	
+	width:10px;
+	height:10px;
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	margin-left:4px;
+}
+.tag-checkbox-label {
+	font-weight:500;
+	margin-top:1px;
+	white-space:nowrap;
+	display:block;
+	font-size:14px;
+	color:#666;
+
+	}
+	
+.tag-checkbox{display:inline-block;float:left;margin-right:8px;}
+.tag-close1-hide,.tag-close-hide,#action-hide-1,#action-hide-2{display:none;}
+.tag-color{
+	content:'';
+	width:10px;
+	height:10px;
+	position:absolute;
+    border-radius: 2px;
+	top:40px;
+	right:0;	
+	}
+.tag-color-1{background-color: #ccc;a{color:black}}
+.tag-color-2{background-color: #69c0ec;a{color:black}}
+.tag-color-3{background-color: #fceb8b;a{color:black}}
+.tag-color-4{background-color: #f27173;a{color:black}}
+.tag-checkbox-add{float:left;margin-right:8px;}
+.tag-text{
+	margin-top:4px;
+	margin-bottom:8px;
+	padding: 0 8px;
+	display:inline-block;
+	border-radius:10px;
+	line-height:24px;
+	text-align:center;
+	height:24px;
+	width:100%;
+	}
+.tag-text-2{
+	padding: 0 8px;
+    display: inline-block;
+    border-radius: 10px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.icon-collapse:before{font-size:16px;}	
+	
+.title_popup[aria-expanded="false"] .icon-collapse:before, .summary[aria-expanded="false"] .icon-collapse:before {
+	content: "\f0fe";
+}
+.title_popup[aria-expanded="true"] .icon-collapse:before,  .summary[aria-expanded="true"] .icon-collapse:before {
+    content: "\f146";
+	color:$M1;
+}
+.target-content-image{
+	width:20px;height:20px;
+	cursor:pointer;
+	float:right;
+}
+
+.target-content[aria-expanded="false"] .target-content-image{
+	background-image:url(../img/table-down.png);
+}
+.target-content[aria-expanded="true"] .target-content-image{
+    background-image:url(../img/table-up.png);
+}	
+.summary div,.summary label{cursor:pointer}
+.summary i{margin-right:8px;}
+.summary-left{padding-left:32px;}
